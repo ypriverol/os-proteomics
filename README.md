@@ -17,23 +17,23 @@ We strive to foster a welcoming, inclusive, and respectful community where every
 
 ## Commenting and contributing 
 
+We welcome contributions from the community. If you would like to
+contribute, please open an issue or a pull request. We will review your
+contribution and provide feedback. We aim to be inclusive and
+collaborative, and we welcome all contributions that are in line with
+our goals.
+
+- If you want to contribute to the manuscript, please do the following: 
+  - Fork the repository
+  - Change the content [manuscript.md](manuscript.md)
+  - Submit a pull request
+  - We will review your contribution and provide feedback
+- If you want to discuss a topic, please open an issue. 
 
 NOTE: If, based on your contribution, you would like to be added as a
 co-author, please open an issue and provide your name and affiliation
 and a short description of your contribution or a link to the relevant
 issue and pull request.
-
-## Conversion to LaTeX
-
-- Any modifications to the text should be made to the
-  `manuscript.md` file. This file is then converted to LaTeX using
-  `pandoc` and included in the main tex file. 
-
-- To convert the markdown file to LaTeX, run:
-
-```bash
-$ pandoc manuscript.md -o manuscript.tex
-```
 
 ## Disclaimer
 
