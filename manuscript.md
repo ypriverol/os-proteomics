@@ -1,5 +1,7 @@
 ### Title: Open source, and FAIR Research Software in Proteomics
 
+### Introduction
+
 Studies have shown that over 90% of scientists consider software critical to their research, with nearly 70% stating that their work would be infeasible without it [28751965]. Proteomics, like many areas of scientific and omics research, has become increasingly dependent on sophisticated and complex software algorithms and tools for data analysis and interpretation. Algorithms and software tools start from data generation and acquisition of mass spectrometers to data processing, analysis, and interpretation []. 
 
 Computational proteomics, along with algorithm and software development, faces several key challenges common to other omics fields:
@@ -14,6 +16,20 @@ OSS has demonstrated clear benefits in increasing the accessibility, reusability
 
 In this viewpoint manuscript, we aim to explore the role of OSS in computational proteomics and its implications for the development of FAIR research software. We will discuss the benefits and challenges of OSS in proteomics, the role of OSS in the development of FAIR research software, and the importance of distribution, licensing, and citation of software in computational proteomics. We will also explore how other omics fields are dealing with OSS and FAIR software, and how these experiences can inform the development of proteomics software.
 
+### Licenses in Proteomics Software
+
+Before we delve into the role of OSS in computational proteomics, and before losing the reader in the details of the manuscript and the importance of FAIR software, we would like to highlight one of the fundamental aspects and challenges in the development of proteomics software: the use of licenses.
+
+Different to other fields in bioinformatics, proteomics software tools and algorithms are often using custom licenses, with complex clauses and terms that confuse the users and developers. These licenses often target commercialization, code reuse but also distribution and citation. In addition, as the field is evolving, and software becomes more complex and has multiple components, each component should have a different license and the dependencies between them should be clearly stated. 
+
+For example, if a software tool that performs PTM-site localization is distributable, but the software that produces the PTMs, peptide identification inputs, etc is not, the user should be aware of this and the community, developers, and journal reviewers should be able to understand the challenge. It could be misunderstood that the software is open-source, when in reality all the main components that it relies on are not. 
+
+We recommend for the proteomics community as the gold standard for proteomics software development the following: 
+
+- Use a standard licenses like the Apache 2.0, MIT, GPL, LGPL, etc; a list of them can be found in (https://opensource.org/licenses). These licenses are well known, have been used in other fields, and are well understood by the community. These licenses are also compatible with the FAIR principles and the Open Source Initiative (OSI) guidelines and well-known by other fields in bioinformatics and computer science. In addition they all have a clear definition of what is allowed and what is not, and how the software can be distributed, reused, and cited.
+- Clearly state the dependencies of the software, and the licenses of each of them. This will help the user to understand the software, the developers to know what they can use, and the journal reviewers to understand the software and its implications.
+
+### Open Source in Proteomics
 
 
 ### Authors
