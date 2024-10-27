@@ -37,9 +37,6 @@ issue and pull request.
 
 ## Disclaimer
 
-The authors have no affiliation with [GitHub](https://github.com/),
-nor any commercial entity mentioned in this article. The views
-described here reflect our own views without input from any third party
-organisation.
+The authors have no affiliation with any commercial entity mentioned in this article. The views described here reflect our own views without input from any third party organisation.
 
 
