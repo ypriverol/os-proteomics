@@ -26,7 +26,7 @@ For example, if a software tool that performs PTM-site localization is distribut
 
 We recommend for the proteomics community as the gold standard for proteomics software development the following: 
 
-- Use a standard licenses like the Apache 2.0, MIT, GPL, LGPL, etc; a list of them can be found in (https://opensource.org/licenses). These licenses are well known, have been used in other fields, and are well understood by the community. These licenses are also compatible with the FAIR principles and the Open Source Initiative (OSI) guidelines and well-known by other fields in bioinformatics and computer science. In addition they all have a clear definition of what is allowed and what is not, and how the software can be distributed, reused, and cited.
+- Use a standard licenses like the Apache 2.0, MIT, GPL, LGPL, etc; a list of them can be found in (https://opensource.org/licenses). These licenses are well known, have been used in other fields, and are well understood by the community. These licenses are also compatible with the FAIR principles and the Open Source Initiative (OSI) guidelines and well-known by other fields in bioinformatics and computer science. In addition, they all have a clear definition of what is allowed and what is not, and how the software can be distributed, reused, and cited.
 - Clearly state the dependencies of the software, and the licenses of each of them. This will help the user to understand the software, the developers to know what they can use, and the journal reviewers to understand the software and its implications.
 
 ### Open Source in Proteomics
