@@ -41,7 +41,7 @@ When algorithms or models are considered primary research outputs, implementing 
 
 Even meticulously documented algorithms can vary significantly in their real-world implementation. Minor differences in programming choices, software dependencies, and hardware environments can alter outcomes in ways that are often invisible in publications. Open-source code documents the detials necessary for researchers to understand precisely how a model or algorithm functions in practice, beyond theoretical descriptions. This level of transparency is vital to scientific integrity; it ensures that others can accurately replicate studies, identify discrepancies, and reveal assumptions that might otherwise go unnoticed. It also empowers others---within the contraints of the chosen OSS license---to validate the proposed model or algorithm with alternative implementations and compare it against the original implementation when discrepancies arise.
 
-Open-source software also plays a critical role in iterative refinement. Bugs and mistakes are inevitable in complex software, and these issues are often best addressed through collaborative scrutiny. In our own work, users have encountered nuances to question and uncovered bugs that we subsequently corrected, improving the reliability and robustness of our tools.. This feedback loop is unique to OSS,, where the contributions from the community enhance the quality and precision of the software over time. Without such transparency, computational research can become a "black box" that stifles innovation rather than promoting it, hindering the growth and accuracy of scientific knowledge. OSS can foster a culture of shared accountability, where code is not just released but continuously scrutinized and refined, driving the field forward in a collective effort toward scientific rigor. We have indeed observed this in our own projects: At the time of writing, Mokapot now has 13 contributors and QuantMS now has 12. 
+Open-source software also plays a critical role in iterative refinement. Bugs and mistakes are inevitable in complex software, and these issues are often best addressed through collaborative scrutiny. In our own work, users have encountered nuances to question and uncovered bugs that we subsequently corrected, improving the reliability and robustness of our tools.. This feedback loop is unique to OSS,, where the contributions from the community enhance the quality and precision of the software over time. Without such transparency, computational research can become a "black box" that stifles innovation rather than promoting it, hindering the growth and accuracy of scientific knowledge. OSS can foster a culture of shared accountability, where code is not just released but continuously scrutinized and refined, driving the field forward in a collective effort toward scientific rigor. We have indeed observed this in our own projects: At the time of writing, QuantMS and Mokapot now have 12 and 13 contributors, respectively.
 
 #### Shared knowledge pushes the field forward
 
@@ -65,6 +65,10 @@ We recommend for the proteomics community as the gold standard for proteomics so
 ### Strategies to Commercialize OSS
 
 ### The Role of Closed-Source Software
+
+### Conflicts of Interest
+
+WEF is an employee of Talus Bioscience, a drug-discovery biotechnology company that proudly develops and contributes to OSS and does not currently sell software.
 
 ### Authors
 
