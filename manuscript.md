@@ -40,7 +40,7 @@ Before we delve into the role of OSS in computational proteomics, and before los
 
 Different to other fields in bioinformatics, proteomics software tools and algorithms are often using custom licenses, with complex clauses and terms that confuse the users and developers. These licenses often target commercialization, code reuse but also distribution and citation. In addition, as the field is evolving, and software becomes more complex and has multiple components, each component should have a different license and the dependencies between them should be clearly stated. 
 
-For example, if a software tool that performs PTM-site localization is distributable, but the software that produces the PTMs, peptide identification inputs, etc is not, the user should be aware of this and the community, developers, and journal reviewers should be able to understand the challenge. It could be misunderstood that the software is open-source, when in reality all the main components that it relies on are not. 
+For example, if a software tool that performs PTM-site localization is distributable, but the software that produces the PTMs, peptide identification inputs, etc is not, the user should be aware of this and the community, developers, and journal reviewers should be able to understand the challenge. It could be misunderstood that the software is open-source, when in reality, all the main components that it relies on are not. 
 
 We recommend for the proteomics community as the gold standard for proteomics software development the following: 
 
