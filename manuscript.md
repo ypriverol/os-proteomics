@@ -16,9 +16,27 @@ OSS has demonstrated clear benefits in increasing the accessibility, reusability
 
 In this viewpoint manuscript, we aim to explore the role of OSS in computational proteomics and its implications for the development of FAIR research software. We will discuss the benefits and challenges of OSS in proteomics, the role of OSS in the development of FAIR research software, and the importance of distribution, licensing, and citation of software in computational proteomics. We will also explore how other omics fields are dealing with OSS and FAIR software, and how these experiences can inform the development of proteomics software.
 
+### What does it mean for software to be "open-source"? 
+
+OSS (open-source software) refers to software where the source code—the core instructions that define how the software functions—is freely accessible to anyone. Unlike "closed-source" software, where the code remains private, OSS provides transparency by design, which is essential for fostering trust, collaboration, and improvement in science. However, the open- or closed-source label simply addresses code visibility; it's the software license that determines who can use, modify, or distribute the software and under what conditions.
+
+"Free and open-source software" (FOSS) is a related term that often causes confusion. Here, "free" doesn’t imply no monetary cost but rather emphasizes freedom: users can run, copy, modify, and distribute the software as they wish (https://www.gnu.org/philosophy/free-sw.html). While we choose to focus on OSS broadly, the licenses discussed below also align with FOSS principles.
+
+Open-source is often misunderstood as merely free (no cost) software or lacking professional quality. OSS does not mean the software is without costs, nor does it imply a lack of security or support. Many open-source projects are maintained by dedicated teams and backed by extensive testing and security protocols. Moreover, open-source doesn't restrict developers from monetizing their work; it simply ensures that the source code remains accessible. Indeed, later we will describe common strategies for commercializing OSS.
+
+### Why should we care about OSS in proteomics?
+
+**Algorithms are a scientific output.**
+
+**Transparency promotes rigor.**
+
+**Shared knowledge pushes the field forward.**
+
+**The community can contributed to development.**
+
 ### Licenses in Proteomics Software
 
-Before we delve into the role of OSS in computational proteomics, and before losing the reader in the details of the manuscript and the importance of FAIR software, we would like to highlight one of the fundamental aspects and challenges in the development of proteomics software: the use of licenses.
+Before we delve into the role of OSS in computational proteomics, and before losing the reader in the details of the manuscript and the importance of FAIR software, we would like to highlight one of the fundamental aspects and challenges in the development of proteomics software: the use of software licenses.
 
 Different to other fields in bioinformatics, proteomics software tools and algorithms are often using custom licenses, with complex clauses and terms that confuse the users and developers. These licenses often target commercialization, code reuse but also distribution and citation. In addition, as the field is evolving, and software becomes more complex and has multiple components, each component should have a different license and the dependencies between them should be clearly stated. 
 
@@ -26,14 +44,18 @@ For example, if a software tool that performs PTM-site localization is distribut
 
 We recommend for the proteomics community as the gold standard for proteomics software development the following: 
 
-- Use a standard licenses like the Apache 2.0, MIT, GPL, LGPL, etc; a list of them can be found in (https://opensource.org/licenses). These licenses are well known, have been used in other fields, and are well understood by the community. These licenses are also compatible with the FAIR principles and the Open Source Initiative (OSI) guidelines and well-known by other fields in bioinformatics and computer science. In addition they all have a clear definition of what is allowed and what is not, and how the software can be distributed, reused, and cited.
+- Use a standard OSS licenses like the Apache 2.0, MIT, GPL, LGPL, etc; a list of them can be found in (https://opensource.org/licenses). These licenses are well known, have been used in other fields, and are well understood by the community. These licenses are also compatible with the FAIR principles and the Open Source Initiative (OSI) guidelines and well-known by other fields in bioinformatics and computer science. In addition they all have a clear definition of what is allowed and what is not, and how the software can be distributed, reused, and cited.
 - Clearly state the dependencies of the software, and the licenses of each of them. This will help the user to understand the software, the developers to know what they can use, and the journal reviewers to understand the software and its implications.
 
 ### Open Source in Proteomics
 
+### Strategies to Commercialize OSS
+
+### The Role of Closed-Source Software
 
 ### Authors
 
 | Name | Email | Affiliation |
 |------|-------|-------------|
 |Yasset Perez-Riverol | yperez@ebi.ac.uk | EMBL-EBI |
+|William E. Fondrie | wfondrie@talus.bio | Talus Bioscience |
