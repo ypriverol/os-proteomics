@@ -24,15 +24,28 @@ OSS (open-source software) refers to software where the source code—the core i
 
 Open-source is often misunderstood as merely free (no cost) software or lacking professional quality. OSS does not mean the software is without costs, nor does it imply a lack of security or support. Many open-source projects are maintained by dedicated teams and backed by extensive testing and security protocols. Moreover, open-source doesn't restrict developers from monetizing their work; it simply ensures that the source code remains accessible. Indeed, later we will describe common strategies for commercializing OSS.
 
-### Why should we care about OSS in proteomics?
+### Why Open-Source Software is Essential for Scientific Research
 
-**Algorithms are a scientific output.**
+#### Algorithms and models can be scientific output
 
-**Transparency promotes rigor.**
+The scientific community increasingly recognizes that algorithms are no longer just tools in the research toolkit; they can be the focus and outputs of research, meriting the same level of scrutiny, validation, and reproducibility as traditional experimental data. 
+Computational models and algorithms often function as both the method and the research focus, designed to test hypotheses and introduce novel approaches. Thus, their implementations and details are essential to justifying scientific claims in publications and evaluating these claims during peer review. In this context, the source code of an algorithm is akin to raw experimental data—like a western blot—providing a basis for other researchers to examine the methods, verify results, and assess the validity of conclusions.
 
-**Shared knowledge pushes the field forward.**
+This evolution in the role of algorithms was notably highlighted in 2024 when the Nobel Prizes in Physics and Chemistry were awarded for breakthroughs in computational fields: deep learning and protein structure prediction. These recognitions underscore the transformative impact of computational research in modern science. However, the scientific community risks losing credibility and reproducibility if such groundbreaking computational contributions remain closed-source. Without open-source code, advancements become little more than advertisements of ideas rather than rigorously validated science, as we later discuss.
 
-**The community can contributed to development.**
+The 2024 AlphaFold3 controversy exemplifies this issue. Unlike its predecessors, the AlphaFold3 source code was not released with the publications, preventing independent verification or adaptation of their methods. Without the code, scientists cannot fully replicate the work or evaluate its accuracy, limiting the community’s ability to build upon the findings. Publishing an algorithm without releasing the code is like publishing experimental results without providing the underlying data: it fundamentally hinders scientific transparency.
+
+#### Transparency promotes scientific rigor
+
+When algorithms or models are considered primary research outputs, implementing them as OSS becomes essential. Inspection of the code allows the scientific community to apply rigorous standards of replication and validation, building upon the same FAIR concepts that we apply to data.. OSS ensures that researchers have the opportunity to independently verify results, which strengthens the credibility of the findings and increases confidence in computational methods as scientific tools.
+
+Even meticulously documented algorithms can vary significantly in their real-world implementation. Minor differences in programming choices, software dependencies, and hardware environments can alter outcomes in ways that are often invisible in publications. Open-source code documents the detials necessary for researchers to understand precisely how a model or algorithm functions in practice, beyond theoretical descriptions. This level of transparency is vital to scientific integrity; it ensures that others can accurately replicate studies, identify discrepancies, and reveal assumptions that might otherwise go unnoticed. It also empowers others---within the contraints of the chosen OSS license---to validate the proposed model or algorithm with alternative implementations and compare it against the original implementation when discrepancies arise.
+
+Open-source software also plays a critical role in iterative refinement. Bugs and mistakes are inevitable in complex software, and these issues are often best addressed through collaborative scrutiny. In our own work, users have encountered nuances to question and uncovered bugs that we subsequently corrected, improving the reliability and robustness of our tools.. This feedback loop is unique to OSS,, where the contributions from the community enhance the quality and precision of the software over time. Without such transparency, computational research can become a "black box" that stifles innovation rather than promoting it, hindering the growth and accuracy of scientific knowledge. OSS can foster a culture of shared accountability, where code is not just released but continuously scrutinized and refined, driving the field forward in a collective effort toward scientific rigor. We have indeed observed this in our own projects: At the time of writing, Mokapot now has 13 contributors and QuantMS now has 12. 
+
+#### Shared knowledge pushes the field forward
+
+#### The community can contributed to development
 
 ### Licenses in Proteomics Software
 
