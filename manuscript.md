@@ -80,9 +80,17 @@ As we previously mentioned, merely the fact that a piece of software is open-sou
 
 ### The Role of Closed-Source Software
 
+Is proprietary, closed-source software ever appropriate in scientific research? We believe the answer to be yes—particularly when the software in question is not the subject of research. Indeed there is great commercial opportunity to build proprietary software from OSS. Although an OSS project may introduce a new algorithm or model to the scientific world, there is often many improvements that can be made to areas such as usability, scaling, and efficiency that can only be accomplished with commercial investment. Indeed, proprietary software can serve researchers well when they are most interested in using a tool answer biological questions, rather than seeking to understand or benchmark the underlying algorithm.
+
+Perhaps more controversial is the idea of a company creating proprietary software that incorporates OSS that was created by an unaffiliated academic lab. Provided that the company is abiding by the terms of the OSS software license, this is a legitimate use of the original OSS software project. However, if this is problematic for an OSS project, we would recommend looking into the strong copyleft licenses and/or adopting a dual licensing strategy that we previously discussed. Regardless, it is important to remember that nearly all modern software build upon foundational OSS that we often take for granted.
+
+### Concluding Remarks
+
+As proteomics research increasingly relies upon computational tools, embracing open-source and FAIR principles is essential for ensuring transparency, reproducibility, and accessibility. We urge researchers, funding agencies, institutions, and companies to prioritize open-source and FAIR practices, especially in publicly funded work, to create a truly collaborative scientific ecosystem. By collectively advancing open-source software, the scientific community can build an inclusive, rigorous foundation that fosters innovation and extends the benefits of research to scientists and the public alike. As we venture into the future, we as a community should explore mechanisms to make OSS sustainable---for example, by creating a foundation for proteomics software to support OSS in our field. Regardless, let us come together commit to open science for a shared, sustainable future in proteomics and science at-large..
+
 ### Conflicts of Interest
 
-WEF is an employee of Talus Bioscience, a drug-discovery biotechnology company that proudly develops and contributes to OSS and does not currently sell software.
+WEF is an employee of Talus Bioscience, a drug-discovery biotechnology company that develops and contributes to OSS and does not currently sell software. Additionally, Talus Bioscience has a collaborative research agreement with Bruker.
 
 ### Authors
 
