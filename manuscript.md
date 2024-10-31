@@ -31,6 +31,8 @@ OSS (open-source software) refers to software where the source code—the core i
 Unlike "closed-source" or "proprietary" software, where the code remains private, OSS provides transparency by design, which is essential for fostering trust, collaboration, and improvement in science.
 However, the open- or closed-source label simply addresses code visibility; it's the software license that determines who can use, modify, or distribute the software and under what conditions.
 
+A common misconception is that closed-source software with "academic" licenses are equivalent to open-source. Adding to the confusion, some journals now require code availability as a condition of publication. This has led researchers to upload their closed-source software to collaborative platforms. While this provides the appearance of openness through features like issue trackers, the source code remains locked away. Even if well-intentioned, this can be misleading to other scientists and in our view discouraged.
+
 Free and open-source software (FOSS) is a related term that can be misunderstood.
 In this context, "free" does not mean free of financial cost, nor does it imply a lack of security or support; instead, it emphasizes the freedom to run, copy, modify, and distribute the software as desired (https://www.gnu.org/philosophy/free-sw.html).
 Open-source is often misunderstood as merely free (no financial cost) software or lacking professional quality. 
@@ -111,7 +113,7 @@ It could be misunderstood that the software is open-source, when in reality, all
 
 We recommend for the proteomics community as the gold standard for proteomics software development the following: 
 
-- Use a standard OSS licenses like the Apache 2.0, MIT, GPL, LGPL, etc; a list of them can be found in (https://opensource.org/licenses). 
+- Use a standard OSS licenses like the Apache 2.0, MIT, BSD, LGPL, GPL, etc; a list of them can be found in (https://opensource.org/licenses). 
   These licenses are well known, have been used in other fields, and are well understood by the community.
   These licenses are also compatible with the FAIR principles and the Open Source Initiative (OSI) guidelines and well-known by other fields in bioinformatics and computer science.
 - In addition, they all have a clear definition of what is allowed and what is not, and how the software can be distributed, reused, and cited.
