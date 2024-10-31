@@ -1,5 +1,9 @@
 # Open source, and FAIR Research Software in Proteomics
 
+Important dates:
+- 11/09 - the deadline for new contributions
+- 11/11 - our target date for manuscript submission to the *Journal of Proteome Research*
+
 ## Description 
 
 This repository is an effort from the proteomics community to write a critical view point about Open source (OS) in computational proteomics. We aim the following: 
@@ -34,6 +38,10 @@ NOTE: If, based on your contribution, you would like to be added as a
 co-author, please open an issue and provide your name and affiliation
 and a short description of your contribution or a link to the relevant
 issue and pull request.
+
+## Journal Submission
+
+Our plan is to submit this manuscript as a Perspective piece in the *Journal of Proteome Research* as part of the "Special Issue on Software Tools and Resources". Although the original deadline for this issue was 10/31, we have secured an extension and plan to submit the manuscript on 11/11. Please make sure all of your contributions have been submitted as pull requests by 11/09 to ensure that there is enough time to incorporate them into the manuscript.
 
 ## Disclaimer
 
