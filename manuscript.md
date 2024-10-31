@@ -185,6 +185,7 @@ Regardless, let us come together and commit to open science for a shared, sustai
 
 WEF is an employee of Talus Bioscience, a drug-discovery biotechnology company that develops and contributes to OSS and does not currently sell software.
 Additionally, Talus Bioscience has a collaborative research agreement with Bruker.
+T.S. is officer in OpenMS Inc., a non-profit foundation that manages the international coordination of OpenMS development.
 
 ### Authors
 
@@ -192,3 +193,4 @@ Additionally, Talus Bioscience has a collaborative research agreement with Bruke
 |------|-------|-------------|
 |Yasset Perez-Riverol | yperez@ebi.ac.uk | EMBL-EBI |
 |William E. Fondrie | wfondrie@talus.bio | Talus Bioscience |
+|Timo Sachsenberg | timo.sachsenberg@uni-tuebingen.de | University of Tübingen |
