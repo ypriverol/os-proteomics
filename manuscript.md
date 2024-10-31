@@ -47,10 +47,10 @@ Moreover, open-source does not restrict developers from monetizing their work; i
 
 #### Transparency promotes scientific rigor
 
-The scientific community increasingly acknowledges that algorithms are not merely tools, but are becoming central research outputs themselves; hence, they are deserving rigorous scrutiny, validation, and reproducibility on par with traditional experimental data.
+The scientific community increasingly acknowledges that algorithms are not merely tools [maybe semantics, but algorithms are not software or tools, right? The algorithm describes the steps, the tool or software is the implementation], but are becoming central research outputs themselves [I feel like this describes software as an output becoming important. Now I read it as the methodological steps being important, which I think has always already been the case]; hence, they are deserving rigorous scrutiny, validation, and reproducibility on par with traditional experimental data.
 Computational models and algorithms often serve dual roles—as both methods and research subjects—crafted to test hypotheses and drive innovation.
 Consequently, the transparency of these implementations is essential to substantiating scientific claims in publications and for critical assessment during peer review.
-To draw an analogy, consider a proteomic experiment where only the final mass spectrometry results are shared, without providing details on the sample preparation, instrument settings, or data processing steps. Without access to this essential information, no other lab could reproduce the experiment, validate the findings, or build on the work effectively. Similarly, without open-source code, even computational methods of only moderate complexity cannot be fully understood or replicated.
+To draw an analogy, consider a proteomic experiment where only the final mass spectrometry results are shared, without providing details on the sample preparation, instrument settings, or data processing steps. Without access to this essential information, no other lab could reproduce the experiment, validate the findings, or build on the work effectively. Similarly, without open-source code, even computational methods of only moderate complexity cannot be fully understood or replicated. [I would say however that just sharing the methodological steps can be done without sharing the code (e.g., see MSFragger). So I do not think this analogy works completely.]
 
 This evolution in the role of computational methods was notably highlighted in 2024 when the Nobel Prizes in Physics and Chemistry recognized breakthroughs in deep learning and protein structure prediction, highlighting the transformative power of computational research in contemporary science.
 Yet, the scientific community’s commitment to credibility and reproducibility is at risk if these pioneering computational contributions remain closed-source.
@@ -71,7 +71,7 @@ Open code is, therefore, not just a matter of transparency—it is essential for
 
 Open-source code documents the details necessary for researchers to understand precisely how a model or algorithm functions in practice, beyond theoretical descriptions.
 This level of transparency is vital to scientific integrity; it ensures that others can accurately replicate studies, identify discrepancies, and reveal assumptions that might otherwise go unnoticed.
-It also empowers others—within the constraints of the chosen OSS license—to validate the proposed model or algorithm with alternative implementations and compare it against the original implementation when discrepancies arise.
+It also empowers others—within the constraints of the chosen OSS license—to validate the proposed model or algorithm with alternative implementations and compare it against the original implementation when discrepancies arise. [I think this section could be written in a more positive way. Now it heavily leans toward policing results. Maybe it is also an idea to first discuss how it pushes the field forward (next section), followed by some additional benefits in terms of scientific rigor]
 
 #### Shared knowledge pushes the field forward
 
@@ -104,14 +104,14 @@ We have indeed observed this in our own projects: At the time of writing, QuantM
 
 Before we delve into the role of OSS in computational proteomics, and before losing the reader in the details of the manuscript and the importance of FAIR software, we would like to highlight one of the fundamental aspects and challenges in the development of proteomics software: the use of software licenses.
 
-Different to other fields in bioinformatics, proteomics software tools and algorithms are often using custom licenses, with complex clauses and terms that confuse the users and developers.
+Different to other fields in bioinformatics, proteomics software tools and algorithms often use custom licenses, with complex clauses and terms that confuse the users and developers. [really is this common practice? I personally know of only a single project]
 These licenses often target commercialization, code reuse but also distribution and citation.
 In addition, as the field is evolving, and software becomes more complex and has multiple components, each component should have a different license and the dependencies between them should be clearly stated. 
 
-For example, if a software tool that performs PTM-site localization is distributable, but the software that produces the PTMs, peptide identification inputs, etc is not, the user should be aware of this and the community, developers, and journal reviewers should be able to understand the challenge.
+For example, if a software tool that performs PTM-site localization is distributable, but the software that produces the PTMs, peptide identification inputs, etc is not, the user should be aware of this and the community, developers, and journal reviewers should be able to understand the challenge [I am not sure what the "challenge" is. Is this the understanding of different licenses being bundled? Challenges in not being able to open source everything? ..].
 It could be misunderstood that the software is open-source, when in reality, all the main components that it relies on are not. 
 
-We recommend for the proteomics community as the gold standard for proteomics software development the following: 
+As the gold standard for proteomics software development we recommend the following policies and licenses: 
 
 - Use a standard OSS licenses like the Apache 2.0, MIT, BSD, LGPL, GPL, etc; a list of them can be found in (https://opensource.org/licenses). 
   These licenses are well known, have been used in other fields, and are well understood by the community.
