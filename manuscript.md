@@ -31,6 +31,8 @@ OSS (open-source software) refers to software where the source code—the core i
 Unlike "closed-source" or "proprietary" software, where the code remains private, OSS provides transparency by design, which is essential for fostering trust, collaboration, and improvement in science.
 However, the open- or closed-source label simply addresses code visibility; it's the software license that determines who can use, modify, or distribute the software and under what conditions.
 
+A common misconception is that closed-source software with "academic" licenses are equivalent to open-source. Adding to the confusion, some journals now require code availability as a condition of publication. This has led researchers to upload their closed-source software to collaborative platforms. While this provides the appearance of openness through features like issue trackers, the source code remains locked away. Even if well-intentioned, this can be misleading to other scientists and in our view discouraged.
+
 Free and open-source software (FOSS) is a related term that can be misunderstood.
 In this context, "free" does not mean free of financial cost, nor does it imply a lack of security or support; instead, it emphasizes the freedom to run, copy, modify, and distribute the software as desired (https://www.gnu.org/philosophy/free-sw.html).
 Open-source is often misunderstood as merely free (no financial cost) software or lacking professional quality. 
@@ -48,7 +50,7 @@ Moreover, open-source doesn't restrict developers from monetizing their work; it
 The scientific community increasingly acknowledges that algorithms are not merely tools, but are becoming central research outputs themselves; hence, they are deserving rigorous scrutiny, validation, and reproducibility on par with traditional experimental data.
 Computational models and algorithms often serve dual roles—as both methods and research subjects—crafted to test hypotheses and drive innovation.
 Consequently, the transparency of these implementations is essential to substantiating scientific claims in publications and for critical assessment during peer review.
-In this light, the source code of an algorithm is comparable to raw experimental data, such as a western blot, offering a foundation for other researchers to scrutinize methods, verify findings, and validate conclusions.
+To draw an analogy, consider a proteomic experiment where only the final mass spectrometry results are shared, without providing details on the sample preparation, instrument settings, or data processing steps. Without access to this essential information, no other lab could reproduce the experiment, validate the findings, or build on the work effectively. Similarly, without open-source code, even computational methods of only moderate complexity cannot be fully understood or replicated.
 
 This evolution in the role of computational methods was notably highlighted in 2024 when the Nobel Prizes in Physics and Chemistry recognized breakthroughs in deep learning and protein structure prediction, highlighting the transformative power of computational research in contemporary science.
 Yet, the scientific community’s commitment to credibility and reproducibility is at risk if these pioneering computational contributions remain closed-source.
@@ -111,7 +113,7 @@ It could be misunderstood that the software is open-source, when in reality, all
 
 We recommend for the proteomics community as the gold standard for proteomics software development the following: 
 
-- Use a standard OSS licenses like the Apache 2.0, MIT, GPL, LGPL, etc; a list of them can be found in (https://opensource.org/licenses). 
+- Use a standard OSS licenses like the Apache 2.0, MIT, BSD, LGPL, GPL, etc; a list of them can be found in (https://opensource.org/licenses). 
   These licenses are well known, have been used in other fields, and are well understood by the community.
   These licenses are also compatible with the FAIR principles and the Open Source Initiative (OSI) guidelines and well-known by other fields in bioinformatics and computer science.
 - In addition, they all have a clear definition of what is allowed and what is not, and how the software can be distributed, reused, and cited.
@@ -183,6 +185,7 @@ Regardless, let us come together and commit to open science for a shared, sustai
 
 WEF is an employee of Talus Bioscience, a drug-discovery biotechnology company that develops and contributes to OSS and does not currently sell software.
 Additionally, Talus Bioscience has a collaborative research agreement with Bruker.
+T.S. is officer in OpenMS Inc., a non-profit foundation that manages the international coordination of OpenMS development.
 
 ### Authors
 
@@ -190,3 +193,4 @@ Additionally, Talus Bioscience has a collaborative research agreement with Bruke
 |------|-------|-------------|
 |Yasset Perez-Riverol | yperez@ebi.ac.uk | EMBL-EBI |
 |William E. Fondrie | wfondrie@talus.bio | Talus Bioscience |
+|Timo Sachsenberg | timo.sachsenberg@uni-tuebingen.de | University of Tübingen |
