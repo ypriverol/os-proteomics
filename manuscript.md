@@ -120,8 +120,6 @@ We recommend for the proteomics community as the gold standard for proteomics so
 - Clearly state the dependencies of the software, and the licenses of each of them.
   This will help the user to understand the software, the developers to know what they can use, and the journal reviewers to understand the software and its implications.
 
-### Open Source in Proteomics
-
 ### Strategies to Commercialize OSS
 
 As we previously mentioned, merely the fact that a piece of software is open-source does not necessarily mean that everyone can use it without financial cost.
