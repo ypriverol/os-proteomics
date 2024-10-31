@@ -31,7 +31,7 @@ OSS (open-source software) refers to software where the source code—the core i
 Unlike "closed-source" or "proprietary" software, where the code remains private, OSS provides transparency by design, which is essential for fostering trust, collaboration, and improvement in science.
 However, the open- or closed-source label simply addresses code visibility; it's the software license that determines who can use, modify, or distribute the software and under what conditions.
 
-A common misconception is that closed-source software with "academic" licenses are equivalent to open-source. Adding to the confusion, some journals now require code availability as a condition of publication. This has led researchers to upload their closed-source software to collaborative platforms. While this provides the appearance of openness through features like issue trackers, the source code remains locked away. Even if well-intentioned, this can be misleading to other scientists and in our view discouraged.
+A common misconception is that closed-source software with "academic" licenses are equivalent to open-source. Adding to the confusion, some journals now require code availability as a condition of publication. This has led researchers to upload their closed-source software to collaborative platforms. While this provides the appearance of openness through features like issue trackers, the source code remains locked away. Even if well-intentioned, this can be misleading to other scientists and in our view discouraged. [what about github repos starting as open-source, changing over time to be closed source under the same name and caursing confusion. Or being open-source at the time of review and removing repositories. I think this should maybe be mentioned here?]
 
 Free and open-source software (FOSS) is a related term that can be misunderstood.
 In this context, "free" does not mean free of financial cost, nor does it imply a lack of security or support; instead, it emphasizes the freedom to run, copy, modify, and distribute the software as desired (https://www.gnu.org/philosophy/free-sw.html).
@@ -41,7 +41,7 @@ For example, in genomics, the Genome Analysis Toolkit (GATK - https://github.com
 In proteomics, for example, Percolator (https://github.com/percolator/percolator) is an open-source project with more than 700 citations and 20 contributors [17952086]; and a core tool for multiple open-source tools [], commercial software [], and pipelines [].
 The idea that open-source software is of lower quality is a myth that has been debunked by the success of many open-source projects in the field of computational proteomics and bioinformatics.
 
-Moreover, open-source doesn't restrict developers from monetizing their work; it simply ensures that the source code remains accessible. Indeed, later we will describe common strategies for commercializing OSS.
+Moreover, open-source does not restrict developers from monetizing their work; it simply ensures that the source code remains accessible. Indeed, later we will describe common strategies for commercializing OSS.
 
 ### Why Open-Source Software is Essential for Scientific Research
 
