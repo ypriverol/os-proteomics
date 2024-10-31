@@ -1,4 +1,4 @@
-### Title: Open source, and FAIR Research Software in Proteomics
+### Title: Open-Source and FAIR Research Software in Proteomics
 
 ### Introduction
 
@@ -28,16 +28,15 @@ We will also explore how other omics fields are dealing with OSS and FAIR softwa
 ### What does it mean for software to be "open-source"? 
 
 OSS (open-source software) refers to software where the source code—the core instructions that define how the software functions—is freely accessible to anyone. 
-Unlike "closed-source" software, where the code remains private, OSS provides transparency by design, which is essential for fostering trust, collaboration, and improvement in science.
+Unlike "closed-source" or "proprietary" software, where the code remains private, OSS provides transparency by design, which is essential for fostering trust, collaboration, and improvement in science.
 However, the open- or closed-source label simply addresses code visibility; it's the software license that determines who can use, modify, or distribute the software and under what conditions.
 
 Free and open-source software (FOSS) is a related term that can be misunderstood.
-In this context, 'free' doesn’t mean free of cost, nor does it imply a lack of security or support; instead, it emphasizes the freedom to run, copy, modify, and distribute the software as desired (https://www.gnu.org/philosophy/free-sw.html).
-~~While we choose to focus on OSS broadly, the licenses discussed below also align with FOSS principles (see license section).~~ 
-Open-source is often misunderstood as merely free (no cost) software or lacking professional quality. 
+In this context, "free" does not mean free of financial cost, nor does it imply a lack of security or support; instead, it emphasizes the freedom to run, copy, modify, and distribute the software as desired (https://www.gnu.org/philosophy/free-sw.html).
+Open-source is often misunderstood as merely free (no financial cost) software or lacking professional quality. 
 Many open-source projects are maintained by dedicated teams and backed by extensive testing and security protocols.
-For example, in genomics, the Genome Analysis Toolkit (GATK - https://github.com/broadinstitute/gatk), is an Apache 2 license project with over a hundred maintainers, more than 4000 pull-requests from the community and more than 26000 citations.
-In proteomics, for example, Percolator (https://github.com/percolator/percolator) is an open-source project with more than 700 citations and 20 contributors; and a core tool for multiple open-source tools [], commercial software [], and pipelines [].
+For example, in genomics, the Genome Analysis Toolkit (GATK - https://github.com/broadinstitute/gatk), is an Apache 2 license project with over a hundred maintainers, more than 4000 pull-requests from the community and more than 26000 citations [20644199].
+In proteomics, for example, Percolator (https://github.com/percolator/percolator) is an open-source project with more than 700 citations and 20 contributors [17952086]; and a core tool for multiple open-source tools [], commercial software [], and pipelines [].
 The idea that open-source software is of lower quality is a myth that has been debunked by the success of many open-source projects in the field of computational proteomics and bioinformatics.
 
 Moreover, open-source doesn't restrict developers from monetizing their work; it simply ensures that the source code remains accessible. Indeed, later we will describe common strategies for commercializing OSS.
@@ -46,7 +45,7 @@ Moreover, open-source doesn't restrict developers from monetizing their work; it
 
 #### Transparency promotes scientific rigor
 
-The scientific community increasingly acknowledges that algorithms are not merely tools but are becoming central research outputs themselves, deserving rigorous scrutiny, validation, and reproducibility on par with traditional experimental data.
+The scientific community increasingly acknowledges that algorithms are not merely tools, but are becoming central research outputs themselves; hence, they are deserving rigorous scrutiny, validation, and reproducibility on par with traditional experimental data.
 Computational models and algorithms often serve dual roles—as both methods and research subjects—crafted to test hypotheses and drive innovation.
 Consequently, the transparency of these implementations is essential to substantiating scientific claims in publications and for critical assessment during peer review.
 In this light, the source code of an algorithm is comparable to raw experimental data, such as a western blot, offering a foundation for other researchers to scrutinize methods, verify findings, and validate conclusions.
@@ -57,20 +56,16 @@ Without open-source code, such achievements risk becoming little more than promo
 The 2024 AlphaFold3 controversy exemplifies this issue (https://zenodo.org/records/11206103).
 Unlike its predecessors, the AlphaFold3 source code was not released with the publications, preventing independent verification or adaptation of their methods. 
 
-Without the code, scientists cannot fully replicate the work or evaluate its accuracy, limiting the community’s ability to build upon the findings.
-Without access to the code, research outputs lack true transparency and verifiability.
-This limitation hinders the ability of peer reviewers and the broader scientific community to rigorously evaluate and reproduce findings.
-Publishing an algorithm without releasing the code is like publishing experimental results without providing the underlying data: it fundamentally hinders scientific transparency.
-
 When algorithms or models are considered primary research outputs, implementing them as OSS becomes essential.
 Inspection of the code allows the scientific community to apply rigorous standards of replication and validation, building upon the same FAIR concepts that we apply to data.
 OSS ensures that researchers have the opportunity to independently verify results, which strengthens the credibility of the findings and increases confidence in computational methods as scientific tools.
+Publishing an algorithm without releasing the code is like publishing experimental results without providing the underlying data: it fundamentally hinders scientific transparency.
 
 Even meticulously documented algorithms can vary significantly in their real-world implementation.
 Minor differences in programming choices, software dependencies, and hardware environments can alter outcomes in ways that are often invisible in publications.
 Even a minor bug in the code, or an unnoticed dependency in a tool or library, can yield dramatically different results—leading to inaccurate biological conclusions and potentially affecting the research outcomes for thousands of scientists who rely on these findings.
 The impact extends beyond academic rigor; flawed computational outputs can cascade across studies, introducing errors in scientific knowledge that may influence future research directions, funding priorities, and even clinical practices.
-Open code is, therefore, not just a matter of transparency—it’s essential for safeguarding the integrity of scientific inquiry and for building a foundation of reliable, reproducible knowledge in computational research.
+Open code is, therefore, not just a matter of transparency—it is essential for safeguarding the integrity of scientific inquiry and for building a foundation of reliable, reproducible knowledge in computational research.
 
 Open-source code documents the details necessary for researchers to understand precisely how a model or algorithm functions in practice, beyond theoretical descriptions.
 This level of transparency is vital to scientific integrity; it ensures that others can accurately replicate studies, identify discrepancies, and reveal assumptions that might otherwise go unnoticed.
@@ -82,9 +77,9 @@ OSS cultivates an ecosystem where researchers across institutions can freely col
 Unlike proprietary software, which isolates progress within companies or specific labs, OSS allows researchers to build on each other's work without reinventing the wheel.
 This collaborative environment accelerates scientific discovery, as labs and researchers can focus on refining or extending existing algorithms, rather than duplicating efforts.
 In this way, OSS promotes the efficient use of resources, turning individual advancements into collective gains.
-Indeed, the proteomics field has benefited from this is a number of ways: the ProteoWizard project is a long-standing OSS resource in the proteomics community containing beloved tools like Skyline and msconvert.
-Numerous plugins have been developed for Skyline to accomplish specialized tasks in a fraction of the time it would have taken to develop the full solution from scratch.
-Likewise, msconvert has provided a unified interface to open mass spectrometry data formats, rather than requiring developers to wrangle proprietary formats and readers.
+Indeed, the proteomics field has benefited from this is a number of ways: the ProteoWizard project [18606607,23051804 ] is a long-standing OSS resource in the proteomics community encompassing beloved tools like Skyline [20147306] and msConvert [28188540].
+Numerous plugins have been developed for Skyline to accomplish specialized tasks in a fraction of the time it would have taken to develop the full solution from scratch; currently, there are 20 external plugins available through the official Skyline Tool Store.
+Likewise, msConvert has provided a unified interface to open mass spectrometry data formats, rather than requiring developers to wrangle proprietary formats and readers.
 Well-supported OSS provides a foundation that accelerates advancement of the field. 
 
 Moreover, OSS democratizes access to high-quality tools, leveling the playing field for researchers in resource-limited settings.
@@ -96,10 +91,12 @@ OSS in science not only enhances rigor and speed, but enables a global community
 
 Open-source software also plays a critical role in iterative refinement.
 Bugs and mistakes are inevitable in complex software, and these issues are often best addressed through collaborative scrutiny.
-In our own work, users have encountered nuances to question and uncovered bugs that we subsequently corrected, improving the reliability and robustness of our tools.
+In our own work, users have encountered uncovered bugs that we subsequently corrected, improving the reliability and robustness of our tools.
+We have also experienced users asking questions about the underlying code, leading to new features and more efficient algorithms.
 This feedback loop is unique to OSS, where the contributions from the community enhance the quality and precision of the software over time.
-Without such transparency, computational research can become a "black box" that stifles innovation rather than promoting it, hindering the growth and accuracy of scientific knowledge. OSS can foster a culture of shared accountability, where code is not just released but continuously scrutinized and refined, driving the field forward in a collective effort toward scientific rigor.
-We have indeed observed this in our own projects: At the time of writing, QuantMS and Mokapot now have 12 and 13 contributors, respectively. 
+Without such transparency, computational research can become a "black box" that stifles innovation rather than promoting it, hindering the growth of scientific knowledge. 
+OSS can foster a culture of shared accountability, where code is not just released but continuously scrutinized and refined, driving the field forward in a collective effort toward scientific rigor.
+We have indeed observed this in our own projects: At the time of writing, QuantMS [38965444] and Mokapot [33596079] now have 12 and 13 contributors, respectively. 
 
 ### Licenses in Proteomics Software
 
@@ -115,20 +112,20 @@ It could be misunderstood that the software is open-source, when in reality, all
 We recommend for the proteomics community as the gold standard for proteomics software development the following: 
 
 - Use a standard OSS licenses like the Apache 2.0, MIT, GPL, LGPL, etc; a list of them can be found in (https://opensource.org/licenses). 
-These licenses are well known, have been used in other fields, and are well understood by the community.
-These licenses are also compatible with the FAIR principles and the Open Source Initiative (OSI) guidelines and well-known by other fields in bioinformatics and computer science.
+  These licenses are well known, have been used in other fields, and are well understood by the community.
+  These licenses are also compatible with the FAIR principles and the Open Source Initiative (OSI) guidelines and well-known by other fields in bioinformatics and computer science.
 - In addition, they all have a clear definition of what is allowed and what is not, and how the software can be distributed, reused, and cited.
 - Clearly state the dependencies of the software, and the licenses of each of them.
-This will help the user to understand the software, the developers to know what they can use, and the journal reviewers to understand the software and its implications.
+  This will help the user to understand the software, the developers to know what they can use, and the journal reviewers to understand the software and its implications.
 
 ### Open Source in Proteomics
 
 ### Strategies to Commercialize OSS
 
-As we previously mentioned, merely the fact that a piece of software is open-source does not necessarily mean that everyone can use it without financia.
+As we previously mentioned, merely the fact that a piece of software is open-source does not necessarily mean that everyone can use it without financial cost.
 Indeed, OSS can be commercialized in a number of different ways depending on the owner's goals and principles.
 Here, we intend for commercialization to refer to any process by which OSS is monetized, regardless of whether it remains part of an academic lab, is developed by a company, or is spun-out into its own startup.
-In fact, we would argue that healthy OSS projects must be financially supported one or more of charitable means, grants, or commercialization, for the development of the project to be sustainable.
+In fact, we would argue that healthy OSS projects must be financially supported by methods such charitable means, grants, or commercialization, in order for the development of the project to be sustainable.
 Here, we discuss a few commercialization models that have become popular with OSS, which try to strike a balance between supporting openness and supporting future development.
 It is worth noting that these strategies are not necessarily mutually exclusive.
 
@@ -136,40 +133,42 @@ It is worth noting that these strategies are not necessarily mutually exclusive.
 Projects using this strategy are often available under a strong copyleft license (GPL, AGPL, etc.) with no financial cost.
 However, the copyleft nature of these licenses requires any derivative works to published under a compatible open-source license, which is often undesirable for corporate users.
 Thus, these projects also offer more permissive licenses to paying customers, which allows the use of the OSS project within proprietary code.
-Although this strategy may seem easy to abuse, our experience has been that companies are often risk-averse and would rather purchase proper license rather than risk legal ramifications of violating a copyleft license. A successful example of this strategy outside of proteomics has been RStudio which is created by Posit.
+Although this strategy may seem easy to abuse, our experience has been that companies are often risk-averse and would rather purchase proper license rather than risk legal ramifications of violating a copyleft license. 
+A successful example of this strategy from outside of proteomics has been RStudio by Posit.
 RStudio is currently available under an open-source AGPLv3 license, or under a commercial license when AGPLv3 is incompatible.
-Notably, developer should make sure to include a "contributor license agreement" as part of their requirements for new contributors to ensure their contributions can be distributed under both licenses.
+Notably, developers should make sure to include a "contributor license agreement" as part of their requirements for new contributors to ensure their contributions can be distributed under both licenses.
 
 **Support or Services.** Some OSS projects commercialize by offering support services or new feature development at a cost.
 Often users, particularly from corporate entities, are willing to pay for specialized training and ongoing support for their use of OSS projects.
 In special instances, it may even be the case that outside entities are able to pay for the prioritization of specific features.
-This road must be tread carefully though; while there is benefit to allowing for sponsored features and they do benefit everyone once implemented, such a model risks losing control over the direction of an OSS project.
+This road must be tread carefully though; while there is benefit to allowing for sponsored features, and they do benefit everyone once implemented, such a model risks losing control over the direction of an OSS project.
 Red Hat is the most prominent example of a company using this strategy to commercialize their enterprise Linux offering. 
 
-**Software as a Service (SaaS).** The SaaS business model has become increasing popular in recent times. When using a SaaS model, the OSS project remains open-source, but commercialization occurs by building a platform around it.
+**Software as a Service (SaaS).** The SaaS commercialization model has become increasing popular in recent times. 
+When using a SaaS model, the OSS project remains open-source, but commercialization occurs by building a platform around it.
 The platform then allows users to more easily use the OSS project.
 This model often includes a managed hardware or cloud infrastructure component, where users pay to merely interact with a web application to use the OSS tool, reducing the barrier to entry.
-In the bioinformatics space, NextFlow is an open-source bioinformatics workflow engine that has been commercialized by Seqera Labs using the SaaS model.
-Their current Seqera Platform product provides an interface to launch, observe, and explore workflow executions with NextFlow. 
+In the bioinformatics space, NextFlow [28398311] is an open-source bioinformatics workflow engine that has been commercialized by Seqera Labs using the SaaS model.
+Their current Seqera Platform product provides an interface to launch, observe, and explore workflow executions with NextFlow, in addition to other features. 
 
 **Open-Core.** The open-core commercialization model provides access to new features only to paying customers.
-Often this is not core functionality, but rather features such as a nicer user interface or early access to new features.
+Often this is not fundamental functionality, but rather optional features such as a nicer user interface or early access to new features.
 Some variants of this model use a time delay for new features, where paying users have access to new features sooner than those using the fully OSS version.
 Practically, the implementation of this strategy often involves the create of private, upstream fork of the OSS code repository.
 New features are then added to the private fork and synced to the OSS version when ready.
-Such a strategy can also be used by academic labs to protect new features while being prepared for publication, although we would advocate for developing those in the open when possible.
-The open-core model is quite common and it proteomics it is used for ScaffoldDIA from Proteome Software: the open-source core of ScaffoldDIA is EncyclopeDIA.
+Such a strategy can also be used by academic labs to protect new features while being prepared for publication, although we would advocate for developing those features in the open, when possible.
+The open-core model is quite common and in proteomics it is used for ScaffoldDIA from Proteome Software: the open-source core of ScaffoldDIA is EncyclopeDIA [30510204].
 
 ### The Role of Closed-Source Software
 
 Is proprietary, closed-source software ever appropriate in scientific research? We believe the answer to be yes—particularly when the software in question is not the subject of research.
 Indeed, there is great commercial opportunity to build proprietary software from OSS.
-Although an OSS project may introduce a new algorithm or model to the scientific world, there is often many improvements that can be made to areas such as usability, scaling, and efficiency that can only be accomplished with commercial investment.
+Although an OSS project may introduce a new algorithm or model to the scientific world, there are often improvements that can be made to the software regarding usability, scaling, and efficiency, all of which may require commercial investment.
 Indeed, proprietary software can serve researchers well when they are most interested in using a tool answer biological questions, rather than seeking to understand or benchmark the underlying algorithm.
 
-Perhaps more controversial is the idea of a company creating proprietary software that incorporates OSS that was created by an unaffiliated academic lab.
-Provided that the company is abiding by the terms of the OSS software license, this is a legitimate use of the original OSS software project.
-However, if this is problematic for an OSS project, we would recommend looking into the strong copyleft licenses and/or adopting a dual licensing strategy that we previously discussed.
+Perhaps a more controversial is the idea of a company creating proprietary software that incorporates OSS, yet the OSS project was created by an unaffiliated academic lab.
+Provided that the company is abiding by the terms of the OSS license, this is a legitimate use of the original OSS project.
+However, if this is problematic for an OSS project, we would recommend looking into the strong copyleft licenses and/or adopting the dual licensing strategy that we previously discussed.
 Regardless, it is important to remember that nearly all modern software build upon foundational OSS that we often take for granted.
 
 ### Concluding Remarks
@@ -177,8 +176,8 @@ Regardless, it is important to remember that nearly all modern software build up
 As proteomics research increasingly relies upon computational tools, embracing open-source and FAIR principles is essential for ensuring transparency, reproducibility, and accessibility.
 We urge researchers, funding agencies, institutions, and companies to prioritize open-source and FAIR practices, especially in publicly funded work, to create a truly collaborative scientific ecosystem.
 By collectively advancing open-source software, the scientific community can build an inclusive, rigorous foundation that fosters innovation and extends the benefits of research to scientists and the public alike.
-As we venture into the future, we as a community should explore mechanisms to make OSS sustainable---for example, by creating a foundation for proteomics software to support OSS in our field.
-Regardless, let us come together to commit to open science for a shared, sustainable future in proteomics and science at-large.
+As we venture into the future, we as a community should explore mechanisms to make OSS sustainable---for example, by creating a foundation for proteomics software to support the maintenance of OSS in our field.
+Regardless, let us come together and commit to open science for a shared, sustainable future in our exploration of the proteome..
 
 ### Conflicts of Interest
 
