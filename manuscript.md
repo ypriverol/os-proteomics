@@ -156,20 +156,22 @@ Often this is not fundamental functionality, but rather optional features such a
 Some variants of this model use a time delay for new features, where paying users have access to new features sooner than those using the fully OSS version.
 Practically, the implementation of this strategy often involves the create of private, upstream fork of the OSS code repository.
 New features are then added to the private fork and synced to the OSS version when ready.
-Such a strategy can also be used by academic labs to protect new features while being prepared for publication, although we would advocate for developing those features in the open, when possible.
+Such a strategy can also be used by academic labs to protect new features while being prepared for publication, although we would advocate for developing those features in the open, when possible. [can we provide reasoning here? I think it might delay progress and issues with commitment to making it public?]
 The open-core model is quite common and in proteomics it is used for ScaffoldDIA from Proteome Software: the open-source core of ScaffoldDIA is EncyclopeDIA [30510204].
 
 ### The Role of Closed-Source Software
 
-Is proprietary, closed-source software ever appropriate in scientific research? We believe the answer to be yes—particularly when the software in question is not the subject of research.
+Is proprietary, closed-source software ever appropriate in scientific research? We believe the answer to be yes—particularly when the software in question is not the subject of research. [Preferably any proteomics software will try to have biology in mind, right? I find it a bit vague where this boundary exactly is, can we define it with a bit more detail?]
 Indeed, there is great commercial opportunity to build proprietary software from OSS.
 Although an OSS project may introduce a new algorithm or model to the scientific world, there are often improvements that can be made to the software regarding usability, scaling, and efficiency, all of which may require commercial investment.
-Indeed, proprietary software can serve researchers well when they are most interested in using a tool answer biological questions, rather than seeking to understand or benchmark the underlying algorithm.
+Indeed, proprietary software can serve researchers well when they are most interested in using a tool to answer biological questions, rather than seeking to understand or benchmark the underlying algorithm.
 
-Perhaps a more controversial is the idea of a company creating proprietary software that incorporates OSS, yet the OSS project was created by an unaffiliated academic lab.
+Perhaps more controversial is the idea of a company creating proprietary software that incorporates OSS, yet the OSS project was created by an unaffiliated academic lab.
 Provided that the company is abiding by the terms of the OSS license, this is a legitimate use of the original OSS project.
 However, if this is problematic for an OSS project, we would recommend looking into the strong copyleft licenses and/or adopting the dual licensing strategy that we previously discussed.
 Regardless, it is important to remember that nearly all modern software build upon foundational OSS that we often take for granted.
+
+[We could also add a very short section about datareuse in AI/ML/DL models, especially how this is questionable when close-sourcing the model or the code. Not even sure if this works with e.g., the PRIDE license/agreement]
 
 ### Concluding Remarks
 
@@ -177,7 +179,7 @@ As proteomics research increasingly relies upon computational tools, embracing o
 We urge researchers, funding agencies, institutions, and companies to prioritize open-source and FAIR practices, especially in publicly funded work, to create a truly collaborative scientific ecosystem.
 By collectively advancing open-source software, the scientific community can build an inclusive, rigorous foundation that fosters innovation and extends the benefits of research to scientists and the public alike.
 As we venture into the future, we as a community should explore mechanisms to make OSS sustainable---for example, by creating a foundation for proteomics software to support the maintenance of OSS in our field.
-Regardless, let us come together and commit to open science for a shared, sustainable future in our exploration of the proteome..
+Regardless, let us come together and commit to open science for a shared, sustainable future in our exploration of the proteome.
 
 ### Conflicts of Interest
 
@@ -192,3 +194,4 @@ T.S. is officer in OpenMS Inc., a non-profit foundation that manages the interna
 |Yasset Perez-Riverol | yperez@ebi.ac.uk | EMBL-EBI |
 |William E. Fondrie | wfondrie@talus.bio | Talus Bioscience |
 |Timo Sachsenberg | timo.sachsenberg@uni-tuebingen.de | University of Tübingen |
+|Robbin Bouwmeester | robbin.bouwmeester@ugent.be | VIB-UGent |
