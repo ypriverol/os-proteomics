@@ -51,9 +51,6 @@ Moreover, software licenses in GitHub repositories can change over time, and rep
 To address this, it is best practice for OSS software to also deposit a permanent record on dedicated archival platforms such as Zenodo or Figshare, which provide persistent identifiers like DOIs for long-term citation and access.
 These platforms have convenient integrations with GitHub and other code platforms, allowing for easy and automated archival, ensuring that the code remains accessible to the community over time.
 
-[W: Maybe remove this sentence here?]
-Moreover, open-source does not restrict developers from monetizing their work; it simply ensures that the source code remains accessible. Indeed, later we will describe common strategies for commercializing OSS.
-
 | Box 1. How to get started with OSS. The following steps provide a guideline that can foster a successful open-source project that grows in adoption, value, and contributions over time. |
 | --- |
 | 1. **Define clear goals and scope.** Start by defining the specific problem or gap your software aims to solve. Ensure it addresses an unmet need or provides a significant improvement over existing solutions. |
