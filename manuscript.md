@@ -46,7 +46,10 @@ A common misconception is that closed-source software with "academic" licenses a
 Adding to the confusion, some journals now require code availability as a condition of publication.
 This has led researchers to upload their closed-source software to collaborative code platforms, such as GitHub.
 While this provides the appearance of openness through features like issue trackers, the source code remains locked away.
-Even if well-intentioned, this can be misleading to other scientists and in our view should be discouraged. [what about github repos starting as open-source, changing over time to be closed source under the same name and causing confusion. Or being open-source at the time of review and removing repositories. I think this should maybe be mentioned here? On second though, probably not here, but I think we should make this point later on.]
+Even if well-intentioned, this can be misleading to other scientists and in our view should be discouraged.
+Moreover, software licenses in GitHub repositories can change over time, and repositories themselves can even be deleted or made private, making it difficult to ensure long-term accessibility.
+To address this, it is best practice for OSS software to also deposit a permanent record on dedicated archival platforms such as Zenodo or Figshare, which provide persistent identifiers like DOIs for long-term citation and access.
+These platforms have convenient integrations with GitHub and other code platforms, allowing for easy and automated archival, ensuring that the code remains accessible to the community over time.
 
 [W: Maybe remove this sentence here?]
 Moreover, open-source does not restrict developers from monetizing their work; it simply ensures that the source code remains accessible. Indeed, later we will describe common strategies for commercializing OSS.
