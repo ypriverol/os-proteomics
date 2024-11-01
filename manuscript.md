@@ -13,11 +13,11 @@ Computational proteomics, along with algorithm and software development, faces s
 - Without structured development practices, proteomics software often struggles to maintain the quality, sustainability, and reproducibility necessary for reliable scientific research. [W: I don't think that OSS doesn't suffer from this.]
 
 - Although most software tools are described in publications, the absence of open-source code, comprehensive documentation, and version control often impedes reproducibility and reuse. 
-This lack of accessibility also limits opportunities for computer scientists [maybe this should be researchers?] and developers to contribute effectively to advancing proteomics software.
+This lack of accessibility also limits opportunities for researchers and, in particular, computer scientists and developers, to contribute effectively to advancing proteomics software.
 
 Open-source software (OSS) offers a solution to these challenges, empowering proteomics with tools that are not only accessible but also foster community-driven development, rigorous validation, and transparent sharing of methodologies [].
 
-OSS has demonstrated clear benefits in increasing the accessibility, reusability, and visibility of scientific software [REF?]. 
+OSS has demonstrated clear benefits in increasing the accessibility, reusability, and visibility of scientific software [36395089]. 
 With code freely available for inspection, modification, and distribution, OSS encourages collaboration and creates avenues for continuous improvement—factors that are critical in fields as data-intensive as proteomics. 
 OSS is also aligned with the FAIR Guiding Principles (Findable, Accessible, Interoperable, and Reusable) established for research data, which were expanded in 2022 to address the growing recognition of research software as a foundational research asset [].
 
