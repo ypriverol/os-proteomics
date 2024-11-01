@@ -44,7 +44,7 @@ The idea that open-source software is of lower quality is a myth that has been d
 In contrast, closed source means that the source code of the software is not published and it is not shared with the public for anyone to look at or change.
 A common misconception is that closed-source software with "academic" licenses are equivalent to open-source. [W: What do you understand under academic licenses? Do you mean that the code is open to academics, or just that academics can run the software for free / at reduced cost? This should be defined for the reader.] [DSK: some "closed-source" software actually makes the source available, but limits sharing or other work using is. I think this is the case with some chemistry software that also allows "free" academic usage.]
 
-Adding to the confusion, some journals now require code availability as a condition of publication.
+Adding to the confusion, some journals now require code availability as a condition of publication. [DSK: I'm not sure where this goes, but it might be useful to talk about journals that publish software here, such as JOSS that I co-lead and others as listed in https://www.software.ac.uk/top-tip/which-journals-should-i-publish-my-software  Maybe this goes near the part about Zenodo?]
 This has led researchers to upload their closed-source software to collaborative code platforms, such as GitHub.
 While this provides the appearance of openness through features like issue trackers, the source code remains locked away. [DSK: add "by lack of a license that permits it to be reused".]
 Even if well-intentioned, this can be misleading to other scientists and in our view should be discouraged.
