@@ -62,7 +62,7 @@ These platforms have convenient integrations with GitHub and other code platform
 |   - User documentation: Provide tutorials, installation guides, and usage examples that lower barriers to entry for new users. |
 |   - Developer documentation: Include technical details that make it easier for new developers to understand the codebase, contribute, and debug. |
 |   - Version control and changelog: Maintain a detailed changelog for tracking updates, and consider using semantic versioning for releases to help users track changes and updates. |
-| 6. **Build a community.** Create forums, mailing lists, or a Slack channel to facilitate communication and support for users and contributors. Promote the project within academic and industry circles, social media, or conferences. Collaborations with other researchers can boost credibility and attract users. Encourage diverse participation, whether from seasoned developers, scientists, or students, by being open to questions, feedback, and contributions of varying levels. | [DSK: mention a code of conduct]
+| 6. **Build a community.** Create forums, mailing lists, or a Slack channel to facilitate communication and support for users and contributors. Promote the project within academic and industry circles, social media, or conferences. Collaborations with other researchers can boost credibility and attract users. Encourage diverse participation, whether from seasoned developers, scientists, or students, by being open to questions, feedback, and contributions of varying levels. | [DSK: mention a code of conduct] [DSK: mention defining governance.]
 | 7. **Implement rigurous testing and quality control.** Use continuous integration/continuous deployment (CI/CD) practices to automate testing and improve code quality. Platforms like GitHub Actions can be set up to run tests on each new code addition or pull request. Develop a robust suite of tests that ensure functionality and compatibility, minimizing the risk of bugs and ensuring reliability. Regularly review code for quality and potential improvements, inviting experienced contributors or external collaborators to audit the code. |
 | 8. **Ensure long-term maintenaince and evolution.** Provide a roadmap that outlines planned features, updates, or long-term project goals. This helps maintainers and contributors stay aligned and gives users confidence in the project’s development. Foster a healthy, engaged community by recognizing contributors, hosting hackathons or sprints, and encouraging new ideas. Consider a governance model where a core group of maintainers or a steering committee manages long-term development, ensuring that the project's mission endures even as individual contributors come and go. |
 | 9. **Monitor and measure success.** Track metrics like repository stars, downloads, citations, or code contributions to gauge adoption and impact. Regularly collect user feedback and address concerns or feature requests to ensure the project stays relevant and useful to its audience. |
@@ -144,8 +144,8 @@ These licenses often target commercialization, code reuse, but also distribution
 
 As the gold standard for proteomics software development we recommend to use a standard OSS license (**Figure 1**), like Apache 2.0, MIT, BSD, LGPL, GPL, etc.; a list of them can be found at (https://opensource.org/licenses).
 These licenses are well known, are in use across many fields, and are well understood by the community.
-Additionally, they are compatible with the FAIR principles and the Open Source Initiative (OSI) guidelines [REF].
-These established licenses all have a clear definition of what is allowed and what is not, and how the software can be distributed, reused, and cited.
+Additionally, they are compatible with the FAIR principles and the Open Source Initiative (OSI) guidelines [REF]. [DSK: again, 1. FAIR does not require OSS, 2. Do you mean FAIR or FAIR4RS here? 3. I don't think it's useful to say that OSI-approved licenses are compatible with OSI guidelines.]
+These established licenses all have a clear definition of what is allowed and what is not, and how the software can be distributed, reused, and cited. [DSK: these licenses typically don't talk about how software can be cited.]
 
 ![jpr_oss_license](fig/jpr_oss_license.png)
 **Figure 1.** Open source software licenses in use in proteomics. Scientific papers published in the _Journal of Proteome Research_ that include a GitHub URL in their abstract were automatically retrieved from PubMed and information on the software license of the corresponding GitHub repository was retrieved through the GitHub API.
@@ -154,7 +154,7 @@ The code to generate these data is available at https://gist.github.com/bittremi
 
 In addition, as the field is evolving, and software becomes more complex and has multiple components, different components could have a different license and the dependencies between them should be clearly stated.
 It is therefore recommended to clearly state the dependencies that a piece of software might have, and the licenses of each of them.
-This will help the user to understand the software, the developers to know what they can use, and the journal reviewers to understand the software and its implications.
+This will help the user to understand the software, the developers to know what they can use, and the journal reviewers to understand the software and its implications. [DSK: this also ties into security and the idea of a software bill of materials (SBOM)]
 For example, if a software tool that performs PTM-site localization is distributable, but the software that produces the PTMs, peptide identification inputs, etc., is not, it could be misunderstood that the software is open-source, when in reality, all the main components that it relies on are not.
 Full disclosure of such dependencies is necessary to ensure that the user is aware of this, such that the community, developers, and journal reviewers are able to understand this challenge.
 
@@ -163,7 +163,7 @@ Full disclosure of such dependencies is necessary to ensure that the user is awa
 Merely the fact that a piece of software is open-source does not necessarily mean that everyone can use it without financial cost.
 Instead, OSS can be commercialized in a number of different ways depending on the owner's goals and principles.
 Here, we intend for commercialization to refer to any process by which OSS is monetized, regardless of whether it remains part of an academic lab, is developed by a company, or is spun-out into its own startup.
-In fact, we would argue that healthy OSS projects must be financially supported by methods such charitable means, grants, or commercialization, in order for the development of the project to be sustainable.
+In fact, we would argue that healthy OSS projects must be financially supported by methods such charitable means, grants, or commercialization, in order for the development of the project to be sustainable. [DSK: I'm unsure if this is completely true - the main thing missing here is donated labor, which can be volunteers, but more typically is staff from companies or research institutions who are putting their time into the project because it supports their institutions' work (or perhaps specific projects.)]
 Here, we discuss a few commercialization models that have become popular with OSS, which try to strike a balance between supporting openness and supporting future development.
 It is worth noting that these strategies are not necessarily mutually exclusive.
 
@@ -175,7 +175,7 @@ Thus, these projects also offer more permissive licenses to paying customers, wh
 Although this strategy may seem easy to abuse, our experience has been that companies are often risk-averse and would rather purchase proper licenses rather than risk legal ramifications of violating a copyleft license. 
 A successful example of this strategy from outside of proteomics has been RStudio by Posit.
 RStudio is currently available under an open-source AGPLv3 license, or under a commercial license when AGPLv3 is incompatible.
-Notably, developers should make sure to include a "contributor license agreement" as part of their requirements for new contributors to ensure their contributions can be distributed under both licenses.
+Notably, developers should make sure to include a "contributor license agreement" as part of their requirements for new contributors to ensure their contributions can be distributed under both licenses. [DSK: CLAs might need to be discussed earlier and more generally.]
 
 **Support or services.**
 Some OSS projects commercialize by offering support services or new feature development at a cost.
@@ -190,16 +190,16 @@ When using a SaaS model, the OSS project remains open-source, but commercializat
 The platform then allows users to more easily use the OSS project.
 This model often includes a managed hardware or cloud infrastructure component, where users pay to interact with a web application to use the OSS tool, reducing the barrier to entry.
 In the bioinformatics space, NextFlow [28398311] is an open-source bioinformatics workflow engine that has been commercialized by Seqera Labs using the SaaS model.
-Their current Seqera Platform product provides an interface to launch, observe, and explore workflow executions with NextFlow, in addition to other features. 
+Their current Seqera Platform product provides an interface to launch, observe, and explore workflow executions with NextFlow, in addition to other features.
 
 **Open-core.**
-The open-core commercialization model provides access to new features only to paying customers.
+The open-core commercialization model provides access to new [DSK: or advanced] features only to paying customers.
 Often this is not fundamental functionality, but rather optional features such as a nicer user interface or early access to new features.
-Some variants of this model use a time delay for new features, where paying users have access to new features sooner than those using the fully OSS version.
+Some variants of this model use a time delay for new features, where paying users have access to new features sooner than those using the fully OSS version. [DSK: some variants never move some features into the OSS version.]
 Practically, the implementation of this strategy often involves the creation of a private, upstream fork of the OSS code repository.
-New features are then added to the private fork and synced to the OSS version when ready.
+New features are then added to the private fork and synced to the OSS version when ready. [DSK: again, they don't have to ever be synced to the OSS version.]
 Such a strategy can also be used by academic labs looking to protect new features while preparing for publication, although we would advocate for developing those features in the open, when possible. [can we provide reasoning here? I think it might delay progress and issues with commitment to making it public?]
-The open-core model is quite common and in proteomics it is used for ScaffoldDIA from Proteome Software: the open-source core of ScaffoldDIA is EncyclopeDIA [30510204].
+The open-core model is quite common [DSK: it's not really common in research software in general, I don't think. Much more in bunsiness software.] and in proteomics it is used for ScaffoldDIA from Proteome Software: the open-source core of ScaffoldDIA is EncyclopeDIA [30510204].
 
 ## The role of closed-source software
 
@@ -214,11 +214,14 @@ Provided that the company is abiding by the terms of the OSS license, this is a 
 However, if this is problematic for an OSS project, we would recommend looking into the strong copyleft licenses and/or adopting the dual licensing strategy that we previously discussed.
 Regardless, it is important to remember that nearly all modern software builds upon foundational OSS that we often take for granted.
 
-[We could also add a very short section about datareuse in AI/ML/DL models, especially how this is questionable when close-sourcing the model or the code. Not even sure if this works with e.g., the PRIDE license/agreement]
+[We could also add a very short section about data reuse in AI/ML/DL models, especially how this is questionable when close-sourcing the model or the code. Not even sure if this works with e.g., the PRIDE license/agreement]
+
+[DSK: I'm very unsure about this section.]
+[DSK: One example I've worked with is Globus, which is closed source SaaS that supports lots of science by providing general services to transfer data, launch computing jobs, etc., with some free usage and some usage that depends on institutional agreements.]
 
 ## Concluding remarks
 
-As proteomics research increasingly relies upon computational tools, embracing open-source and FAIR principles is essential for ensuring transparency, reproducibility, and accessibility.
+As proteomics research increasingly relies upon computational tools, embracing open-source and FAIR principles is essential for ensuring transparency, reproducibility, and accessibility. [DSK: I think FAIR has been mentioned a bunch of times, but none of them have really been convincing to me. If FAIR wasn't mentioned in this paper, would it be worse?]
 We urge researchers, funding agencies, institutions, and companies to prioritize open-source and FAIR practices, especially in publicly funded work, to create a truly collaborative scientific ecosystem.
 By collectively advancing open-source software, the scientific community can build an inclusive, rigorous foundation that fosters innovation and extends the benefits of research to scientists and the public alike.
 As we venture into the future, we as a community should explore mechanisms to make OSS sustainable---for example, by creating a foundation for proteomics software to support the maintenance of OSS in our field.
