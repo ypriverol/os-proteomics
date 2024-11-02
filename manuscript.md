@@ -2,9 +2,12 @@
 
 ## Introduction
 
-Studies have shown that over 90% of scientists consider software critical to their research, with nearly 70% stating that their work would be infeasible without it [28751965]. [DSK: I don't know what this reference is, and the start of the sentence says "studies", so I would expect multiple references here.]
-This reliance on software is also true in proteomics, and due to recent developments in the field, data analysis and interpretation are increasingly performed with complex software algorithms and tools.
-These algorithms and tools play a crucial role throughout the research workflow, from the generation and acquisition of data by mass spectrometers to the subsequent stages of processing, analysis, and interpretation []. 
+Research software is essential to modern science, with the majority of scientists recognizing it as indispensable for their work and often impossible to conduct research without it [28751965, https://zenodo.org/records/14809].
+This reliance on software is equally crucial in proteomics, where researchers depend on a range of tools and algorithms for every step, from data acquisition and mass spectrometer configuration, to the subsequent stages of processing, analysis, and interpretation [23467006, 34906327].
+
+Since the original publication of the first peptide identification algorithm and tool, SEQUEST [24226387], proteomics software has evolved into a sophisticated ecosystem encompassing multiple stages of data processing, advanced predictive models, and robust computational frameworks. 
+Tools like Percolator [17952086] optimize peptide and protein identification through machine learning, while Prosit [31133760] applies deep learning to predict fragment ion intensities, aiding in more accurate spectra matching. Platforms like GalaxyP [29092937], or quantms [38965444] facilitate accessible, reproducible analyses through high-performance computing (HPC) and distributed workflows, supporting researchers in handling large datasets and complex analyses. 
+Together, these advances underscore how proteomics software has transformed into a multidisciplinary field, in a complex ecosystem of algorithms, models, and software tools requiring sophisticated computational and algorithmic expertise.
 
 Computational proteomics, along with algorithm and software development, faces several key challenges common to other omics fields:
 
