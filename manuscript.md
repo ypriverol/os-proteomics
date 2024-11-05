@@ -15,12 +15,12 @@ Computational proteomics, along with algorithm and software development, faces s
 - Although most software tools are described in publications, the absence of open-source code, comprehensive documentation, and version control often impedes reproducibility and reuse. 
 This lack of accessibility also limits opportunities for computer scientists [maybe this should be researchers?] and developers to contribute effectively to advancing proteomics software.
 
-- Complex workflows and hight-trougpout data analysis is relying nowadays on (unattended) software deployment. This is complicated on its own because it requires managing dependencies, configurations, and environments consistently across diverse systems and  architecture without human intervention. The community has tackled this challenge with CI/CD pipelines as for example decribed in 10.1101/gr.276963.122, but this relies on OSS and the permission to freely redistribute software along the entire dependency chain. If one piece in this supply chain is not OS, exceptions needs to be handles, automatisation is harder or impossible ... in sum it creates a huge additional burden for the entire community downstream of the non-OS software package, which on its own is a hidden cost.
+- Complex workflows and high-throughput data analysis is relying nowadays on (unattended) software deployment. This is complicated on its own because it requires managing dependencies, configurations, and environments consistently across diverse systems and  architecture without human intervention. The community has tackled this challenge with CI/CD pipelines as for example described in 10.1101/gr.276963.122, but this relies on OSS and the permission to freely redistribute software along the entire dependency chain. If one piece in this supply chain is not OS, exceptions needs to be handles, automatization is harder or impossible ... in sum it creates a huge additional burden for the entire community downstream of the non-OS software package, which on its own is a hidden cost.
 
 Open-source software (OSS) offers a solution to these challenges, empowering proteomics with tools that are not only accessible but also foster community-driven development, rigorous validation, and transparent sharing of methodologies [].
 
 OSS has demonstrated clear benefits in increasing the accessibility, reusability, and visibility of scientific software [REF?]. 
-OSS makes reproducibility, tracebility and auditability possible.
+OSS makes reproducibility, traceability and auditability possible.
 With code freely available for inspection, modification, and distribution, OSS encourages collaboration and creates avenues for continuous improvement—factors that are critical in fields as data-intensive as proteomics. 
 OSS is also aligned with the FAIR Guiding Principles (Findable, Accessible, Interoperable, and Reusable) established for research data, which were expanded in 2022 to address the growing recognition of research software as a foundational research asset [].
 
@@ -68,15 +68,16 @@ These platforms have convenient integrations with GitHub and other code platform
 | 2. **Choose an open source license.** Choose an OSI approved license that aligns with the project's intended use and desired level of openness. For projects that may later require commercialization or enterprise use, dual licensing (e.g., open-source with an option for commercial licensing) can be considered to support sustainability. |
 | 3. **Plan for sustainability.** Research potential funding sources, such as grants, academic support, or partnerships. Decide if the project will rely on donations, grants, or if it might later incorporate paid services. If applicable, consider models like SaaS, support-based revenue, or feature-based licensing that could sustain the project without sacrificing its open-source nature. |
 | 4. **Set up a well-structured repository.** Use a version-control platform like GitHub or GitLab for easy access, community contributions, and versioning. Use clear folder structures, name conventions, and modular code design to enhance usability and maintainability. Provide a clear guide on how others can contribute to the project, including coding standards, pull request policies, and a Code of Conduct to foster a positive collaborative environment. |
-| 5. **Implement rigurous testing and quality control.** Use continuous integration/continuous deployment (CI/CD) practices to automate testing and improve code quality. Platforms like GitHub Actions can be set up to run tests on each new code addition or pull request. Develop a robust suite of tests that ensure functionality and compatibility, minimizing the risk of bugs and ensuring reliability. Regularly review code for quality and potential improvements, inviting experienced contributors or external collaborators to audit the code. |
+| 5. **Implement rigorous testing and quality control.** Use continuous integration/continuous deployment (CI/CD) practices to automate testing and improve code quality. Platforms like GitHub Actions can be set up to run tests on each new code addition or pull request. Develop a robust suite of tests that ensure functionality and compatibility, minimizing the risk of bugs and ensuring reliability. Regularly review code for quality and potential improvements, inviting experienced contributors or external collaborators to audit the code. |
 | 6. **Develop thorough documentation.** |
 |   - User documentation: Provide tutorials, installation guides, and usage examples that lower barriers to entry for new users. |
 |   - Developer documentation: Include technical details that make it easier for new developers to understand the codebase, contribute, and debug. |
 |   - Version control and changelog: Maintain a detailed changelog for tracking updates, and consider using semantic versioning for releases to help users track changes and updates. |
 | 7. **Build a community.** Create forums, mailing lists, or a Slack channel to facilitate communication and support for users and contributors. Promote the project within academic and industry circles, social media, or conferences. Collaborations with other researchers can boost credibility and attract users. Encourage diverse participation, whether from seasoned developers, scientists, or students, by being open to questions, feedback, and contributions of varying levels. |
-| 8. **Ensure long-term maintenaince and evolution.** Provide a roadmap that outlines planned features, updates, or long-term project goals. This helps maintainers and contributors stay aligned and gives users confidence in the project’s development. Foster a healthy, engaged community by recognizing contributors, hosting hackathons or sprints, and encouraging new ideas. Consider a governance model where a core group of maintainers or a steering committee manages long-term development, ensuring that the project's mission endures even as individual contributors come and go. |
+| 8. **Ensure long-term maintenance and evolution.** Provide a roadmap that outlines planned features, updates, or long-term project goals. This helps maintainers and contributors stay aligned and gives users confidence in the project’s development. Foster a healthy, engaged community by recognizing contributors, hosting hackathons or sprints, and encouraging new ideas. Consider a governance model where a core group of maintainers or a steering committee manages long-term development, ensuring that the project's mission endures even as individual contributors come and go. |
 | 9. **Monitor and measure success.** Track metrics like repository stars, downloads, citations, or code contributions to gauge adoption and impact. Regularly collect user feedback and address concerns or feature requests to ensure the project stays relevant and useful to its audience. |
-[W: Open to discussion. Please carefully double-check whether these steps make sense and that I haven't forgotten anything.] [B: 7-9 is often not possible in our current funding system - we should make clear that the first bulletpoints are a must have and the last 3 are a goal]
+[W: Open to discussion. Please carefully double-check whether these steps make sense and that I haven't forgotten anything.] [B: 7-9 is often not possible in our current funding system - we should make clear that the first bullet points are a must have and the last 3 are a goal][M: A major problem is that there are very very few examples of this in proteomics ... there are a handful tops. I think this needs to be toned down a lot. This should be a goal but the funding agencies have to be supportive of this first. The issue is that the NIH doesn't want to fund open source software development and they definitely don't want to fund repositories.
+]
 
 ## Why open-source software is essential for scientific research
 
@@ -93,7 +94,7 @@ This evolution in the role of computational methods was notably highlighted in 2
 Yet, the scientific community's commitment to credibility and reproducibility is at risk if these pioneering computational contributions remain closed-source.
 Without open-source code, such achievements risk becoming little more than promoted ideas rather than rigorously validated science, as further discussed.
 The 2024 AlphaFold3 controversy exemplifies this issue (https://zenodo.org/records/11206103).
-Unlike its predecessors, the AlphaFold3 source code was not released with the publications, preventing independent verification or adaptation of their methods. 
+Unlike its predecessors, the AlphaFold3 source code was not released with the publications, preventing independent verification or adaptation of their methods. [M: there are different types of verification. There have been lots of verification of the output. The biggest issue with AlphaFold3 is that Google owns all drugs developed with AF3.]
 
 When algorithms or models are considered primary research outputs, implementing them as OSS becomes essential.
 Inspection of the code allows the scientific community to apply rigorous standards of replication and validation, building upon the same FAIR concepts that we apply to data.
@@ -108,7 +109,7 @@ Open code is, therefore, not just a matter of transparency—it is essential for
 
 Open-source code documents the details necessary for researchers to understand precisely how a model or algorithm functions in practice, beyond theoretical descriptions.
 This level of transparency is vital to scientific integrity; it ensures that others can accurately replicate studies, identify discrepancies, and reveal assumptions that might otherwise go unnoticed.
-It also empowers others—within the constraints of the chosen OSS license—to validate the proposed model or algorithm with alternative implementations and compare it against the original implementation when discrepancies arise. [I think this section could be written in a more positive way. Now it heavily leans toward policing results. Maybe it is also an idea to first discuss how it pushes the field forward (next section), followed by some additional benefits in terms of scientific rigor] [W: Agree.]
+It also empowers others—within the constraints of the chosen OSS license—to validate the proposed model or algorithm with alternative implementations and compare it against the original implementation when discrepancies arise. [I think this section could be written in a more positive way. Now it heavily leans toward policing results. Maybe it is also an idea to first discuss how it pushes the field forward (next section), followed by some additional benefits in terms of scientific rigor] [W: Agree.] [MJM: a good example is how the BLOSUM matrices in blast are different from what was described https://www.nature.com/articles/nbt0308-274]
 
 ### Shared knowledge pushes the field forward
 
@@ -120,6 +121,8 @@ Indeed, the proteomics field has benefited from this is a number of ways: the Pr
 Numerous plugins have been developed for Skyline to accomplish specialized tasks in a fraction of the time it would have taken to develop the full solution from scratch; currently, there are 20 external plugins available through the official Skyline Tool Store.
 Likewise, msConvert has provided a unified interface to open mass spectrometry data formats, rather than requiring developers to wrangle proprietary formats and readers.
 Well-supported OSS provides a foundation that accelerates advancement of the field.
+[M: the sad truth is that there has been very little contribution to the pwiz and Skyline projects despite both going for 16+ years. Most people prefer to implement a new UI outside of Skyline as opposed to implementing an algorithm within Skyline. The number of outside contributions is very few. The external tools are something we are proud of as it lowered the barrier for academic contributors but it frequently requires development by our lab still.]
+
 
 Moreover, OSS democratizes access to high-quality tools, leveling the playing field for researchers in resource-limited settings.
 When foundational tools are open-source, scientists at smaller institutions or in countries with limited funding have access to the same technology as those in well-funded labs.
@@ -161,6 +164,7 @@ These established licenses all have a clear definition of what is allowed and wh
 **Figure 1.** Open source software licenses in use in proteomics. Scientific papers published in the _Journal of Proteome Research_ that include a GitHub URL in their abstract were automatically retrieved from PubMed and information on the software license of the corresponding GitHub repository was retrieved through the GitHub API.
 Many proteomics code repositories do not have a license specified, in addition to several OSS licenses being used.
 The code to generate these data is available at https://gist.github.com/bittremieux/70905e5d9dcc829ae49aab49e85954af.
+[M: we need to point out that without a specified license it isn't open source. Without a specified license the software and contributions are exclusively owned by the authors and no one can use, copy, or distribute the contributions. I also think it is important to point out the legitimate concerns some institutions, like UW, have for Apache 2.0. Also, the problems of GPL, AGPL, and LGPL in discouraging use. Many in the MS community don't understand open source licenses and this might be an opportunity to explain them.]
 
 In addition, as the field is evolving, and software becomes more complex and has multiple components, different components could have a different license and the dependencies between them should be clearly stated.
 It is therefore recommended to clearly state the dependencies that a piece of software might have, and the licenses of each of them.
@@ -209,7 +213,7 @@ Some variants of this model use a time delay for new features, where paying user
 Practically, the implementation of this strategy often involves the creation of a private, upstream fork of the OSS code repository.
 New features are then added to the private fork and synced to the OSS version when ready.
 Such a strategy can also be used by academic labs looking to protect new features while preparing for publication, although we would advocate for developing those features in the open, when possible. [can we provide reasoning here? I think it might delay progress and issues with commitment to making it public?]
-The open-core model is quite common and in proteomics it is used for ScaffoldDIA from Proteome Software: the open-source core of ScaffoldDIA is EncyclopeDIA [30510204].
+The open-core model is quite common and in proteomics it is used for ScaffoldDIA from Proteome Software: the open-source core of ScaffoldDIA is EncyclopeDIA [30510204]. [M: also I believe Scaffold makes use of Comet and X!tandem]
 
 ## The role of closed-source software
 
@@ -224,7 +228,7 @@ Provided that the company is abiding by the terms of the OSS license, this is a 
 However, if this is problematic for an OSS project, we would recommend looking into the strong copyleft licenses and/or adopting the dual licensing strategy that we previously discussed.
 Regardless, it is important to remember that nearly all modern software builds upon foundational OSS that we often take for granted.
 
-[We could also add a very short section about datareuse in AI/ML/DL models, especially how this is questionable when close-sourcing the model or the code. Not even sure if this works with e.g., the PRIDE license/agreement]
+[We could also add a very short section about data reuse in AI/ML/DL models, especially how this is questionable when close-sourcing the model or the code. Not even sure if this works with e.g., the PRIDE license/agreement]
 
 ## Concluding remarks
 
@@ -233,7 +237,7 @@ We urge researchers, funding agencies, institutions, and companies to prioritize
 By collectively advancing open-source software, the scientific community can build an inclusive, rigorous foundation that fosters innovation and extends the benefits of research to scientists and the public alike.
 As we venture into the future, we as a community should explore mechanisms to make OSS sustainable---for example, by creating a foundation for proteomics software to support the maintenance of OSS in our field.
 
-[B: agreed, but, we also need to start paying for OSS. Who is paying for gitlab, dockerhub, nextcloud etc at the moment? If we as a community don't start to pay, such a foundation is useless.]
+[B: agreed, but, we also need to start paying for OSS. Who is paying for gitlab, dockerhub, nextcloud etc at the moment? If we as a community don't start to pay, such a foundation is useless.][M: a major problem was covered in this paper, https://pubs.acs.org/doi/10.1021/acs.jproteome.8b00015 ... most people don't trust open source and free software.]
 
 Regardless, let us come together and commit to open science for a shared, sustainable future in our exploration of the proteome.
 
