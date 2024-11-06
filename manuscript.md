@@ -13,8 +13,6 @@ Computational proteomics, along with algorithm and software development, faces s
 
 - The increasing complexity and size of data acquired by mass spectrometers, the complex sequence of steps, including spectral processing, statistical analysis, and biological interpretation, along with the need to manage algorithmic details and parameter settings, all contribute to making software development in proteomics a complex and demanding endeavor.
 
-- Without structured development practices, proteomics software often struggles to maintain the quality, sustainability, and reproducibility necessary for reliable scientific research. [W: I don't think that OSS doesn't suffer from this.] [DSK: this is a common problem across fields, and structured development practices can only improve it, not solve it.]
-
 - Although most software tools are described in publications, the absence of open-source code, comprehensive documentation, and version control often impedes reproducibility and reuse. 
 This lack of accessibility also limits opportunities for researchers and developers to contribute effectively to advancing proteomics software. 
 
