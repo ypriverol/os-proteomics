@@ -25,7 +25,7 @@ The community has tackled this challenge with CI/CD pipelines, as for example, d
 If one piece in this supply chain is not OS, exceptions need to be handled, automatization is harder or impossible. 
 In sum, it creates a huge additional burden for the entire community downstream of the non-OS software package, which on its own is a hidden cost.
 
-Open-source software (OSS) and making the FAIR principles (Findable, Accessible, Interoperable, Reusable) offers a solution to these challenges, empowering proteomics with tools that are not only accessible but also foster community-driven development, rigorous validation, and transparent sharing of methodologies [].
+Open-source software (OSS) following FAIR principles (Findable, Accessible, Interoperable, Reusable) offers a solution to these challenges, empowering proteomics with tools that are not only accessible but also foster community-driven development, rigorous validation, and transparent sharing of methodologies [].
 OSS has demonstrated clear benefits in increasing the accessibility, usability, and visibility of scientific software [30212065]. 
 OSS makes reproducibility, traceability and auditability possible.
 With code freely available for inspection, modification, and distribution, OSS encourages collaboration and creates avenues for continuous improvement—factors that are critical in fields as data-intensive as proteomics. 
