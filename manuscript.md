@@ -13,21 +13,28 @@ Computational proteomics, along with algorithm and software development, faces s
 
 - The increasing complexity and size of data acquired by mass spectrometers, the complex sequence of steps, including spectral processing, statistical analysis, and biological interpretation, along with the need to manage algorithmic details and parameter settings, all contribute to making software development in proteomics a complex and demanding endeavor.
 
+- Ensuring reproducibility is a challenge due to the limited access to detailed algorithmic information, which hinders validation and extension of methods.
+
 - Although most software tools are described in publications, the absence of open-source code, comprehensive documentation, and version control often impedes reproducibility and reuse. 
 This lack of accessibility also limits opportunities for researchers and developers to contribute effectively to advancing proteomics software. 
+- Custom licenses and restrictions on software distribution can further complicate the situation, making it difficult to share, modify, or redistribute software, and hindering the development of a collaborative and open-source ecosystem.
+Proteomics software is usually on distribution by licences and also platform specific, which makes it difficult to use in a diverse environment and services, putting a restriction to the field and the integration of proteomics with other omics fields. 
 
-- Complex workflows and high-throughput data analysis is relying nowadays on (unattended) software deployment. This is complicated on its own because it requires managing dependencies, configurations, and environments consistently across diverse systems and  architecture without human intervention. The community has tackled this challenge with CI/CD pipelines as for example described in 10.1101/gr.276963.122, but this relies on OSS and the permission to freely redistribute software along the entire dependency chain. If one piece in this supply chain is not OS, exceptions needs to be handles, automatization is harder or impossible ... in sum it creates a huge additional burden for the entire community downstream of the non-OS software package, which on its own is a hidden cost.
+- Complex workflows and high-throughput data analysis are relying nowadays on (unattended) software deployment. This is complicated on its own because it requires managing dependencies, configurations, and environments consistently across diverse systems and  architecture without human intervention. 
+The community has tackled this challenge with CI/CD pipelines, as for example, described in 10.1101/gr.276963.122, but this relies on OSS and the permission to freely redistribute software along the entire dependency chain. 
+If one piece in this supply chain is not OS, exceptions need to be handles, automatization is harder or impossible. 
+In sum, it creates a huge additional burden for the entire community downstream of the non-OS software package, which on its own is a hidden cost.
 
-Open-source software (OSS) offers a solution to these challenges, empowering proteomics with tools that are not only accessible but also foster community-driven development, rigorous validation, and transparent sharing of methodologies [].
 
-OSS has demonstrated clear benefits in increasing the accessibility, reusability, and visibility of scientific software [REF?]. 
+Open-source software (OSS) and making the FAIR principles (Findable, Accessible, Interoperable, Reusable) offers a solution to these challenges, empowering proteomics with tools that are not only accessible but also foster community-driven development, rigorous validation, and transparent sharing of methodologies [].
+OSS has demonstrated clear benefits in increasing the accessibility, usability, and visibility of scientific software [30212065]. 
 OSS makes reproducibility, traceability and auditability possible.
 With code freely available for inspection, modification, and distribution, OSS encourages collaboration and creates avenues for continuous improvement—factors that are critical in fields as data-intensive as proteomics. 
-OSS is also aligned with the FAIR Guiding Principles (Findable, Accessible, Interoperable, and Reusable) established for research data, which were expanded in 2022 to address the growing recognition of research software as a foundational research asset [].
+OSS is also aligned with the FAIR Principles for software research (FAIR4RS) established for research data, which were expanded in 2022 [26978244] to address the growing recognition of research software as a foundational research asset [36241754].
 
 In this manuscript, we aim to explore the role of OSS in computational proteomics and its implications for the development of FAIR research software. 
 We will discuss the benefits and challenges of OSS in proteomics, the role of OSS in the development of FAIR research software, and the importance of distribution, licensing, and citation of software in computational proteomics. 
-We will also explore how other omics fields are dealing with OSS and FAIR software, and how these experiences can inform the development of proteomics software. [W: Does the manuscript really do this last part?]
+We will also explore how other omics fields are dealing with OSS and FAIR software, and how these experiences can inform the development of proteomics software. 
 
 ## What does it mean for software to be "open source"? 
 
