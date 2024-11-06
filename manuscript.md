@@ -22,7 +22,7 @@ Proteomics software is often distributed under restrictive licenses and tailored
 
 - Complex workflows and high-throughput data analysis are relying nowadays on (unattended) software deployment. This is complicated on its own because it requires managing dependencies, configurations, and environments consistently across diverse systems and  architecture without human intervention. 
 The community has tackled this challenge with CI/CD pipelines, as for example, described in 10.1101/gr.276963.122, but this relies on OSS and the permission to freely redistribute software along the entire dependency chain. 
-If one piece in this supply chain is not OS, exceptions need to be handles, automatization is harder or impossible. 
+If one piece in this supply chain is not OS, exceptions need to be handled, automatization is harder or impossible. 
 In sum, it creates a huge additional burden for the entire community downstream of the non-OS software package, which on its own is a hidden cost.
 
 Open-source software (OSS) and making the FAIR principles (Findable, Accessible, Interoperable, Reusable) offers a solution to these challenges, empowering proteomics with tools that are not only accessible but also foster community-driven development, rigorous validation, and transparent sharing of methodologies [].
