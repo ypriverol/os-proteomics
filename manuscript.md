@@ -54,6 +54,8 @@ In addition to all these misconceptions and complexity, journals mandate code av
 - Researchers upload closed-source software to platforms like GitHub, giving an impression of openness with features such as issue tracking, while the actual source code remains inaccessible. Although often well-intentioned, this practice can mislead other scientists and, in our view, should be discouraged. 
 - Software is deposited in GitHub as open-source during the submission of the manuscript, but after publication; software licenses in GitHub repositories are changed over time, and repositories themselves can be deleted or made private, complicating efforts to ensure long-term accessibility and reliability.
 
+To address these challenges and misconceptions, we propose a set of guidelines for developing and maintaining open-source software in proteomics. The guidelines aim to foster a culture of transparency, collaboration, and sustainability in proteomics software development, ensuring that software remains accessible, reliable, and impactful over time.
+
 | Box 1. How to get started with OSS. The following steps provide a guideline that can foster a successful open-source project that grows in adoption, value, and contributions over time. |
 | --- |
 | 1. **Define clear goals and scope.** Start by defining the specific problem or gap your software aims to solve. Ensure it addresses an unmet need or provides a significant improvement over existing solutions. |
