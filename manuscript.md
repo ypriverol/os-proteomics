@@ -86,7 +86,6 @@ These platforms have convenient integrations with GitHub and other code platform
 
 [W: Open to discussion. Please carefully double-check whether these steps make sense and that I haven't forgotten anything.] [B: 7-9 is often not possible in our current funding system - we should make clear that the first bullet points are a must have and the last 3 are a goal][M: A major problem is that there are very very few examples of this in proteomics ... there are a handful tops. I think this needs to be toned down a lot. This should be a goal but the funding agencies have to be supportive of this first. The issue is that the NIH doesn't want to fund open source software development and they definitely don't want to fund repositories.
 
-
 ## Why open-source software is essential for scientific research
 
 ### Transparency promotes scientific rigor
