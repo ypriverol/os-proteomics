@@ -37,34 +37,23 @@ We will also explore how other omics fields are dealing with OSS and FAIR softwa
 
 ## What does it mean for software to be "open source"? 
 
-OSS (open-source software) refers to software where the source code—the core instructions that define how the software functions—is freely accessible to anyone. 
+OSS (open-source software) refers to software where the source code—the core instructions that define how the software functions—is freely accessible to anyone (https://opensource.org/osd). In contrast, closed source means that the source code of the software is not published, and it is not shared with the public for anyone to look at or change.
+
 Unlike "closed-source" or "proprietary" software, where the code remains private, OSS provides transparency by design, which is essential for fostering trust, collaboration, and progress in science.
 However, the open- or closed-source label simply addresses code visibility; it is the software license that determines who can use, modify, or distribute the software and under what conditions.
-(we should reference https://opensource.org/osd and maybe also https://opendefinition.org/)
 
-Free and open-source software (FOSS) is a related term that can be misunderstood.
-In this context, "free" does not mean free of financial cost, nor does it imply a lack of security or support; instead, it emphasizes the freedom to run, copy, modify, and distribute the software as desired (https://www.gnu.org/philosophy/free-sw.html).
-Open-source is often misunderstood as merely free (no financial cost) software or lacking professional quality. 
-Many open-source projects are maintained by dedicated teams and backed by extensive testing and security protocols.
-For example, in genomics, the Genome Analysis Toolkit (GATK - https://github.com/broadinstitute/gatk), is an Apache 2.0 licensed project with over a hundred maintainers, more than 4000 pull requests from the community, and more than 26,000 citations [20644199].
+In proteomics - and bioinformatics in general - multiple misconceptions exist about open/closed source software: 
 
-(GATK is maybe a bad example, it was not OSS for a very long time. Samtools is maybe better)
-
-In proteomics, Percolator (https://github.com/percolator/percolator) is an open-source project with more than 700 citations and 20 contributors [17952086]; and a core tool for multiple open-source tools [], commercial software [], and pipelines [].
-The idea that open-source software is of lower quality is a myth that has been debunked by the success of many open-source projects in the field of computational proteomics and bioinformatics. [If it was debunked why does Proteomics still have this problem? Why do we write this manuscript? I guess you can demonstrate the success of Genomics and the healthy software ecosystem there - and contrast it with Proteomics or Metabolomics] [M: the community thinks academic proteomics software is of lower quality ...  https://pubs.acs.org/doi/10.1021/acs.jproteome.8b00015]
-
-[W: I moved this paragraph down because I think it makes more sense to first discuss different aspects of OSS, and afterwards transition to closed source.]
-In contrast, closed source means that the source code of the software is not published and it is not shared with the public for anyone to look at or change. [True, but it can also be public, but not allowed to be modified or shared.]
-A common misconception is that closed-source software with "academic" licenses are equivalent to open-source. [W: What do you understand under academic licenses? Do you mean that the code is open to academics, or just that academics can run the software for free / at reduced cost? This should be defined for the reader.] [B: usually this refers to free-for-academic-use only. And this is bullshit, because no-one can define academics.]
-
-[B: Rant about "free-for-academic-use": There is no defintion of academics, is an institute payed 50% from a state, 50% by industry, academic or not? Is an industry partner that has a public grant together with some university "academic" or not?
-Even worse, if I'm a packager, creating conda packages or containers, who is responsible to check that the consumer of those packages is academic? If I run a webserver with those tools, who is responsible to check the "academic"? We could shorten this section and simply state OSS is only software that adhers to one of the OSI approved licenses: https://opensource.org/licenses]
+- Closed-source software with "academic" licenses are equivalent to open-source. This is not true, as academic licenses only refer to free-for-academic-use, but the source code is not necessarily open, shareable or can be modified. Even the term "academic" is not well-defined, as it can refer to a wide range of institutions and organizations. To simplify this complexity, we can define OSS as any software that uses an OSI-approved license (https://opensource.org/licenses). 
+- Open-source means the code accessible. This is not true, Open-source software does not only mean that the code is openly available, but also that it is allowed to be modified and shared.
+- Free open-source software (FOSS) means free of financial cost. In this context, "free" does not imply cost, lack of security or support; instead, it emphasizes the freedom to run, copy, modify, and distribute the software as desired (https://www.gnu.org/philosophy/free-sw.html).
+- OSS is often mistakenly viewed as lacking professional quality. However, many open-source projects are maintained by dedicated teams with robust testing and good best programming practices. In genomics, projects like samtools (https://github.com/samtools/samtools) [19505943], an MIT-licensed project with over 80 contributors and 50,000+ citations, and the Genome Analysis Toolkit (GATK, https://github.com/broadinstitute/gatk) [20644199], now open-source with over 100 maintainers and 26,000+ citations, exemplify this standard. In proteomics, Percolator (https://github.com/percolator/percolator) [17952086] has over 700 citations and 20 contributors, serving as a core tool for projects like MS2Rescore [35803561], OpenMS [38366242], and Crux [36598107]. Other successful open-source projects in proteomics, such as OpenMS [38366242], Skyline [20147306], PeptideShaker [25574629], and ProteoWizard [23051804], demonstrate the benefits of transparency and collaboration. Despite these successes, academic open-source proteomics software is still perceived as lower quality. In 2018, Rob Smith highlighted the community’s concerns about academic proteomics and metabolomics software, including poor documentation, lack of transparency, and limited support [29546988], though much of this feedback was directed at academic and free-for-academic-use software, not necessarily open-source. 
 
 
 Adding to the confusion, some journals now require code availability as a condition of publication.
 This has led researchers to upload their closed-source software to collaborative code platforms, such as GitHub.
 While this provides the appearance of openness through features like issue trackers, the source code remains locked away.
-Even if well-intentioned, this can be misleading to other scientists and in our view should be discouraged.
+Even if well-intentioned, this can be misleading to other scientists and, in our view, should be discouraged.
 Moreover, software licenses in GitHub repositories can change over time, and repositories themselves can even be deleted or made private, making it difficult to ensure long-term accessibility. [B: it its was open source, there can be a copy made of the source, as we usually do as a community effort. Then only newer versions can not be used.]
 To address this, it is best practice for OSS software to also deposit a permanent record on dedicated archival platforms such as Zenodo, Figshare or Software Heritage, which provide persistent identifiers like DOIs for long-term citation and access.
 These platforms have convenient integrations with GitHub and other code platforms, allowing for easy and automated archival, ensuring that the code remains accessible to the community over time.
