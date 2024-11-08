@@ -90,13 +90,12 @@ Finally, open-source code allows researchers to apply and compare different impl
 
 ### Shared knowledge pushes the field forward
 
-
 Open-source software (OSS) fosters a collaborative ecosystem where researchers across institutions can freely contribute, refine, and extend tools, accelerating scientific progress. 
 Unlike proprietary software that confines advancements to specific labs or companies, OSS allows researchers to build on each other’s work without duplicating efforts, promoting efficient resource use and transforming individual achievements into collective gains. 
 By democratizing access to high-quality tools, OSS enables scientists from resource-limited settings to leverage the same technology as those in well-funded institutions, fostering a diverse global community that drives innovation forward.
 
 Proteomics has greatly benefited from this open-source approach.
-Projects like ProteoWizard, with tools such as Skyline and msConvert, exemplify OSS’s impact. 
+Projects like ProteoWizard [18606607,23051804], with tools such as Skyline [20147306] and msConvert [28188540], exemplify OSS’s impact. 
 Skyline, for instance, supports over 20 external plugins available in its Tool Store, allowing users to perform specialized tasks far more efficiently than if they had to build solutions from scratch. 
 Similarly, msConvert provides a standardized interface for mass spectrometry data, sparing developers the need to manage proprietary formats. 
 These well-supported OSS projects create a foundational infrastructure that accelerates proteomics advancements.
