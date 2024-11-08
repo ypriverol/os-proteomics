@@ -54,7 +54,7 @@ In addition to all these misconceptions and complexity, many journals mandate co
 - Researchers upload closed-source software to platforms like GitHub, giving an impression of openness with features such as issue tracking, while the actual source code remains inaccessible. Although often well-intentioned, this practice can mislead other scientists and, in our view, should be discouraged. 
 - Software is deposited in GitHub as open-source during the submission of the manuscript, but after publication; software licenses in GitHub repositories are changed, repositories deleted or made private, complicating efforts to ensure long-term accessibility.
 
-Knowing all of these misconceptions and complexity, we want to make clear for the community, users, developers, readers of manuscripts, and reviewers what is open-source in proteomics, what is not, and how to make it clear for everyone: 
+Given the many misconceptions and complexities surrounding open-source in proteomics, we aim to clarify for the entire community - users, developers, manuscript readers, and reviewers - what constitutes open-source, what does not, and how to transparently communicate the state of own software: 
 
 - **Source Code Availability**: The source code is publicly accessible, allowing anyone to view, download, and examine the code’s details (https://opensource.org/osd).
 
