@@ -60,7 +60,7 @@ Given the many misconceptions and complexities surrounding open-source in proteo
 
 - **OSI-Approved License**: The software must use an OSI-approved license, which specifies rights to freely use, modify, and distribute the software, regardless of its application or environment (https://opensource.org/licenses).
 
-- **Freedom to Modify and Distribute**: Open-source software allows users not only to access the code but also to modify it and share these modifications, encouraging innovation and collaboration.
+- **Freedom to Modify and Distribute**: Open-source software, in contrast to source-available software, allows users not only to access the code but also to modify it and share these modifications, encouraging innovation and collaboration.
 
 - **Transparency and Community Trust**: With open-source, the code is transparent by design, allowing the community to understand, verify, and contribute to the project. This fosters trust and credibility, especially crucial in scientific fields.
 
