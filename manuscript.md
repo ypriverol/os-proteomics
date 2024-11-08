@@ -90,21 +90,29 @@ Finally, open-source code allows researchers to apply and compare different impl
 
 ### Shared knowledge pushes the field forward
 
-OSS cultivates an ecosystem where researchers across institutions can freely collaborate, improving tools and methods in real time.
-Unlike proprietary software, which isolates progress within companies or specific labs, OSS allows researchers to build on each other's work without reinventing the wheel.
-This collaborative environment accelerates scientific discovery, as labs and researchers can focus on refining or extending existing algorithms, rather than duplicating efforts.
-In this way, OSS promotes the efficient use of resources, turning individual advancements into collective gains.
-Indeed, the proteomics field has benefited from this is a number of ways: the ProteoWizard project [18606607,23051804] is a long-standing OSS resource in the proteomics community encompassing beloved tools like Skyline [20147306] and msConvert [28188540].
-Numerous plugins have been developed for Skyline to accomplish specialized tasks in a fraction of the time it would have taken to develop the full solution from scratch; currently, there are 20 external plugins available through the official Skyline Tool Store.
-Likewise, msConvert has provided a unified interface to open mass spectrometry data formats, rather than requiring developers to wrangle proprietary formats and readers.
-Well-supported OSS provides a foundation that accelerates advancement of the field.
-[M: the sad truth is that there has been very little contribution to the pwiz and Skyline projects despite both going for 16+ years. Most people prefer to implement a new UI outside of Skyline as opposed to implementing an algorithm within Skyline. The number of outside contributions is very few. The external tools are something we are proud of as it lowered the barrier for academic contributors but it frequently requires development by our lab still.]
 
+Open-source software (OSS) fosters a collaborative ecosystem where researchers across institutions can freely contribute, refine, and extend tools, accelerating scientific progress. 
+Unlike proprietary software that confines advancements to specific labs or companies, OSS allows researchers to build on each other’s work without duplicating efforts, promoting efficient resource use and transforming individual achievements into collective gains. 
+By democratizing access to high-quality tools, OSS enables scientists from resource-limited settings to leverage the same technology as those in well-funded institutions, fostering a diverse global community that drives innovation forward.
 
-Moreover, OSS democratizes access to high-quality tools, leveling the playing field for researchers in resource-limited settings.
-When foundational tools are open-source, scientists at smaller institutions or in countries with limited funding have access to the same technology as those in well-funded labs.
-This broad accessibility leads to a greater diversity of ideas and contributions, as scientists worldwide can implement, critique, and enhance these tools.
-OSS in science not only enhances rigor and speed, but enables a global community to push the boundaries of knowledge together.
+Proteomics has greatly benefited from this open-source approach.
+Projects like ProteoWizard, with tools such as Skyline and msConvert, exemplify OSS’s impact. 
+Skyline, for instance, supports over 20 external plugins available in its Tool Store, allowing users to perform specialized tasks far more efficiently than if they had to build solutions from scratch. 
+Similarly, msConvert provides a standardized interface for mass spectrometry data, sparing developers the need to manage proprietary formats. 
+These well-supported OSS projects create a foundational infrastructure that accelerates proteomics advancements.
+
+However, sustaining successful OSS projects in proteomics requires ongoing community engagement, which has often proven challenging. 
+Despite their long history, projects like ProteoWizard and Skyline see few external contributions. 
+Many researchers opt to develop independent tools rather than contribute enhancements within Skyline, missing opportunities for broader collaboration. 
+Skyline’s external tools framework, which lowers technical barriers to contributions, has helped, but much of the development remains within the original labs.
+
+Community contributions in proteomics face barriers unique to the field. 
+Developing software for proteomics demands specialized technical skills that many labs lack, especially when resources are focused on biological research rather than software engineering. 
+The need for continuous updates to accommodate evolving data formats and instruments also requires substantial resources. 
+Additionally, academic incentives often prioritize novel software creation over contributions to existing projects, further deterring collaborative development.
+
+To create a more robust and impactful OSS ecosystem in proteomics, stronger incentives for community involvement and frameworks that support sustained collaboration are essential. 
+With enhanced incentives, collaborative frameworks, and dedicated resources, the proteomics community can achieve a more sustainable, widely supported, and effective ecosystem of open-source tools.
 
 ### The community can contribute to development
 
@@ -115,7 +123,7 @@ We have also experienced users asking questions about the underlying code, leadi
 This feedback loop is unique to OSS, where the contributions from the community enhance the quality and precision of the software over time.
 Without such transparency, computational research can become a "black box" that stifles innovation rather than promoting it, hindering the growth of scientific knowledge. 
 OSS can foster a culture of shared accountability, where code is not just released but continuously scrutinized and refined, driving the field forward in a collective effort toward scientific rigor.
-We have indeed observed this in our own projects: at the time of writing, QuantMS [38965444] and Mokapot [33596079] now have 12 and 13 contributors, respectively.
+We have indeed observed this in our own projects: at the time of writing, quantms [38965444] and Mokapot [33596079] now have 12 and 13 contributors, respectively.
 
 ### Increasing emphasis on open science and open source by funding agencies
 
