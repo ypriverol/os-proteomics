@@ -1,4 +1,4 @@
-# Open-Source and FAIR Research Software in Proteomics]
+# Open-Source and FAIR Research Software in Proteomics
 
 ## Introduction
 
@@ -54,7 +54,7 @@ In addition to all these misconceptions and complexity, many journals mandate co
 - Researchers upload closed-source software to platforms like GitHub, giving an impression of openness with features such as issue tracking, while the actual source code remains inaccessible. Although often well-intentioned, this practice can mislead other scientists and, in our view, should be discouraged. 
 - Software is deposited in GitHub as open-source during the submission of the manuscript, but after publication; software licenses in GitHub repositories are changed, repositories deleted or made private, complicating efforts to ensure long-term accessibility.
 
-Given the many misconceptions and complexities surrounding open-source in proteomics, we aim to clarify for the entire community (users, developers, manuscript readers, and reviewers) what constitutes open-source, what does not, and how to transparently communicate the state of own software: [JKE: is "own software" meant to be "OSS software" here??]
+Given the many misconceptions and complexities surrounding open-source in proteomics, we aim to clarify for the entire community (users, developers, manuscript readers, and reviewers) what constitutes open-source. An open-source project means:
 
 - **Source Code Availability**: The source code is publicly accessible, allowing anyone to view, download, and examine the code’s details (https://opensource.org/osd).
 
@@ -113,7 +113,10 @@ Additionally, academic incentives often prioritize novel software creation over 
 To create a more robust and impactful OSS ecosystem in proteomics, stronger incentives for community involvement and frameworks that support sustained collaboration are essential. 
 With enhanced incentives, collaborative frameworks, and dedicated resources, the proteomics community can achieve a more sustainable, widely supported, and effective ecosystem of open-source tools.
 
-### The community can contribute to development
+Apart from the engament needed from the community to foster the development of open-source software, proteomics could start thinking to create and sustain some of the core functionalities of the field in small libraries and tools that could be used by the entire community and full solutions. 
+This is the case, for example, for search engines that are now widely used but multiple tools but also tools like MS2Rescore [35803561] (for rescoring peptide identifications), pyOpenMS [24420968] (for based proteomics functions) or spectrum_utils [31809021] (for spectral data manipulation).
+
+# The community can contribute to development
 
 Open-source software also plays a critical role in iterative refinement.
 Bugs and mistakes are inevitable in complex software, and these issues are often best addressed through collaborative scrutiny.
@@ -132,7 +135,7 @@ Additionally, all Horizon Europe funded research is required to establish a data
 In the United States, agencies like the National Institutes of Health (NIH) and the National Science Foundation (NSF) strongly encourage, and in some cases require, software and code sharing through public repositories, aiming to maximize reproducibility and scientific transparency (https://datascience.nih.gov/tools-and-analytics/best-practices-for-sharing-research-software-faq).
 Similarly, the Wellcome Trust in the United Kingdom mandates that all research outputs, such as software integral to funded research, be made freely available under recognized open-source licenses to facilitate widespread accessibility and reuse (https://wellcome.org/grant-funding/guidance/policies-grant-conditions/data-software-materials-management-and-sharing-policy).
 Many other funding agencies all over the world have similar open source guidelines and mandates.
-This underscore a commitment from funders to foster collaborative scientific ecosystems, democratizing access to essential research tools and enhancing reproducibility across disciplines.
+This underscores a commitment from funders to foster collaborative scientific ecosystems, democratizing access to essential research tools and enhancing reproducibility across disciplines.
 
 ## How to get started with OSS
 
