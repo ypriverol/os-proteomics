@@ -1,4 +1,4 @@
-# Open-Source and FAIR Research Software in Proteomics
+# Open-Source and FAIR Research Software in Proteomics]
 
 ## Introduction
 
@@ -159,7 +159,7 @@ This underscore a commitment from funders to foster collaborative scientific eco
 Before we delve into the role of OSS in computational proteomics, we would like to highlight one of the fundamental aspects and challenges in the development of proteomics software: the use of software licenses.
 These licenses often target commercialization, code reuse, but also distribution and citation. 
 
-As the gold standard for proteomics software development we recommend to use a standard OSS license (**Figure 1**), like Apache 2.0, MIT, BSD, LGPL, GPL, etc.; a list of them can be found at (https://opensource.org/licenses).
+As the gold standard for proteomics software development, we recommend to use a standard OSS license (**Figure 1**) like Apache 2.0, MIT, BSD, LGPL, GPL, etc.; a list of them can be found at (https://opensource.org/licenses).
 These licenses are well known, are in use across many fields, and are well understood by the community.
 Additionally, they are compatible with the FAIR principles and the Open Source Initiative (OSI) guidelines [REF].
 These established licenses all have a clear definition of what is allowed and what is not, and how the software can be distributed, reused, and cited.
@@ -222,10 +222,10 @@ The open-core model is quite common and in proteomics it is used for ScaffoldDIA
 ## The role of closed-source software
 
 Is proprietary, closed-source software ever appropriate in scientific research?
-We believe the answer to be yes—particularly when the software in question is not the subject of research. [Preferably any proteomics software will try to have biology in mind, right? I find it a bit vague where this boundary exactly is, can we define it with a bit more detail?] [B: I would say no. Public funded software, should be open.]
+We believe the answer to be yes, particularly when the software in question is not the subject of research. [Preferably any proteomics software will try to have biology in mind, right? I find it a bit vague where this boundary exactly is, can we define it with a bit more detail?] [B: I would say no. Public funded software, should be open.]
 Indeed, there is great commercial opportunity to build proprietary software from OSS.
 Although an OSS project may introduce a new algorithm or model to the scientific world, there are often improvements that can be made to the software regarding usability, scaling, and efficiency, all of which may require commercial investment.
-Indeed, proprietary software can serve researchers well when they are most interested in using a tool to answer biological questions, rather than seeking to understand or benchmark the underlying algorithm.
+Indeed, proprietary software can serve researchers well when they are most interested in using a tool to answer biological questions, rather than seeking to understand or benchmark the underlying algorithm. [JKE: this confuses me in the context of this OS manuscript. And if it confuses me, it's going to confuse anyone skeptical of the manuscript goals as it's sending a mixed message. I read it as it's ok to have proprietary software whether a derivative of OSS or not. I think it's worth clarifying under what context it's OK and I'm not sure the existing text covers this adequately.]
 
 Perhaps more controversial is the idea of a company creating proprietary software that incorporates OSS, yet the OSS project was created by an unaffiliated academic lab.
 Provided that the company is abiding by the terms of the OSS license, this is a legitimate use of the original OSS project.
