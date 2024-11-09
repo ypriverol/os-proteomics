@@ -235,6 +235,17 @@ Provided that the company is abiding by the terms of the OSS license, this is a 
 However, if this is problematic for an OSS project, we would recommend looking into the strong copyleft licenses and/or adopting the dual licensing strategy that we previously discussed.
 Regardless, it is important to remember that nearly all modern software builds upon foundational OSS that are often taken for granted.
 
+## Open source in deep learning model for proteomics
+The application of machine learning and deep learning are becoming increasingly prevalent in the field of proteomics, e.g. MS2 prediction model MS2PIP [37140039] and peptide denovo sequencing model Casanovo [39080256].
+Most software tools based on deep learning make their data and results reproducible and reusable by reporting their source code, training parameters, etc. in a clear and complete manner.
+Although closed-source tools themselves have also contributed greatly to scientific research, the risk of bias and potential usefulness of an AI/ML model maybe not be adequately assessed when close-sourcing the model or the code. 
+Perhaps more controversial is that the closed-source even commercial model are trained on public community datasets shared by other researchers or public proteomics storage infrastructure under an OSS specific licence.
+
+Indeed, Open source model and code avoid these problems to some extent by providing a complete and detailed code structure of the model.
+Also, for the case of training models on public repository data, we would recommend introducing specific License for AI reuse of public proteomics data.
+In the license, we may need to clarify whether the public community data and subsequent directly trained models have usage or even an open source relationship. [Dai: I am not sure]]
+
+
 [We could also add a very short section about data reuse in AI/ML/DL models, especially how this is questionable when close-sourcing the model or the code. Not even sure if this works with e.g., the PRIDE license/agreement]
 
 ## Concluding remarks
