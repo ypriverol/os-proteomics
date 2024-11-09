@@ -222,21 +222,6 @@ New features are then added to the private fork and synced to the OSS version at
 Such a strategy can also be used by academic labs looking to protect new features while preparing for publication, although we would advocate for developing those features in the open, when possible. [can we provide reasoning here? I think it might delay progress and issues with commitment to making it public?]
 The open-core model is quite common and in proteomics it is used for ScaffoldDIA from Proteome Software: the open-source core of ScaffoldDIA is EncyclopeDIA [30510204]. [M: also I believe Scaffold makes use of Comet and X!tandem]
 
-## The role of closed-source software
-
-Is proprietary, closed-source software ever appropriate in scientific research?
-We believe the answer to be yes, particularly when the software in question is not the subject of research. [Preferably any proteomics software will try to have biology in mind, right? I find it a bit vague where this boundary exactly is, can we define it with a bit more detail?] [B: I would say no. Public funded software, should be open.]
-Indeed, there is great commercial opportunity to build proprietary software from OSS.
-Although an OSS project may introduce a new algorithm or model to the scientific world, there are often improvements that can be made to the software regarding usability, scaling, and efficiency, all of which may require commercial investment.
-Indeed, proprietary software can serve researchers well when they are most interested in using a tool to answer biological questions, rather than seeking to understand or benchmark the underlying algorithm. [JKE: this confuses me in the context of this OS manuscript. And if it confuses me, it's going to confuse anyone skeptical of the manuscript goals as it's sending a mixed message. I read it as it's ok to have proprietary software whether a derivative of OSS or not. I think it's worth clarifying under what context it's OK and I'm not sure the existing text covers this adequately.]
-
-Perhaps more controversial is the idea of a company creating proprietary software that incorporates OSS, yet the OSS project was created by an unaffiliated academic lab.
-Provided that the company is abiding by the terms of the OSS license, this is a legitimate use of the original OSS project.
-However, if this is problematic for an OSS project, we would recommend looking into the strong copyleft licenses and/or adopting the dual licensing strategy that we previously discussed.
-Regardless, it is important to remember that nearly all modern software builds upon foundational OSS that are often taken for granted.
-
-[We could also add a very short section about data reuse in AI/ML/DL models, especially how this is questionable when close-sourcing the model or the code. Not even sure if this works with e.g., the PRIDE license/agreement]
-
 ## Concluding remarks
 
 As proteomics research increasingly relies upon computational tools, embracing open-source and FAIR principles is essential for ensuring transparency, reproducibility, and accessibility.
