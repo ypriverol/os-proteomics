@@ -78,15 +78,28 @@ Given the many misconceptions and complexities surrounding open-source in proteo
 
 ### Transparency promotes scientific rigor
 
-The scientific community increasingly recognizes that algorithms, while not software or tools themselves but rather the underlying steps and methodology, are becoming significant research outputs in their own right. Algorithms are no longer seen merely as tools but are valued as core research outputs, reflecting the critical steps and methodologies at the heart of scientific innovation. For example, in proteomics, the fragment-indexing approach introduced by the MSFragger algorithm has recently been implemented in two different search engines: SAGE [37819886] and Comet [10.1101/2024.10.11.617953v1.abstract]. This shift highlights the importance of not only software as a means of implementation but also the reproducibility and reliability of computational methods that drive new discoveries. Both algorithms and their software implementations are now held to rigorous validation and reproducibility standards, similar to those for traditional experimental data.
+The scientific community increasingly recognizes that algorithms, while not software or tools themselves but rather the underlying steps and methodology, are becoming significant research outputs in their own right. 
+Algorithms are no longer seen merely as tools but are valued as core research outputs, reflecting the critical steps and methodologies at the heart of scientific innovation. 
+For example, in proteomics, the fragment-indexing approach introduced by the MSFragger algorithm has recently been implemented in two different search engines: SAGE [37819886] and Comet [10.1101/2024.10.11.617953v1.abstract]. 
+This shift highlights the importance of not only software as a means of implementation but also the reproducibility and reliability of computational methods that drive new discoveries. 
+Both algorithms and their software implementations are now held to rigorous validation and reproducibility standards, similar to those for traditional experimental data.
 
-Transparent computational methods open doors to innovation, enabling researchers to test hypotheses, refine methodologies, and build upon one another’s work with confidence. For instance, providing open-source implementations allows the scientific community to verify methods, adapt them to new challenges, and explore alternative approaches. Open-source code, therefore, becomes a powerful tool for disseminating knowledge, facilitating shared standards, and accelerating the pace of discovery. Consider a proteomics experiment: without details on sample preparation or instrument settings or the raw data, the final results lack reproducibility. Similarly, open code ensures that computational methods can be accurately understood, replicated, and extended across labs worldwide.
+Transparent computational methods open doors to innovation, enabling researchers to test hypotheses, refine methodologies, and build upon one another’s work with confidence. 
+For instance, providing open-source implementations allows the scientific community to verify methods, adapt them to new challenges, and explore alternative approaches. 
+Open-source code, therefore, becomes a powerful tool for disseminating knowledge, facilitating shared standards, and accelerating the pace of discovery. 
+Consider a proteomics experiment: without details on sample preparation or instrument settings or the raw data, the final results lack reproducibility. Similarly, open code ensures that computational methods can be accurately understood, replicated, and extended across labs worldwide.
 
-When algorithms and models are shared as open-source software, they inherently uphold the FAIR principles applied to scientific data. This level of openness strengthens scientific rigor, enabling others to examine the code, replicate findings, and contribute improvements. A transparent approach to computational research, through openly available code, fosters a collaborative environment where the community can validate results and improve tools, ultimately building trust in computational methodologies.
+When algorithms and models are shared as open-source software, they inherently uphold the FAIR principles applied to scientific data. 
+This level of openness strengthens scientific rigor, enabling others to examine the code, replicate findings, and contribute improvements. 
+A transparent approach to computational research, through openly available code, fosters a collaborative environment where the community can validate results and improve tools, ultimately building trust in computational methodologies.
 
-Moreover, open-source implementations guard against unintended variation in outcomes caused by minor differences in coding practices, dependencies, or hardware environments. Even small programming choices can lead to significant changes in results. Open code mitigates these risks by making the entire process visible, allowing other scientists to understand the nuances and make informed adjustments. Transparency is key in computational research, not just for ensuring rigor but for building a reliable foundation that drives the entire field forward.
+Moreover, open-source implementations guard against unintended variation in outcomes caused by minor differences in coding practices, dependencies, or hardware environments. 
+Even small programming choices can lead to significant changes in results. 
+Open code mitigates these risks by making the entire process visible, allowing other scientists to understand the nuances and make informed adjustments. 
+Transparency is key in computational research, not just for ensuring rigor but for building a reliable foundation that drives the entire field forward.
 
-Finally, open-source code allows researchers to apply and compare different implementations, revealing assumptions and enhancing understanding. For instance, discrepancies between implementations of common tools—such as variations in BLOSUM matrices for sequence alignment[18327232]—demonstrate how essential code transparency is for ensuring scientific consistency. Open-source practices thus empower researchers to expand on established methods with confidence, propelling science toward more robust, reproducible, and innovative outcomes.
+Finally, open-source code allows researchers to apply and compare different implementations, revealing assumptions and enhancing understanding. 
+For instance, discrepancies between implementations of common tools—such as variations in BLOSUM matrices for sequence alignment [18327232]—demonstrate how essential code transparency is for ensuring scientific consistency. Open-source practices thus empower researchers to expand on established methods with confidence, propelling science toward more robust, reproducible, and innovative outcomes.
 
 ### Shared knowledge pushes the field forward
 
@@ -96,14 +109,15 @@ By democratizing access to high-quality tools, OSS enables scientists from resou
 
 Proteomics has greatly benefited from this open-source approach.
 Projects like ProteoWizard [18606607,23051804], with tools such as Skyline [20147306] and msConvert [28188540], exemplify OSS’s impact. 
-Skyline, for instance, supports over 20 external plugins available in its Tool Store, allowing users to perform specialized tasks far more efficiently than if they had to build solutions from scratch. 
+Skyline, for instance, supports over 20 external plugins available in its Tool Store, allowing users to perform specialized tasks far more efficiently than if they had to build solutions from scratch.
+For a long-time, multiple search engines for peptide identification were available open-source for the proteomics community including developers and bioinformaticians to learn and contribute to them. X!Tandem [14976030], Comet [23148064] or MSGF+ [25358478] are the three main examples, been Comet the tool with more integration with other pipelines—as mentioned before — like OpenMS, quantms, PeptideShaker, Crux, and other frameworks.   
 Similarly, msConvert provides a standardized interface for mass spectrometry data, sparing developers the need to manage proprietary formats. 
 These well-supported OSS projects create a foundational infrastructure that accelerates proteomics advancements.
 
 However, sustaining successful OSS projects in proteomics requires ongoing community engagement, which has often proven challenging. 
 Despite their long history, projects like ProteoWizard and Skyline see few external contributions. 
 Many researchers opt to develop independent tools rather than contribute enhancements within Skyline, missing opportunities for broader collaboration. 
-Skyline’s external tools framework, which lowers technical barriers to contributions, has helped, but much of the development remains within the original labs.
+Skyline’s external tools framework, which lowers technical barriers to contributions, has helped, but much of the development remains within the original labs. 
 
 Community contributions in proteomics face barriers unique to the field. 
 Developing software for proteomics demands specialized technical skills that many labs lack, especially when resources are focused on biological research rather than software engineering. 
@@ -113,7 +127,10 @@ Additionally, academic incentives often prioritize novel software creation over 
 To create a more robust and impactful OSS ecosystem in proteomics, stronger incentives for community involvement and frameworks that support sustained collaboration are essential. 
 With enhanced incentives, collaborative frameworks, and dedicated resources, the proteomics community can achieve a more sustainable, widely supported, and effective ecosystem of open-source tools.
 
-### The community can contribute to development
+Apart from the engament needed from the community to foster the development of open-source software, proteomics could start thinking to create and sustain some of the core functionalities of the field in small libraries and tools that could be used by the entire community and full solutions. 
+This is the case, for example, for search engines that are now widely used but multiple tools but also tools like MS2Rescore [35803561] (for rescoring peptide identifications), pyOpenMS [24420968] (for based proteomics functions) or spectrum_utils [31809021] (for spectral data manipulation).
+
+# The community can contribute to development
 
 Open-source software also plays a critical role in iterative refinement.
 Bugs and mistakes are inevitable in complex software, and these issues are often best addressed through collaborative scrutiny.
@@ -132,7 +149,7 @@ Additionally, all Horizon Europe funded research is required to establish a data
 In the United States, agencies like the National Institutes of Health (NIH) and the National Science Foundation (NSF) strongly encourage, and in some cases require, software and code sharing through public repositories, aiming to maximize reproducibility and scientific transparency (https://datascience.nih.gov/tools-and-analytics/best-practices-for-sharing-research-software-faq).
 Similarly, the Wellcome Trust in the United Kingdom mandates that all research outputs, such as software integral to funded research, be made freely available under recognized open-source licenses to facilitate widespread accessibility and reuse (https://wellcome.org/grant-funding/guidance/policies-grant-conditions/data-software-materials-management-and-sharing-policy).
 Many other funding agencies all over the world have similar open source guidelines and mandates.
-This underscore a commitment from funders to foster collaborative scientific ecosystems, democratizing access to essential research tools and enhancing reproducibility across disciplines.
+This underscores a commitment from funders to foster collaborative scientific ecosystems, democratizing access to essential research tools and enhancing reproducibility across disciplines.
 
 ## How to get started with OSS
 
@@ -217,7 +234,7 @@ Some variants of this model use a time delay for new features, where paying user
 Practically, the implementation of this strategy often involves the creation of a private, upstream fork of the OSS code repository.
 New features are then added to the private fork and synced to the OSS version when ready.
 Such a strategy can also be used by academic labs looking to protect new features while preparing for publication, although we would advocate for developing those features in the open, when possible. [can we provide reasoning here? I think it might delay progress and issues with commitment to making it public?]
-The open-core model is quite common and in proteomics it is used for ScaffoldDIA from Proteome Software: the open-source core of ScaffoldDIA is EncyclopeDIA [30510204]. [M: also I believe Scaffold makes use of Comet and X!tandem]
+The open-core model is quite common, and in proteomics it is used for ScaffoldDIA from Proteome Software: the open-source core of ScaffoldDIA is EncyclopeDIA [30510204], the same could be applied to Scaffold with uses two different open source search engines X!Tandem [14976030] and SAGE [37819886]. 
 
 ## The role of closed-source software
 
