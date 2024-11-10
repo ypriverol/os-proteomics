@@ -235,15 +235,24 @@ Provided that the company is abiding by the terms of the OSS license, this is a 
 However, if this is problematic for an OSS project, we would recommend looking into the strong copyleft licenses and/or adopting the dual licensing strategy that we previously discussed.
 Regardless, it is important to remember that nearly all modern software builds upon foundational OSS that are often taken for granted.
 
-## Open source in deep learning model for proteomics
+## Open source in AI model for proteomics
 The application of machine learning and deep learning are becoming increasingly prevalent in the field of proteomics, e.g. MS2 prediction model MS2PIP [37140039] and peptide denovo sequencing model Casanovo [39080256].
-Most software tools based on deep learning make their data and results reproducible and reusable by reporting their source code, training parameters, etc. in a clear and complete manner.
+Most proteomics software tools based on deep learning make their data and results reproducible and reusable by reporting their source code, training parameters, etc. in a clear and complete manner.
 Although closed-source tools themselves have also contributed greatly to scientific research, the risk of bias and potential usefulness of an AI/ML model maybe not be adequately assessed when close-sourcing the model or the code. 
 Perhaps more controversial is that the closed-source even commercial model are trained on public community datasets shared by other researchers or public proteomics storage infrastructure under an OSS specific licence.
+Open Source has demonstrated that massive benefits accrue to everyone after removing the barriers to learning, using, sharing and improving software systems.
+For AI for proteomics, society needs at least the same essential freedoms of Open Source to enable AI developers, researcher and end users to enjoy those same benefits: autonomy, transparency, frictionless reuse and collaborative improvement.
+The Open Source Initiative released the first version of the Open Source AI Definition (OSAID): An Open Source AI is an AI system made available under terms and in a way that grant the freedoms to:
 
-Indeed, Open source model and code avoid these problems to some extent by providing a complete and detailed code structure of the model.
-Also, for the case of training models on public repository data, we would recommend introducing specific License for AI reuse of public proteomics data.
-In the license, we may need to clarify whether the public community data and subsequent directly trained models have usage or even an open source relationship. [Dai: I am not sure]]
+1. Use the system for any purpose and without having to ask for permission.
+2. Study how the system works and inspect its components.
+3. Modify the system for any purpose, including to change its output.
+4. Share the system for others to use with or without modifications, for any purpose.
+
+AI and specifically machine learning systems are not only simply software programs, but also they blend boundaries with data, configuration options, documentation and new artifacts, like weights and biases.
+So open source also apply to a system, a model, weights and parameters, or other structural elements.
+However, It is not clear what mechanisms and license are currently in place to ensure that models are available for use, research, modify and share, especially model parameters. we would recommend explicit assertion accompanying the distribution of Parameters that assures they're freely available to all.
+
 
 
 [We could also add a very short section about data reuse in AI/ML/DL models, especially how this is questionable when close-sourcing the model or the code. Not even sure if this works with e.g., the PRIDE license/agreement]
