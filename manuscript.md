@@ -276,10 +276,11 @@ T.S. is an officer in OpenMS Inc., a non-profit foundation that manages the inte
 
 ### Authors
 
-| Name | Email | Affiliation |
-|------|-------|-------------|
-|Yasset Perez-Riverol | yperez@ebi.ac.uk | EMBL-EBI |
-|William E. Fondrie | wfondrie@talus.bio | Talus Bioscience |
-|Timo Sachsenberg | timo.sachsenberg@uni-tuebingen.de | University of Tübingen |
-|Robbin Bouwmeester | robbin.bouwmeester@ugent.be | VIB-UGent |
-|Wout Bittremieux | wout.bittremieux@uantwerpen.be | University of Antwerp |
+| Name                 | Email                             | Affiliation                      |
+|----------------------|-----------------------------------|----------------------------------|
+| Yasset Perez-Riverol | yperez@ebi.ac.uk                  | EMBL-EBI                         |
+| William E. Fondrie   | wfondrie@talus.bio                | Talus Bioscience                 |
+| Timo Sachsenberg     | timo.sachsenberg@uni-tuebingen.de | University of Tübingen           |
+| Robbin Bouwmeester   | robbin.bouwmeester@ugent.be       | VIB-UGent                        |
+| Wout Bittremieux     | wout.bittremieux@uantwerpen.be    | University of Antwerp            |
+| Chengxin Dai         | chengxin2024@126.com              | Beijing Proteome Research Center |
