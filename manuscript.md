@@ -242,7 +242,7 @@ Although closed-source tools themselves have also contributed greatly to scienti
 Perhaps more controversial is that the closed-source even commercial model are trained on public community datasets shared by other researchers or public proteomics storage infrastructure under an OSS specific licence.
 Open Source has demonstrated that massive benefits accrue to everyone after removing the barriers to learning, using, sharing and improving software systems.
 For AI for proteomics, society needs at least the same essential freedoms of Open Source to enable AI developers, researcher and end users to enjoy those same benefits: autonomy, transparency, frictionless reuse and collaborative improvement.
-The Open Source Initiative released the first version of the Open Source AI Definition (OSAID): An Open Source AI is an AI system made available under terms and in a way that grant the freedoms to:
+The Open Source Initiative released the first version of the Open Source AI Definition (OSAID) [https://opensource.org/ai/open-source-ai-definition]: An Open Source AI is an AI system made available under terms and in a way that grant the freedoms to:
 
 1. Use the system for any purpose and without having to ask for permission.
 2. Study how the system works and inspect its components.
