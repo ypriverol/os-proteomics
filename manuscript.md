@@ -16,21 +16,19 @@ Computational proteomics, along with algorithm and software development, faces s
 - Ensuring reproducibility is a challenge due to the limited access to detailed algorithmic information, which hinders validation and extension of methods.
 
 - Although most software tools are described in publications, the absence of open-source code, comprehensive documentation, and version control often impedes reproducibility and reuse.
-This lack of accessibility also limits opportunities for researchers and developers to contribute effectively to advancing proteomics software.
+  This lack of accessibility also limits opportunities for researchers and developers to contribute effectively to advancing proteomics software.
 - Custom licenses and restrictions on software distribution can further complicate the situation, making it difficult to share, modify, or redistribute software, and hindering the development of a collaborative and open-source ecosystem.
-Proteomics software is often distributed under restrictive licenses and tailored to specific platforms (e.g., operating systems, computer architectures), limiting its use across diverse environments and services. This restricts the field’s adaptability and hinders the integration of proteomics with other omics disciplines.
+  Proteomics software is often distributed under restrictive licenses and tailored to specific platforms (e.g., operating systems, computer architectures), limiting its use across diverse environments and services. This restricts the field’s adaptability and hinders the integration of proteomics with other omics disciplines.
 
-- Complex workflows and high-throughput data analysis are currently relying on (unattended) software deployment. This is complicated on its own because it requires managing dependencies, configurations, and environments consistently across diverse systems and  architecture without human intervention.
-The community has tackled this challenge with CI/CD pipelines as, for example, described in 10.1101/gr.276963.122, but this relies on OSS and the permission to freely redistribute software along the entire dependency chain.
-If one piece in this supply chain is not OS, exceptions need to be handled and automatization is harder or impossible.
-In sum, it creates a huge additional burden for the entire community downstream of the non-OS software package, which on its own is a hidden cost.
-
+- Complex workflows and high-throughput data analysis are currently relying on (unattended) software deployment. This is complicated on its own because it requires managing dependencies, configurations, and environments consistently across diverse systems and architecture without human intervention.
+  The community has tackled this challenge with CI/CD pipelines as, for example, described in 10.1101/gr.276963.122, but this relies on OSS and the permission to freely redistribute software along the entire dependency chain.
+  If one piece in this supply chain is not OS, exceptions need to be handled and automatization is harder or impossible.
+  In sum, it creates a huge additional burden for the entire community downstream of the non-OS software package, which on its own is a hidden cost.
 
 A solution to these challenges is offered by Open-source software (OSS) which is also aligned with the FAIR Principles (Findable, Accessible, Interoperable, Reusable), initially established for scientific data [26978244]. FAIR principles were expanded in 2022 for research software (FAIR4RS) to address the growing recognition of research software as a foundational research asset [36241754]. Following FAIR4RS principles empowers proteomics with OSS tools that are not only accessible but also foster community-driven development, rigorous validation, and transparent sharing of methodologies [].
 OSS has demonstrated clear benefits in increasing the accessibility, usability, and visibility of scientific software [30212065].
 OSS makes reproducibility, traceability and auditability possible.
 With code freely available for inspection, modification, and distribution, OSS encourages collaboration and creates avenues for continuous improvement—factors that are critical in fields as data-intensive as proteomics.
-
 
 In this manuscript, we aim to explore the role of OSS in computational proteomics and its implications for the development of FAIR research software.
 We will discuss the benefits and challenges of OSS in proteomics, the role of OSS in the development of FAIR research software, and the importance of distribution, licensing, and citation of software in computational proteomics.
@@ -43,8 +41,8 @@ OSS (open-source software) refers to software where the source code—the core i
 Unlike "closed-source" or "proprietary" software, where the code remains private, OSS provides transparency by design, which is essential for fostering trust, collaboration, and progress in science.
 However, the open- or closed-source label simply addresses code visibility; it is the software license that determines who can use, modify, or distribute the software and under what conditions.
 
-
 ### Misconceptions about open source
+
 In proteomics, and bioinformatics in general, multiple misconceptions exist about open/closed source software:
 
 - Free means open source. This is not true as closed-source software with free "academic" licenses are not open-source. Academic licenses only refer to free-for-academic-use. The source code is not necessarily open, shareable, or modifiable. Even the term "academic" is not well-defined as it can refer to a wide range of institutions and organizations. To simplify this complexity, we can define OSS as any software that uses an license approved by the Open Source Initiative (OSI, https://opensource.org/licenses).
@@ -52,8 +50,8 @@ In proteomics, and bioinformatics in general, multiple misconceptions exist abou
 - Free open-source software (FOSS) means free of financial cost. In this context, "free" does not imply cost, lack of security or support. Instead, it emphasizes the freedom to run, copy, modify, and distribute the software as desired (https://www.gnu.org/philosophy/free-sw.html).
 - OSS is often mistakenly viewed as lacking professional quality. However, many open-source projects are maintained by dedicated teams with robust testing and good best programming practices. In genomics, projects like samtools (https://github.com/samtools/samtools) [19505943], an MIT-licensed project with over 80 contributors and 50,000+ citations, and the Genome Analysis Toolkit (GATK, https://github.com/broadinstitute/gatk) [20644199], now open-source with over 100 maintainers and 26,000+ citations, exemplify this standard. In proteomics, Percolator (https://github.com/percolator/percolator) [17952086] has over 700 citations and 20 contributors, serving as a core tool for projects like MS2Rescore [35803561], OpenMS [38366242], and Crux [36598107]. Other successful open-source projects in proteomics, such as OpenMS [38366242], Skyline [20147306], PeptideShaker [25574629], and ProteoWizard [23051804], demonstrate the benefits of transparency and collaboration. Despite these successes, academic open-source proteomics software is still perceived as lower quality. In 2018, Rob Smith highlighted the community’s concerns about academic proteomics and metabolomics software, including poor documentation, lack of transparency, and limited support [29546988], though much of this feedback was directed at academic and free-for-academic-use software, not necessarily open-source.
 
-
 ### Detrimental practices in using public repositories
+
 In addition to all the described misconceptions and complexity, many journals and some funding agencies mandate code availability as part of publishing, which has prompted multiple bad practices from software developers and bioinformaticians aiming to fulfill these requirements. Notable examples include:
 
 - **Open-source Facade**: Researchers may upload closed-source software to platforms like GitHub, giving an impression of openness with features such as issue tracking, while the actual source code remains inaccessible. Although often well-intentioned, this practice can mislead scientists and, in our view, should be discouraged. In these instances, a clear statement in the repository should indicate to the users that the software is not open source.
@@ -61,8 +59,8 @@ In addition to all the described misconceptions and complexity, many journals an
 - **License Misuse or Ambiguity**: Some repositories may use inappropriate or ambiguous licenses, causing confusion about the terms of use, distribution, and modification (more details discussed in the section Licenses in proteomics software).
 - **Obscure Dependencies**: Software repositories may have dependencies that are not clearly documented, which may require closed-source or proprietary software. This can create barriers for other researchers attempting to run or build on the software, as they may not have access to necessary components or may need to purchase expensive licenses. Clear documentation of all dependencies along their licensing terms is essential to ensure transparency and reproducibility.
 
-
 ### Attributes of an open source project
+
 Given the many misconceptions and complexities surrounding open-source in proteomics, we aim to clarify for the entire community (users, developers, manuscript readers, and reviewers) what constitutes open-source. An open-source project means:
 
 - **Source Code Availability**: The source code is publicly accessible, allowing anyone to view, download, and examine the code’s details (https://opensource.org/osd).
@@ -148,21 +146,21 @@ This underscores a commitment from funders to foster collaborative scientific ec
 
 ## How to get started with OSS
 
-| Box 1. How to get started with OSS. The following steps provide a guideline that can foster a successful open-source project that grows in adoption, value, and contributions over time. |
-| --- |
-| 1. **Define clear goals and scope.** Start by defining the specific problem or gap your software aims to solve. Ensure it addresses an unmet need or provides a significant improvement over existing solutions. Before starting an independent OSS project, consider contributing to an existing OSS project by evaluating if your use case could take advantage of existing frameworks. For example, adding a new feature within Skyline or OpenMS would not require using your resources for implementing a raw data reading component and a user interface. |
-| 2. **Choose an open source license.** Choose an OSI approved license that aligns with the project's intended use and desired level of openness. For projects that may later require commercialization or enterprise use, dual licensing (e.g., open-source with an option for commercial licensing) can be considered to support sustainability. |
-| 3. **Plan for sustainability.** Research potential funding sources, such as grants, academic support, or partnerships. Decide if the project will rely on donations, grants, or if it might later incorporate paid services. If applicable, consider models like SaaS, support-based revenue, or feature-based licensing that could sustain the project without sacrificing its open-source nature. |
-| 4. **Set up a well-structured repository.** Use a version-control platform like GitHub or GitLab for easy access, community contributions, and versioning. Use clear folder structures, name conventions, and modular code design to enhance usability and maintainability. Provide a clear guide on how others can contribute to the project, including coding standards, pull request policies, and a Code of Conduct to foster a positive collaborative environment. |
-| 5. **Implement rigorous testing and quality control.** Use continuous integration/continuous deployment (CI/CD) practices to automate testing and improve code quality. Platforms like GitHub Actions can be set up to run tests on each new code addition or pull request. Develop a robust suite of tests that ensure functionality and compatibility, minimizing the risk of bugs and ensuring reliability. Regularly review code for quality and potential improvements, inviting experienced contributors or external collaborators to audit the code. |
-| 6. **Develop thorough documentation.** |
-|   - User documentation: Provide tutorials, installation guides, and usage examples that lower barriers to entry for new users. |
-|   - Developer documentation: Include technical details that make it easier for new developers to understand the codebase, contribute, and debug. |
-|   - Version control and changelog: Maintain a detailed changelog for tracking updates, and consider using semantic versioning for releases to help users track changes and updates. |
-| 7. **Build a community.** Create forums, mailing lists, or a Slack channel to facilitate communication and support for users and contributors. Promote the project within academic and industry circles, social media, or conferences. Collaborations with other researchers can boost credibility and attract users. Encourage diverse participation, whether from seasoned developers, scientists, or students, by being open to questions, feedback, and contributions of varying levels. |
+| Box 1. How to get started with OSS. The following steps provide a guideline that can foster a successful open-source project that grows in adoption, value, and contributions over time.                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1. **Define clear goals and scope.** Start by defining the specific problem or gap your software aims to solve. Ensure it addresses an unmet need or provides a significant improvement over existing solutions. Before starting an independent OSS project, consider contributing to an existing OSS project by evaluating if your use case could take advantage of existing frameworks. For example, adding a new feature within Skyline or OpenMS would not require using your resources for implementing a raw data reading component and a user interface.                                  |
+| 2. **Choose an open source license.** Choose an OSI approved license that aligns with the project's intended use and desired level of openness. For projects that may later require commercialization or enterprise use, dual licensing (e.g., open-source with an option for commercial licensing) can be considered to support sustainability.                                                                                                                                                                                                                                                 |
+| 3. **Plan for sustainability.** Research potential funding sources, such as grants, academic support, or partnerships. Decide if the project will rely on donations, grants, or if it might later incorporate paid services. If applicable, consider models like SaaS, support-based revenue, or feature-based licensing that could sustain the project without sacrificing its open-source nature.                                                                                                                                                                                              |
+| 4. **Set up a well-structured repository.** Use a version-control platform like GitHub or GitLab for easy access, community contributions, and versioning. Use clear folder structures, name conventions, and modular code design to enhance usability and maintainability. Provide a clear guide on how others can contribute to the project, including coding standards, pull request policies, and a Code of Conduct to foster a positive collaborative environment.                                                                                                                          |
+| 5. **Implement rigorous testing and quality control.** Use continuous integration/continuous deployment (CI/CD) practices to automate testing and improve code quality. Platforms like GitHub Actions can be set up to run tests on each new code addition or pull request. Develop a robust suite of tests that ensure functionality and compatibility, minimizing the risk of bugs and ensuring reliability. Regularly review code for quality and potential improvements, inviting experienced contributors or external collaborators to audit the code.                                      |
+| 6. **Develop thorough documentation.**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| - User documentation: Provide tutorials, installation guides, and usage examples that lower barriers to entry for new users.                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| - Developer documentation: Include technical details that make it easier for new developers to understand the codebase, contribute, and debug.                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| - Version control and changelog: Maintain a detailed changelog for tracking updates, and consider using semantic versioning for releases to help users track changes and updates.                                                                                                                                                                                                                                                                                                                                                                                                                |
+| 7. **Build a community.** Create forums, mailing lists, or a Slack channel to facilitate communication and support for users and contributors. Promote the project within academic and industry circles, social media, or conferences. Collaborations with other researchers can boost credibility and attract users. Encourage diverse participation, whether from seasoned developers, scientists, or students, by being open to questions, feedback, and contributions of varying levels.                                                                                                     |
 | 8. **Ensure long-term maintenance and evolution.** Provide a roadmap that outlines planned features, updates, or long-term project goals. This helps maintainers and contributors stay aligned and gives users confidence in the project’s development. Foster a healthy, engaged community by recognizing contributors, hosting hackathons or sprints, and encouraging new ideas. Consider a governance model where a core group of maintainers or a steering committee manages long-term development, ensuring that the project's mission endures even as individual contributors come and go. |
-| 9. **Monitor and measure success.** Track metrics like repository stars, downloads, citations, or code contributions to gauge adoption and impact. Regularly collect user feedback and address concerns or feature requests to ensure the project stays relevant and useful to its audience. |
-| 10: **Stable DOIs.** To address the challenge of license changes and code changes from public to private after publication; OSS projects should create permanent records on archival platforms like Zenodo, Figshare, or Software Heritage, which provide DOIs for long-term citation and access. These platforms integrate with GitHub for automated archival, ensuring enduring accessibility to the community. |
+| 9. **Monitor and measure success.** Track metrics like repository stars, downloads, citations, or code contributions to gauge adoption and impact. Regularly collect user feedback and address concerns or feature requests to ensure the project stays relevant and useful to its audience.                                                                                                                                                                                                                                                                                                     |
+| 10: **Stable DOIs.** To address the challenge of license changes and code changes from public to private after publication; OSS projects should create permanent records on archival platforms like Zenodo, Figshare, or Software Heritage, which provide DOIs for long-term citation and access. These platforms integrate with GitHub for automated archival, ensuring enduring accessibility to the community.                                                                                                                                                                                |
 
 [W: Open to discussion. Please carefully double-check whether these steps make sense and that I haven't forgotten anything.]
 [B: 7-9 is often not possible in our current funding system - we should make clear that the first bullet points are a must have and the last 3 are a goal]
@@ -247,6 +245,24 @@ In these cases, the commercial investment may result in free or commercial softw
 Furthermore, proprietary, closed-source software may be appropriate in scientific research, particularly when the software in question is not the subject of research. For example, proprietary software can serve researchers well when they are most interested in using a tool to answer biological questions, rather than seeking to understand or benchmark the underlying algorithm.
 Regardless, it is important to remember that nearly all modern software builds upon foundational OSS that are often taken for granted.
 
+## Open source in AI model for proteomics
+
+The application of machine learning and deep learning are becoming increasingly prevalent in the field of proteomics, e.g. MS2 prediction model MS2PIP [37140039] and peptide denovo sequencing model Casanovo [39080256].
+Most proteomics software tools based on deep learning make their data and results reproducible and reusable by reporting their source code, training parameters, etc. in a clear and complete manner.
+Although closed-source tools themselves have also contributed greatly to scientific research, the risk of bias and potential usefulness of an AI/ML model maybe not be adequately assessed when close-sourcing the model or the code.
+Perhaps more controversial is that the closed-source even commercial model are trained on public community datasets shared by other researchers or public proteomics storage infrastructure under an OSS specific licence.
+Open Source has demonstrated that massive benefits accrue to everyone after removing the barriers to learning, using, sharing and improving software systems.
+For AI for proteomics, society needs at least the same essential freedoms of Open Source to enable AI developers, researcher and end users to enjoy those same benefits: autonomy, transparency, frictionless reuse and collaborative improvement.
+The Open Source Initiative released the first version of the Open Source AI Definition (OSAID) [https://opensource.org/ai/open-source-ai-definition]: An Open Source AI is an AI system made available under terms and in a way that grant the freedoms to:
+
+1. Use the system for any purpose and without having to ask for permission.
+2. Study how the system works and inspect its components.
+3. Modify the system for any purpose, including to change its output.
+4. Share the system for others to use with or without modifications, for any purpose.
+
+AI and specifically machine learning systems are not only simply software programs, but also they blend boundaries with data, configuration options, documentation and new artifacts, like weights and biases.
+So open source also apply to a system, a model, weights and parameters, or other structural elements.
+However, It is not clear what mechanisms and license are currently in place to ensure that models are available for use, research, modify and share, especially model parameters. we would recommend explicit assertion accompanying the distribution of Parameters that assures they're freely available to all.
 
 [Preferably any proteomics software will try to have biology in mind, right? I find it a bit vague where this boundary exactly is, can we define it with a bit more detail?]
 [B: I would say no. Public funded software, should be open.]
@@ -275,11 +291,12 @@ T.S. is an officer in OpenMS Inc., a non-profit foundation that manages the inte
 
 ### Authors
 
-| Name | Email | Affiliation |
-|------|-------|-------------|
-|Yasset Perez-Riverol | yperez@ebi.ac.uk | EMBL-EBI |
-|William E. Fondrie | wfondrie@talus.bio | Talus Bioscience |
-|Timo Sachsenberg | timo.sachsenberg@uni-tuebingen.de | University of Tübingen |
-|Robbin Bouwmeester | robbin.bouwmeester@ugent.be | VIB-UGent |
-|Wout Bittremieux | wout.bittremieux@uantwerpen.be | University of Antwerp |
-|Aivett Bilbao| aivett.bilbao@pnnl.gov | PNNL-EMSL |
+| Name                 | Email                             | Affiliation                      |
+| -------------------- | --------------------------------- | -------------------------------- |
+| Yasset Perez-Riverol | yperez@ebi.ac.uk                  | EMBL-EBI                         |
+| William E. Fondrie   | wfondrie@talus.bio                | Talus Bioscience                 |
+| Timo Sachsenberg     | timo.sachsenberg@uni-tuebingen.de | University of Tübingen           |
+| Robbin Bouwmeester   | robbin.bouwmeester@ugent.be       | VIB-UGent                        |
+| Wout Bittremieux     | wout.bittremieux@uantwerpen.be    | University of Antwerp            |
+| Aivett Bilbao        | aivett.bilbao@pnnl.gov            | PNNL-EMSL                        |
+| Chengxin Dai         | chengxin2024@126.com              | Beijing Proteome Research Center |
