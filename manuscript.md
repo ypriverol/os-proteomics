@@ -214,7 +214,7 @@ Notably, developers should make sure to include a "contributor license agreement
 Some OSS projects commercialize by offering support services or new feature development at a cost.
 Often users, particularly from corporate entities, are willing to pay for specialized training and ongoing support for their use of OSS projects.
 In special instances, it may even be the case that outside entities are able to pay for the prioritization of specific features.
-This road must be tread carefully though; while there is benefit to allowing sponsored features, and they do benefit everyone once implemented, such a model risks losing control over the direction of an OSS project.
+This road must be tread carefully though; while there is benefit to allowing sponsored features, and they do benefit everyone once implemented; such a model risks losing control over the direction of an OSS project.
 Red Hat is the most prominent example of a company using this strategy to commercialize their enterprise Linux offering.
 
 **Software as a service (SaaS).**
