@@ -169,9 +169,10 @@ These established licenses all have a clear definition of what is allowed and wh
 
 ![jpr_oss_license](fig/jpr_oss_license.png)
 **Figure 1.** Open source software licenses in use in proteomics. Scientific papers published in the _Journal of Proteome Research_ that include a GitHub URL in their abstract were automatically retrieved from PubMed and information on the software license of the corresponding GitHub repository was retrieved through the GitHub API.
-Many proteomics code repositories do not have a license specified, in addition to several OSS licenses being used.
+Many proteomics code repositories do not have a license specified, in addition to several OSS licenses being used. Its important to note that without a specified license the software isn't open source. Without a specified license the software and contributions are exclusively owned by the authors and no one can use, copy, or distribute the contributions. Given the largest category of source code for proteomics tools have unspecified licenses suggests an misunderstanding of software licensing.
 The code to generate these data is available at https://gist.github.com/bittremieux/70905e5d9dcc829ae49aab49e85954af.
-[M: we need to point out that without a specified license it isn't open source. Without a specified license the software and contributions are exclusively owned by the authors and no one can use, copy, or distribute the contributions. I also think it is important to point out the legitimate concerns some institutions, like UW, have for Apache 2.0. Also, the problems of GPL, AGPL, and LGPL in discouraging use. Many in the MS community don't understand open source licenses and this might be an opportunity to explain them.]
+[MacCoss: I personally think you should remove unspecified from the plot. Repos without a specificed license are not open source. Just like datasets without a specified license can't be used by others.]
+
 
 In addition, as the field is evolving, and software becomes more complex and has multiple components, different components could have a different license and the dependencies between them should be clearly stated.
 It is therefore recommended to clearly state the dependencies that a piece of software might have and the licenses of each of them.
@@ -181,7 +182,7 @@ Full disclosure of such dependencies is necessary to ensure that the user is awa
 
 ## Strategies to commercialize OSS
 
-A piece of software being open-source does not necessarily mean that everyone can use it without financial cost. [B: that sentence could be misunderstood I think.]
+A piece of software being open-source does not necessarily mean that everyone can use it without financial cost. [B: that sentence could be misunderstood I think. MacCoss: I don't know what this sentence is trying to say. I think you are its trying to say that open source software costs money to maintain. However, by definition open source means that the source code is freely available and can be modified.]
 Instead, OSS can be commercialized in a number of different ways depending on the owner's goals and principles.
 Here, we intend for commercialization to refer to any process by which OSS is monetized, regardless of whether it remains part of an academic lab, is developed by a company, or is spun-out into its own startup.
 In fact, we would argue that healthy OSS projects must be financially supported by methods such charitable means, grants, or commercialization, in order for the development of the project to be sustainable.
@@ -190,19 +191,15 @@ It is worth noting that these strategies are not necessarily mutually exclusive.
 
 **Dual licensing.**
 A popular commercialization option for OSS has been to offer the software under multiple licenses.
-Projects using this strategy are often available under a strong copyleft license (GPL, AGPL, etc.) with no financial cost.
-However, the copyleft nature of these licenses requires any derivative works to be published under a compatible open-source license, which is often undesirable for corporate users.
-Thus, these projects also offer more permissive licenses to paying customers, which allows using the OSS project within proprietary code.
-Although this strategy may seem easy to abuse, our experience has been that companies are often risk-averse and would rather purchase proper licenses rather than risk legal ramifications of violating a copyleft license. 
+Projects using this strategy are often available under a strong copyleft license (GPL, AGPL, etc.) with no financial cost. The copyleft nature of these licenses requires any derivative works to be published under the same license terms as the original work -- requiring the purchase of the code under a more commercialization friendly license. A downside of this is that it discourages some from building on these licenses when they might not be able to release their work as open source. Although this strategy may seem easy to abuse, our experience has been that companies are often risk-averse and would rather purchase proper licenses rather than risk legal ramifications of violating a copyleft license. In contrast, licenses like Apache 2.0, BSD, or MIT offer more permissive licenses to paying customers, which allows using the OSS project within proprietary code.
+
 A successful example of this strategy from outside of proteomics has been RStudio by Posit.
 RStudio is currently available under an open-source AGPLv3 license, or under a commercial license when AGPLv3 is incompatible.
 Notably, developers should make sure to include a "contributor license agreement" as part of their requirements for new contributors to ensure their contributions can be distributed under both licenses.
 
 **Support or services.**
-Some OSS projects commercialize by offering support services or new feature development at a cost.
-Often users, particularly from corporate entities, are willing to pay for specialized training and ongoing support for their use of OSS projects.
-In special instances, it may even be the case that outside entities are able to pay for the prioritization of specific features.
-This road must be tread carefully though; while there is benefit to allowing sponsored features, and they do benefit everyone once implemented, such a model risks losing control over the direction of an OSS project.
+Some OSS projects commercialize by offering support services or new feature development at a cost. Often users, particularly from corporate entities, are willing to pay for specialized training and ongoing support for their use of OSS projects.
+In special instances, it may even be the case that outside entities are able to pay for the prioritization of specific features. For example, major instrument vendors have provided financial support for Skyline and the Proteowizard to ensure that features, documentation, and support are added specific to the instrument vendor. This road must be tread carefully though; while there is benefit to allowing sponsored features, and they do benefit everyone once implemented, such a model risks losing control over the direction of an OSS project.
 Red Hat is the most prominent example of a company using this strategy to commercialize their enterprise Linux offering. 
 
 **Software as a service (SaaS).**
