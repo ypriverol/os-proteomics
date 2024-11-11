@@ -103,8 +103,7 @@ By democratizing access to high-quality tools, OSS enables scientists from resou
 
 Proteomics has greatly benefited from this open-source approach.
 Projects like ProteoWizard [18606607,23051804], with tools such as Skyline [20147306] and msConvert [28188540], exemplify OSS’s impact.
-Skyline, for instance, supports over 20 external plugins available in its Tool Store, allowing users to perform specialized tasks far more efficiently than if they had to build solutions from scratch.
-Similarly, msConvert provides a standardized interface for mass spectrometry data, sparing developers the need to manage proprietary formats.
+Skyline, for instance, supports over 20 external plugins available in its Tool Store, allowing users to perform specialized tasks far more efficiently than if they had to build solutions from scratch. Similarly, msConvert provides a standardized interface for mass spectrometry data, sparing developers the need to manage proprietary formats.
 These well-supported OSS projects create a foundational infrastructure that accelerates proteomics advancements.
 
 However, sustaining successful OSS projects in proteomics requires ongoing community engagement, which has often proven challenging.
@@ -212,8 +211,8 @@ Notably, developers should make sure to include a "contributor license agreement
 **Support or services.**
 Some OSS projects commercialize by offering support services or new feature development at a cost.
 Often users, particularly from corporate entities, are willing to pay for specialized training and ongoing support for their use of OSS projects.
-In special instances, it may even be the case that outside entities are able to pay for the prioritization of specific features.
-This road must be tread carefully though; while there is benefit to allowing sponsored features, and they do benefit everyone once implemented, such a model risks losing control over the direction of an OSS project.
+In special instances, it may even be the case that outside entities are able to pay for the prioritization of specific features. For example, the major mass spectrometry instrument vendors have been providing financial support to both the Skyline and Proteowizard projects to ensure features, support, and documentation are provided for their customers.
+This road must be tread carefully though; while there is benefit to allowing sponsored features, and they do benefit everyone once implemented, such a model risks losing control over the direction of an OSS project. Features added to Skyline from a vendor are made available to all vendors if they have compatible instrumentation. 
 Red Hat is the most prominent example of a company using this strategy to commercialize their enterprise Linux offering. 
 
 **Software as a service (SaaS).**
