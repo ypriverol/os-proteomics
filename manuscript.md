@@ -212,7 +212,7 @@ Notably, developers should make sure to include a "contributor license agreement
 Some OSS projects commercialize by offering support services or new feature development at a cost.
 Often users, particularly from corporate entities, are willing to pay for specialized training and ongoing support for their use of OSS projects.
 In special instances, it may even be the case that outside entities are able to pay for the prioritization of specific features.
-This road must be tread carefully though; while there is benefit to allowing sponsored features, and they do benefit everyone once implemented, such a model risks losing control over the direction of an OSS project.
+This road must be tread carefully though; while there is benefit to allowing sponsored features, and they do benefit everyone once implemented; such a model risks losing control over the direction of an OSS project.
 Red Hat is the most prominent example of a company using this strategy to commercialize their enterprise Linux offering.
 
 **Software as a service (SaaS).**
@@ -233,43 +233,6 @@ Such a strategy can also be used by academic labs looking to protect new feature
 
 [can we provide reasoning here? I think it might delay progress and issues with commitment to making it public?]
 The open-core model is quite common and in proteomics it is used for ScaffoldDIA from Proteome Software: the open-source core of ScaffoldDIA is EncyclopeDIA [30510204]. [M: also I believe Scaffold makes use of Comet and X!tandem]
-
-## The role of closed-source software
-
-Although we strongly advocate for the greater benefits of OSS in proteomics research over closed source, especially when the development is funded by public grants, we recognize that open-source is not always viable. As previously reported, publicly funded efforts rarely include the financial, personnel, and software engineering resources required to create the kind of extensive requirements specification and implementation that results in user-friendly, non-buggy, fully featured platforms [29546988].
-
-Closed source software may be a requirement for obtaining private funding to continue a project. Even in cases where an OSS project may introduce a new algorithm or model to the scientific world, typically there are improvements that can be made to the software regarding usability, scalability, and efficiency, all of which may be supported through commercial investment. Similarly, a company may create proprietary software that incorporates OSS (while respecting the OSS license terms), to ensure a software that adheres to industry standards and regulations, making it suitable beyond research and for use in sectors that require strict compliance, such as diagnostics in healthcare.
-
-In these cases, the commercial investment may result in free or commercial software, but it typically requires closed-source in order to protect intellectual property and maintain the company's competitive advantage. An example of a closed-source software tool that is provided for free is the PNNL-PreProcessor [34382401], which is developed and maintained under the support of the instrument vendor. This closed-source freely available software development model provides an alternative for agile, rapid development of research software that satisfies user requirements and advances the adoption of the instrument, while avoiding slow approval processes that would be required for internal development at the instrument vendor or by a private software company (across the industry, it could take a year to obtain permission to begin speaking with mass spectrometry scientists, even when the scientists are very interested users [29546988]).
-
-Furthermore, proprietary, closed-source software may be appropriate in scientific research, particularly when the software in question is not the subject of research. For example, proprietary software can serve researchers well when they are most interested in using a tool to answer biological questions, rather than seeking to understand or benchmark the underlying algorithm.
-Regardless, it is important to remember that nearly all modern software builds upon foundational OSS that are often taken for granted.
-
-## Open source in AI model for proteomics
-
-The application of machine learning and deep learning are becoming increasingly prevalent in the field of proteomics, e.g. MS2 prediction model MS2PIP [37140039] and peptide denovo sequencing model Casanovo [39080256].
-Most proteomics software tools based on deep learning make their data and results reproducible and reusable by reporting their source code, training parameters, etc. in a clear and complete manner.
-Although closed-source tools themselves have also contributed greatly to scientific research, the risk of bias and potential usefulness of an AI/ML model maybe not be adequately assessed when close-sourcing the model or the code.
-Perhaps more controversial is that the closed-source even commercial model are trained on public community datasets shared by other researchers or public proteomics storage infrastructure under an OSS specific licence.
-Open Source has demonstrated that massive benefits accrue to everyone after removing the barriers to learning, using, sharing and improving software systems.
-For AI for proteomics, society needs at least the same essential freedoms of Open Source to enable AI developers, researcher and end users to enjoy those same benefits: autonomy, transparency, frictionless reuse and collaborative improvement.
-The Open Source Initiative released the first version of the Open Source AI Definition (OSAID) [https://opensource.org/ai/open-source-ai-definition]: An Open Source AI is an AI system made available under terms and in a way that grant the freedoms to:
-
-1. Use the system for any purpose and without having to ask for permission.
-2. Study how the system works and inspect its components.
-3. Modify the system for any purpose, including to change its output.
-4. Share the system for others to use with or without modifications, for any purpose.
-
-AI and specifically machine learning systems are not only simply software programs, but also they blend boundaries with data, configuration options, documentation and new artifacts, like weights and biases.
-So open source also apply to a system, a model, weights and parameters, or other structural elements.
-However, It is not clear what mechanisms and license are currently in place to ensure that models are available for use, research, modify and share, especially model parameters. we would recommend explicit assertion accompanying the distribution of Parameters that assures they're freely available to all.
-
-[Preferably any proteomics software will try to have biology in mind, right? I find it a bit vague where this boundary exactly is, can we define it with a bit more detail?]
-[B: I would say no. Public funded software, should be open.]
-
-[JKE: this confuses me in the context of this OS manuscript. And if it confuses me, it's going to confuse anyone skeptical of the manuscript goals as it's sending a mixed message. I read it as it's ok to have proprietary software whether a derivative of OSS or not. I think it's worth clarifying under what context it's OK and I'm not sure the existing text covers this adequately.]
-
-[We could also add a very short section about data reuse in AI/ML/DL models, especially how this is questionable when close-sourcing the model or the code. Not even sure if this works with e.g., the PRIDE license/agreement]
 
 ## Concluding remarks
 
