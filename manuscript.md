@@ -103,8 +103,7 @@ By democratizing access to high-quality tools, OSS enables scientists from resou
 
 Proteomics has greatly benefited from this open-source approach.
 Projects like ProteoWizard [18606607,23051804], with tools such as Skyline [20147306] and msConvert [28188540], exemplify OSS’s impact.
-Skyline, for instance, supports over 20 external plugins available in its Tool Store, allowing users to perform specialized tasks far more efficiently than if they had to build solutions from scratch.
-Similarly, msConvert provides a standardized interface for mass spectrometry data, sparing developers the need to manage proprietary formats.
+Skyline, for instance, supports over 20 external plugins available in its Tool Store, allowing users to perform specialized tasks far more efficiently than if they had to build solutions from scratch. Similarly, msConvert provides a standardized interface for mass spectrometry data, sparing developers the need to manage proprietary formats.
 These well-supported OSS projects create a foundational infrastructure that accelerates proteomics advancements.
 
 However, sustaining successful OSS projects in proteomics requires ongoing community engagement, which has often proven challenging.
@@ -179,9 +178,10 @@ These established licenses all have a clear definition of what is allowed and wh
 
 ![jpr_oss_license](fig/jpr_oss_license.png)
 **Figure 1.** Open source software licenses in use in proteomics. Scientific papers published in the _Journal of Proteome Research_ that include a GitHub URL in their abstract were automatically retrieved from PubMed and information on the software license of the corresponding GitHub repository was retrieved through the GitHub API.
-Many proteomics code repositories do not have a license specified, in addition to several OSS licenses being used.
+Many proteomics code repositories do not have a license specified, in addition to several OSS licenses being used. Its important to note that without a specified license the software isn't open source. Without a specified license the software and contributions are exclusively owned by the authors and no one can use, copy, or distribute the contributions. Given the largest category of source code for proteomics tools have unspecified licenses suggests an misunderstanding of software licensing.
 The code to generate these data is available at https://gist.github.com/bittremieux/70905e5d9dcc829ae49aab49e85954af.
-[M: we need to point out that without a specified license it isn't open source. Without a specified license the software and contributions are exclusively owned by the authors and no one can use, copy, or distribute the contributions. I also think it is important to point out the legitimate concerns some institutions, like UW, have for Apache 2.0. Also, the problems of GPL, AGPL, and LGPL in discouraging use. Many in the MS community don't understand open source licenses and this might be an opportunity to explain them.]
+[MacCoss: I personally think you should remove unspecified from the plot. Repos without a specificed license are not open source. Just like datasets without a specified license can't be used by others.]
+
 
 In addition, as the field is evolving, and software becomes more complex and has multiple components, different components could have a different license and the dependencies between them should be clearly stated.
 It is therefore recommended to clearly state the dependencies that a piece of software might have and the licenses of each of them.
@@ -191,7 +191,7 @@ Full disclosure of such dependencies is necessary to ensure that the user is awa
 
 ## Strategies to commercialize OSS
 
-A piece of software being open-source does not necessarily mean that everyone can use it without financial cost. [B: that sentence could be misunderstood I think.]
+A piece of software being open-source does not necessarily mean that everyone can use it without financial cost. [B: that sentence could be misunderstood I think. MacCoss: I don't know what this sentence is trying to say. I think you are its trying to say that open source software costs money to maintain. However, by definition open source means that the source code is freely available and can be modified.]
 Instead, OSS can be commercialized in a number of different ways depending on the owner's goals and principles.
 Here, we intend for commercialization to refer to any process by which OSS is monetized, regardless of whether it remains part of an academic lab, is developed by a company, or is spun-out into its own startup.
 In fact, we would argue that healthy OSS projects must be financially supported by methods such charitable means, grants, or commercialization, in order for the development of the project to be sustainable.
@@ -211,9 +211,9 @@ Notably, developers should make sure to include a "contributor license agreement
 **Support or services.**
 Some OSS projects commercialize by offering support services or new feature development at a cost.
 Often users, particularly from corporate entities, are willing to pay for specialized training and ongoing support for their use of OSS projects.
-In special instances, it may even be the case that outside entities are able to pay for the prioritization of specific features.
-This road must be tread carefully though; while there is benefit to allowing sponsored features, and they do benefit everyone once implemented; such a model risks losing control over the direction of an OSS project.
-Red Hat is the most prominent example of a company using this strategy to commercialize their enterprise Linux offering.
+In special instances, it may even be the case that outside entities are able to pay for the prioritization of specific features. For example, the major mass spectrometry instrument vendors have been providing financial support to both the Skyline and Proteowizard projects to ensure features, support, and documentation are provided for their customers.
+This road must be tread carefully though; while there is benefit to allowing sponsored features, and they do benefit everyone once implemented, such a model risks losing control over the direction of an OSS project. Features added to Skyline from a vendor are made available to all vendors if they have compatible instrumentation. 
+Red Hat is the most prominent example of a company using this strategy to commercialize their enterprise Linux offering. 
 
 **Software as a service (SaaS).**
 The SaaS commercialization model has become increasingly popular in recent times.
@@ -254,12 +254,13 @@ T.S. is an officer in OpenMS Inc., a non-profit foundation that manages the inte
 
 ### Authors
 
-| Name                 | Email                             | Affiliation                      |
-| -------------------- | --------------------------------- | -------------------------------- |
-| Yasset Perez-Riverol | yperez@ebi.ac.uk                  | EMBL-EBI                         |
-| William E. Fondrie   | wfondrie@talus.bio                | Talus Bioscience                 |
-| Timo Sachsenberg     | timo.sachsenberg@uni-tuebingen.de | University of Tübingen           |
-| Robbin Bouwmeester   | robbin.bouwmeester@ugent.be       | VIB-UGent                        |
-| Wout Bittremieux     | wout.bittremieux@uantwerpen.be    | University of Antwerp            |
-| Aivett Bilbao        | aivett.bilbao@pnnl.gov            | PNNL-EMSL                        |
-| Chengxin Dai         | chengxin2024@126.com              | Beijing Proteome Research Center |
+| Name                 | Email                             | Affiliation                             |
+| -------------------- | --------------------------------- | --------------------------------------- |
+| Yasset Perez-Riverol | yperez@ebi.ac.uk                  | EMBL-EBI                                |
+| William E. Fondrie   | wfondrie@talus.bio                | Talus Bioscience                        |
+| Timo Sachsenberg     | timo.sachsenberg@uni-tuebingen.de | University of Tübingen                  |
+| Robbin Bouwmeester   | robbin.bouwmeester@ugent.be       | VIB-UGent                               |
+| Wout Bittremieux     | wout.bittremieux@uantwerpen.be    | University of Antwerp                   |
+| Aivett Bilbao        | aivett.bilbao@pnnl.gov            | PNNL-EMSL                               |
+| Chengxin Dai         | chengxin2024@126.com              | Beijing Proteome Research Center        |
+| Daniel S. Katz       | d.katz@ieee.org                   | University of Illinois Urbana-Champaign |

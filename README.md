@@ -41,7 +41,7 @@ issue and pull request.
 
 ## Journal Submission
 
-Our plan is to submit this manuscript as a Perspective piece in the *Journal of Proteome Research* as part of the "Special Issue on Software Tools and Resources". Although the original deadline for this issue was 10/31, we have secured an extension and plan to submit the manuscript on 11/11. Please make sure all of your contributions have been submitted as pull requests by 11/09 to ensure that there is enough time to incorporate them into the manuscript.
+Our plan is to submit this manuscript as a Perspective piece in the *Journal of Proteome Research* as part of the "Special Issue on Software Tools and Resources". Although the original deadline for this issue was 10/31, we have secured an extension and plan to submit the manuscript on 11/30. Please make sure all of your contributions have been submitted as pull requests by 11/20 to ensure that there is enough time to incorporate them into the manuscript.
 
 ## Disclaimer
 
