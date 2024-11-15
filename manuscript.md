@@ -124,12 +124,14 @@ Apart from the engagement needed from the community to foster the development of
 
 # The community can contribute to development
 
-Open-source software also plays a critical role in iterative refinement.
-Bugs and mistakes are inevitable in complex software, and these issues are often best addressed through collaborative scrutiny.
-In our own work, users have uncovered bugs that we subsequently corrected, improving the reliability and robustness of our tools.
-We have also experienced users asking questions about the underlying code, leading to new features and more efficient algorithms.
-This feedback loop is unique to OSS, where the contributions from the community enhance the quality and precision of the software over time.  Compared to proprietary software, OSS can often move faster and defray development costs by enabling users to build and contribute the features they need, rather than hoping that the maintainers of the software are willing or able to add the features themselves.
-Without such transparency, computational research can become a "black box" that stifles innovation rather than promoting it, hindering the growth of scientific knowledge.
+One of the greatest strengths of open-source software is that "given enough eyeballs, all bugs are shallow" (http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/ar01s04.html). 
+Many of the critical pieces of software that underpin the modern technology stack are open-source: Linux powers operating systems across the globe, Chromium serves as the foundation for multiple web browsers, PostgreSQL is a backbone of data storage, and Python and PyTorch have revolutionized machine learning and data science. Bringing this open-source ethos to proteomics holds the potential to accelerate advancements in the field, creating tools that are not only robust but also accessible to a global community of researchers.
+
+Bugs and mistakes are inevitable in complex software, but collaborative scrutiny allows them to be addressed more efficiently. In proteomics, as in other scientific fields, the diverse expertise of the community enhances both the quality and the utility of open-source tools. Users who encounter issues or limitations often provide feedback, suggest solutions, or even contribute code to address the challenges, fostering continuous improvement. In our own work, users have uncovered bugs that we subsequently corrected, or asked questions about the underlying code that led to new features, fewer bugs, and more efficient algorithms.
+
+This feedback loop is unique to OSS, where the contributions from the community enhance the quality and precision of the software over time.  Compared to proprietary software, OSS can often move faster and defray development costs by enabling users to build and contribute the features they need, rather than hoping that the maintainers of the software are willing or able to add the features themselves. This dynamic frees developers from the burden of predicting and implementing every possible use case and shifts some of the innovation to the broader community. For users, OSS reduces reliance on software maintainers, allowing research to advance even in the absence of formal support.
+
+Without such transparency, computational research risks becoming a "black box" that stifles innovation rather than promoting it, hindering the growth of scientific knowledge.
 OSS can foster a culture of shared accountability, where code is not just released but continuously scrutinized and refined, driving the field forward in a collective effort toward scientific rigor.
 We have indeed observed this in our own projects: at the time of writing, quantms [38965444] and Mokapot [33596079] now have 12 and 13 contributors, respectively.
 
