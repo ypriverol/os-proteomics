@@ -25,7 +25,7 @@ Computational proteomics, along with algorithm and software development, faces s
   If one piece in this supply chain is not OSS, exceptions need to be handled and automation is harder or impossible.
   In sum, it creates a huge additional burden for the entire community downstream of the non-OSS software package, which on its own is a hidden cost.
 
-A solution to these challenges is offered by Open-source software (OSS) which is also aligned with the FAIR Principles (Findable, Accessible, Interoperable, Reusable), initially established for scientific data [26978244]. FAIR principles were expanded in 2022 for research software (FAIR4RS) to address the growing recognition of research software as a foundational research asset [36241754]. Following FAIR4RS principles empowers proteomics with OSS tools that are not only accessible but also foster community-driven development, rigorous validation, and transparent sharing of methodologies [].
+A solution to these challenges is offered by open-source software (OSS) which is also aligned with the FAIR Principles (Findable, Accessible, Interoperable, Reusable), initially established for scientific data [26978244]. FAIR principles were expanded in 2022 for research software (FAIR4RS) to address the growing recognition of research software as a foundational research asset [36241754]. Following FAIR4RS principles empowers proteomics with OSS tools that are not only accessible but also foster community-driven development, rigorous validation, and transparent sharing of methodologies [].
 OSS has demonstrated clear benefits in increasing the accessibility, usability, and visibility of scientific software [30212065].
 OSS makes reproducibility, traceability and auditability possible.
 With code freely available for inspection, modification, and distribution, OSS encourages collaboration and creates avenues for continuous improvement—factors that are critical in fields as data-intensive as proteomics.
@@ -38,9 +38,31 @@ We will also explore how other omics fields are dealing with OSS and FAIR softwa
 
 [ML: I have removed some contradictions from this section, but it seems somewhat redundant with the "Attributes of Open Source" section below -- perhaps the attributes should be moved here?]
 
-OSS (open-source software) refers to software that meets several criteria (https://opensource.org/osd): The source code — the instructions that define how the software functions — must be made accessible to anyone, and anyone must be allowed to be redistribute, modify, or create derived works of the software. Availability of the source code alone is not sufficient for the software to qualify as open-source, as different licenses can restrict use or modification of the software to different fields of endeavors (e.g., modification only for non-commercial use).
+### Attributes of an open source project
 
-Unlike "closed-source", "source-available", or "proprietary" software, where the code remains private, OSS provides transparency by design, which is essential for fostering trust, collaboration, and progress in science.
+~~The source code — the instructions that define how the software functions — must be made accessible to anyone, and anyone must be allowed to be redistribute, modify, or create derived works of the software. Availability of the source code alone is not sufficient for the software to qualify as open-source, as different licenses can restrict use or modification of the software to different fields of endeavors (e.g., modification only for non-commercial use).
+Unlike "closed-source", "source-available", or "proprietary" software, where the code remains private, OSS provides transparency by design, which is essential for fostering trust, collaboration, and progress in science.~~ 
+Given the many misconceptions and complexities surrounding open-source in proteomics, we aim to clarify for the entire community (users, developers, manuscript readers, and reviewers) what constitutes open-source. Open-source software specifically refers to software that meets several criteria (https://opensource.org/osd):
+
+- **Source Code Availability**: The source code - the instructions that define how software functions - is publicly accessible, allowing anyone to view, download, and examine the code’s details (https://opensource.org/osd).
+
+- **OSI-Approved License**: The software must use an Open Source Initiative-approved license, which specifies rights to freely use, modify, and distribute the software, regardless of its application or environment (https://opensource.org/licenses).
+
+- **Freedom to Modify and Distribute**: Open-source software, in contrast to source-available software, allows users not only to access the code but also to modify it and share these modifications, encouraging innovation and collaboration.
+
+- **Transparency and Community Trust**: With open-source, the code is transparent by design, allowing the community to understand, verify, and contribute to the project. This fosters trust and credibility, especially crucial in scientific fields.
+
+- **Collaborative Development**: Open-source projects are often maintained by communities or dedicated teams, and they welcome contributions, such as bug reports, enhancements, and new features, from a diverse group of users and developers.
+
+- **Long-term Reliability**: Because the code is publicly accessible, open-source projects are less dependent on single organizations or developers, promoting continuity and stability even if original contributors leave.
+
+- **No Restriction to Specific User Groups**: Unlike “free-for-academic-use” licenses, which restrict usage to academic settings, open-source licenses do not impose limitations on the types of users or institutions that can access or use the software.
+
+- ~~**Not Dependent on Platform**: Open-source projects aim to be platform-agnostic, allowing integration across various environments and reducing dependency on proprietary systems or architectures.~~
+
+- ~~**Not Necessarily Free of Cost**: Open-source software is “free” in terms of freedom, not necessarily in terms of price. Users might pay for support, hosting, or additional services, but they retain freedom in how they use and modify the software.~~
+
+[ML: I would remove the last two bullet points. These aren't necessary attributes]
 
 ### Misconceptions about open-source
 
@@ -60,30 +82,6 @@ In addition to the described misconceptions and complexity, many journals and so
 - **Alterations Post-Publication**: Software is deposited in GitHub as open-source during the submission of the manuscript, but after publication, software licenses in GitHub repositories are changed, or repositories are deleted or made private, all of which complicates efforts to ensure long-term accessibility.
 - **License Misuse or Ambiguity**: Some repositories may use inappropriate or ambiguous licenses, causing confusion about the terms of use, distribution, and modification (more details discussed in the section Licenses in proteomics software).
 - **Obscure Dependencies**: Software repositories may have dependencies that are not clearly documented, which may require closed-source or proprietary software. This can create barriers for other researchers attempting to run or build on the software, as they may not have access to necessary components or may need to purchase expensive licenses. Clear documentation of all dependencies along their licensing terms is essential to ensure transparency and reproducibility.
-
-### Attributes of an open source project
-
-Given the many misconceptions and complexities surrounding open-source in proteomics, we aim to clarify for the entire community (users, developers, manuscript readers, and reviewers) what constitutes open-source. An open-source project means:
-
-- **Source Code Availability**: The source code is publicly accessible, allowing anyone to view, download, and examine the code’s details (https://opensource.org/osd).
-
-- **OSI-Approved License**: The software must use an Open Source Initiative-approved license, which specifies rights to freely use, modify, and distribute the software, regardless of its application or environment (https://opensource.org/licenses).
-
-- **Freedom to Modify and Distribute**: Open-source software, in contrast to source-available software, allows users not only to access the code but also to modify it and share these modifications, encouraging innovation and collaboration.
-
-- **Transparency and Community Trust**: With open-source, the code is transparent by design, allowing the community to understand, verify, and contribute to the project. This fosters trust and credibility, especially crucial in scientific fields.
-
-- **Collaborative Development**: Open-source projects are often maintained by communities or dedicated teams, and they welcome contributions, such as bug reports, enhancements, and new features, from a diverse group of users and developers.
-
-- **Long-term Reliability**: Because the code is publicly accessible, open-source projects are less dependent on single organizations or developers, promoting continuity and stability even if original contributors leave.
-
-- **No Restriction to Specific User Groups**: Unlike “free-for-academic-use” licenses, which restrict usage to academic settings, open-source licenses do not impose limitations on the types of users or institutions that can access or use the software.
-
-- **Not Dependent on Platform**: Open-source projects aim to be platform-agnostic, allowing integration across various environments and reducing dependency on proprietary systems or architectures.
-
-- **Not Necessarily Free of Cost**: Open-source software is “free” in terms of freedom, not necessarily in terms of price. Users might pay for support, hosting, or additional services, but they retain freedom in how they use and modify the software.
-
-[ML: I would remove the last two bullet points. These aren't necessary attributes]
 
 ## Why open-source software is essential for scientific research
 
