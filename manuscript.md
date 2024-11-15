@@ -20,7 +20,7 @@ Computational proteomics, along with algorithm and software development, faces s
 - Custom licenses and restrictions on software distribution can further complicate the situation, making it difficult to share, modify, or redistribute software, and hindering the development of a collaborative and open-source ecosystem.
   Proteomics software is often distributed under restrictive licenses and tailored to specific platforms (e.g., operating systems, computer architectures), limiting its use across diverse environments and services. This restricts the field’s adaptability and hinders the integration of proteomics with other omics disciplines.
 
-- Complex workflows and high-throughput data analysis are currently relying on (unattended) software deployment. This is complicated on its own because it requires managing dependencies, configurations, and environments consistently across diverse systems and architecture without human intervention.
+- Complex workflows and high-throughput data analysis are currently relying on (unattended) software deployment [ML: what does this mean? What is "(unattended) software deployment"?]. This is complicated on its own because it requires managing dependencies, configurations, and environments consistently across diverse systems and architecture without human intervention.
   The community has tackled this challenge with CI/CD pipelines as, for example, described in 10.1101/gr.276963.122, but this relies on OSS and the permission to freely redistribute software along the entire dependency chain.
   If one piece in this supply chain is not OS, exceptions need to be handled and automatization is harder or impossible.
   In sum, it creates a huge additional burden for the entire community downstream of the non-OS software package, which on its own is a hidden cost.
@@ -36,10 +36,11 @@ We will also explore how other omics fields are dealing with OSS and FAIR softwa
 
 ## What does it mean for software to be "open source"?
 
-OSS (open-source software) refers to software where the source code—the core instructions that define how the software functions—is freely accessible to anyone (https://opensource.org/osd). In contrast, closed source means that the source code of the software is not published, and it is not shared with the public for anyone to look at or change.
+[ML: I have removed some contradictions from this section, but it seems somewhat redundant with the "Attributes of Open Source" section below]
 
-Unlike "closed-source" or "proprietary" software, where the code remains private, OSS provides transparency by design, which is essential for fostering trust, collaboration, and progress in science.
-However, the open- or closed-source label simply addresses code visibility; it is the software license that determines who can use, modify, or distribute the software and under what conditions.
+OSS (open-source software) refers to software that meets several criteria (https://opensource.org/osd): The source code — the instructions that define how the software functions — must be made accessible to anyone, and anyone must be allowed to be redistribute, modify, or create derived works of the software. Availability of the source code alone is not sufficient for the software to qualify as open-source, as different licenses can restrict use or modification of the software to different fields of endeavors (e.g., modification only for non-commercial use).
+
+Unlike "closed-source", "source-available", or "proprietary" software, where the code remains private, OSS provides transparency by design, which is essential for fostering trust, collaboration, and progress in science.
 
 ### Misconceptions about open source
 
@@ -85,7 +86,7 @@ Given the many misconceptions and complexities surrounding open-source in proteo
 
 ### Transparency promotes scientific rigor
 
-The scientific community increasingly recognizes that algorithms, while not software or tools themselves but rather the underlying steps and methodology, are becoming significant research outputs in their own right. Algorithms are no longer seen merely as tools but are valued as core research outputs, reflecting the critical steps and methodologies at the heart of scientific innovation. For example, in proteomics, the fragment-indexing approach introduced by the MSFragger algorithm [28394336] has recently been implemented in two different search engines: SAGE [37819886] and Comet [10.1101/2024.10.11.617953]. This shift highlights the importance of not only software as a means of implementation but also the reproducibility and reliability of computational methods that drive new discoveries. Both algorithms and their software implementations are now held to rigorous validation and reproducibility standards, similar to those for traditional experimental data.
+The scientific community increasingly recognizes that algorithms, while not software or tools themselves but rather the underlying steps and methodology, are becoming significant research outputs in their own right. Algorithms are no longer seen merely as tools but are valued as core research outputs, reflecting the critical steps and methodologies at the heart of scientific innovation. For example, in proteomics, the fragment-indexing approach introduced by the MSFragger algorithm [28394336] has recently been implemented in two different search engines: Sage [37819886] and Comet [10.1101/2024.10.11.617953]. This shift highlights the importance of not only software as a means of implementation but also the reproducibility and reliability of computational methods that drive new discoveries. Both algorithms and their software implementations are now held to rigorous validation and reproducibility standards, similar to those for traditional experimental data.
 
 Transparent computational methods open doors to innovation, enabling researchers to test hypotheses, refine methodologies, and build upon one another’s work with confidence. For instance, providing open-source implementations allows the scientific community to verify methods, adapt them to new challenges, and explore alternative approaches. Open-source code therefore becomes a powerful tool for disseminating knowledge, facilitating shared standards, and accelerating the pace of discovery. Consider a proteomics experiment: without details on sample preparation or instrument settings or the raw data, the final results lack reproducibility. Similarly, open code ensures that computational methods can be accurately understood, replicated, and extended across labs worldwide.
 
@@ -119,8 +120,7 @@ Additionally, academic incentives often prioritize novel software creation over 
 To create a more robust and impactful OSS ecosystem in proteomics, stronger incentives for community involvement and frameworks that support sustained collaboration are essential.
 With enhanced incentives, collaborative frameworks, and dedicated resources, the proteomics community can achieve a more sustainable, widely supported, and effective ecosystem of open-source tools.
 
-Apart from the engament needed from the community to foster the development of open-source software, proteomics could start thinking to create and sustain some of the core functionalities of the field in small libraries and tools that could be used by the entire community and full solutions.
-This is the case, for example, for search engines that are now widely used but multiple tools but also tools like MS2Rescore [35803561] (for rescoring peptide identifications), pyOpenMS [24420968] (for based proteomics functions) or spectrum_utils [31809021] (for spectral data manipulation).
+Apart from the engagement needed from the community to foster the development of open-source software, proteomics could create and sustain some of the core functionalities of the field in small libraries and tools that could be used by the entire community: for example tools like MS2Rescore [35803561] (for rescoring peptide identifications), pyOpenMS [24420968] (for Python-based proteomics functions) or spectrum_utils [31809021] (for spectral data manipulation).
 
 # The community can contribute to development
 
@@ -165,10 +165,11 @@ This underscores a commitment from funders to foster collaborative scientific ec
 [B: 7-9 is often not possible in our current funding system - we should make clear that the first bullet points are a must have and the last 3 are a goal]
 [M: A major problem is that there are very very few examples of this in proteomics ... there are a handful tops. I think this needs to be toned down a lot. This should be a goal but the funding agencies have to be supportive of this first. The issue is that the NIH doesn't want to fund open source software development and they definitely don't want to fund repositories.]
 [AB: I would include an item earlier (maybe after 4), with something like: Incorporate early user feedback. Develop a prototype and engage a select group of users as beta testers than can try the software and provide feedback to ensure its usefulness and effectiveness.]
+[ML: Maybe instead of "how to get started", frame this as "gold standard", or what world-class open-source projects aim for (in proteomics, or not). I think all of them are reasonable, but agree that 7-9 are more aspirational]
 
 ## Licenses in proteomics software
 
-Before we delve into the role of OSS in computational proteomics, we would like to highlight one of the fundamental aspects and challenges in the development of proteomics software: the use of software licenses.
+Before we delve into the role of OSS in computational proteomics [ML: this is after, not before the role of OSS], we would like to highlight one of the fundamental aspects and challenges in the development of proteomics software: the use of software licenses.
 These licenses often target commercialization, code reuse, but also distribution and citation.
 
 As the gold standard for proteomics software development, we recommend to use a standard OSS license (**Figure 1**) like Apache 2.0, MIT, BSD, LGPL, GPL, etc.; a list of them can be found at (https://opensource.org/licenses).
@@ -181,17 +182,24 @@ These established licenses all have a clear definition of what is allowed and wh
 Many proteomics code repositories do not have a license specified, in addition to several OSS licenses being used. Its important to note that without a specified license the software isn't open source. Without a specified license the software and contributions are exclusively owned by the authors and no one can use, copy, or distribute the contributions. Given the largest category of source code for proteomics tools have unspecified licenses suggests an misunderstanding of software licensing.
 The code to generate these data is available at https://gist.github.com/bittremieux/70905e5d9dcc829ae49aab49e85954af.
 [MacCoss: I personally think you should remove unspecified from the plot. Repos without a specificed license are not open source. Just like datasets without a specified license can't be used by others.]
+[ML: Agreed - change unspecified, other, and CC licenses to "source-available, or closed-source" (or "not open source"). They are not OSS licences]
 
 
-In addition, as the field is evolving, and software becomes more complex and has multiple components, different components could have a different license and the dependencies between them should be clearly stated.
+
+In addition, as the field is evolving, and software becomes more complex and has multiple components, different components could have different licenses and the dependencies between them should be clearly stated.
 It is therefore recommended to clearly state the dependencies that a piece of software might have and the licenses of each of them.
-This will help the user to understand the software, the developers to know what they can use, and the journal reviewers to understand the software and its implications.
-For example, if a software tool that performs PTM-site localization is distributable, but the software that produces the PTMs, peptide identification inputs, etc., is not, it could be misunderstood that the software is open-source, when in reality, all the main components that it relies on are not.
+~~This will help the user to understand the software, the developers to know what they can use, and the journal reviewers to understand the software and its implications.
+For example, if a software tool that performs PTM-site localization is distributable, but the software that produces the PTMs, peptide identification inputs, etc., is not, it could be misunderstood that the software is open-source, when in reality, all the main components that it relies on are not.~~ [ML: This doesn't make sense. The software is still open source, even if it only works with inputs from closed-source software
+I suggest removing this whole section in lieu of something along these lines:
+"Additionally, dependencies of the software package, and any associated licenses, should be clearly stated."
+].
+
 Full disclosure of such dependencies is necessary to ensure that the user is aware of this, such that the community, developers, and journal reviewers are able to understand this challenge.
 
 ## Strategies to commercialize OSS
 
 A piece of software being open-source does not necessarily mean that everyone can use it without financial cost. [B: that sentence could be misunderstood I think. MacCoss: I don't know what this sentence is trying to say. I think you are its trying to say that open source software costs money to maintain. However, by definition open source means that the source code is freely available and can be modified.]
+[ML: I think they are saying that software costs money to run.? I don't think the statement is necessary, since it is obviously true - regardless of the intended meaning, it is a very confusing line].
 Instead, OSS can be commercialized in a number of different ways depending on the owner's goals and principles.
 Here, we intend for commercialization to refer to any process by which OSS is monetized, regardless of whether it remains part of an academic lab, is developed by a company, or is spun-out into its own startup.
 In fact, we would argue that healthy OSS projects must be financially supported by methods such charitable means, grants, or commercialization, in order for the development of the project to be sustainable.
@@ -220,7 +228,7 @@ The SaaS commercialization model has become increasingly popular in recent times
 When using a SaaS model, the OSS project remains open-source, but commercialization occurs by building a platform around it.
 The platform then allows users to more easily use the OSS project.
 This model often includes a managed hardware or cloud infrastructure component, where users pay to interact with a web application to use the OSS tool, reducing the barrier to entry.
-In the bioinformatics space, NextFlow [28398311] is an open-source bioinformatics workflow engine that has been commercialized by Seqera Labs using the SaaS model. [please check if they are earning money or if they still rely on venture capital]
+In the bioinformatics space, NextFlow [28398311] is an open-source bioinformatics workflow engine that has been commercialized by Seqera Labs using the SaaS model. [please check if they are earning money or if they still rely on venture capital] [ML: why does it matter if they are earning money?]
 Their current Seqera Platform product provides an interface to launch, observe, and explore workflow executions with NextFlow, in addition to other features.
 
 **Open-core.**
@@ -251,6 +259,7 @@ Regardless, let us come together and commit to open science for a shared, sustai
 WEF is an employee of Talus Bioscience, a drug-discovery biotechnology company that develops and contributes to OSS and does not currently sell software.
 Additionally, Talus Bioscience has a collaborative research agreement with Bruker.
 T.S. is an officer in OpenMS Inc., a non-profit foundation that manages the international coordination of OpenMS development.
+MRL is an employee of Belharra Therapeutics, Inc., and an officer of Chaparral Labs, Inc., a company offering SaaS solutions for proteomics, in addition to commercial support for OSS software. 
 
 ### Authors
 
@@ -264,3 +273,4 @@ T.S. is an officer in OpenMS Inc., a non-profit foundation that manages the inte
 | Aivett Bilbao        | aivett.bilbao@pnnl.gov            | PNNL-EMSL                               |
 | Chengxin Dai         | chengxin2024@126.com              | Beijing Proteome Research Center        |
 | Daniel S. Katz       | d.katz@ieee.org                   | University of Illinois Urbana-Champaign |
+| Michael R. Lazear    | mlazear@belharratx.com            | Belharra Therapeutics                   |
