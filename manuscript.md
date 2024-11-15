@@ -99,7 +99,7 @@ Finally, open-source code allows researchers to apply and compare different impl
 ### Shared knowledge pushes the field forward
 
 Open-source software (OSS) fosters a collaborative ecosystem where researchers across institutions can freely contribute, refine, and extend tools, accelerating scientific progress.
-Unlike proprietary software that confines advancements to specific labs or companies, OSS allows researchers to build on each other’s work without duplicating efforts, promoting efficient resource use and transforming individual achievements into collective gains.
+Unlike proprietary software that confines advancements to specific labs or companies, OSS allows researchers to rapidly build on each other’s work without duplicating efforts, promoting efficient resource use and transforming individual achievements into collective gains.
 By democratizing access to high-quality tools, OSS enables scientists from resource-limited settings to leverage the same technology as those in well-funded institutions, fostering a diverse global community that drives innovation forward.
 
 Proteomics has greatly benefited from this open-source approach.
@@ -112,7 +112,7 @@ Despite their long history, projects like ProteoWizard and Skyline see few exter
 Many researchers opt to develop independent tools rather than contribute enhancements within Skyline, missing opportunities for broader collaboration.
 Skyline’s external tools framework, which lowers technical barriers to contributions, has helped but much of the development remains within the original labs.
 
-Community contributions in proteomics face barriers unique to the field.
+Community contributions in proteomics face barriers unique to the field. [ML: I don't think this is anything unique to the field.]
 Developing software for proteomics demands specialized technical skills that many labs lack, especially when resources are focused on biological research rather than software engineering.
 The need for continuous updates to accommodate evolving data formats and instruments also requires substantial resources.
 Additionally, academic incentives often prioritize novel software creation over contributions to existing projects, further deterring collaborative development.
@@ -128,7 +128,7 @@ Open-source software also plays a critical role in iterative refinement.
 Bugs and mistakes are inevitable in complex software, and these issues are often best addressed through collaborative scrutiny.
 In our own work, users have uncovered bugs that we subsequently corrected, improving the reliability and robustness of our tools.
 We have also experienced users asking questions about the underlying code, leading to new features and more efficient algorithms.
-This feedback loop is unique to OSS, where the contributions from the community enhance the quality and precision of the software over time.
+This feedback loop is unique to OSS, where the contributions from the community enhance the quality and precision of the software over time.  Compared to proprietary software, OSS can often move faster and defray development costs by enabling users to build and contribute the features they need, rather than hoping that the maintainers of the software are willing or able to add the features themselves.
 Without such transparency, computational research can become a "black box" that stifles innovation rather than promoting it, hindering the growth of scientific knowledge.
 OSS can foster a culture of shared accountability, where code is not just released but continuously scrutinized and refined, driving the field forward in a collective effort toward scientific rigor.
 We have indeed observed this in our own projects: at the time of writing, quantms [38965444] and Mokapot [33596079] now have 12 and 13 contributors, respectively.
