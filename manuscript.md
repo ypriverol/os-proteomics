@@ -161,6 +161,47 @@ Similarly, the Wellcome Trust in the United Kingdom mandates that all research o
 Many other funding agencies all over the world have similar open source guidelines and mandates.
 This underscores a commitment from funders to foster collaborative scientific ecosystems, democratizing access to essential research tools and enhancing reproducibility across disciplines.
 
+## Challenges of Maintaining Open-Source Scientific Software
+
+Open-source software (OSS) in computational proteomics offers significant benefits but also poses challenges, particularly around sustainability. 
+These challenges often deter long-term commitment, with some researchers transitioning to closed-source software after facing sustainability issues. 
+Below, we outline key barriers to maintaining OSS and propose strategies—both practical and aspirational—to help advance OSS in the field.
+
+### Financial Sustainability
+
+Maintaining an OSS project requires ongoing funding for updates, bug fixes, testing, and user support. However, funding agencies like the NIH often prioritize novelty over software maintenance, leaving many projects to become "abandonware" once the initial grants end.
+
+- **Problem**: Without consistent funding, OSS projects in proteomics lose momentum after the initial development phase.
+- **Potential Solutions**:
+  - **Dedicated Maintenance Grants**: Funding agencies should create grant mechanisms for software maintenance, such as the Chan-Zuckerberg Initiative’s "Essential Open Source Software for Science" grants, and expand these options to the NIH.
+  - **Commercialization Models**: OSS projects could explore commercialization, potentially leading to academic spin-offs or new revenue streams (read the section about commercialization strategies).
+
+### Misaligned Incentive Structures in Academia
+
+The academic incentive structure prioritizes publications and novelty, encouraging researchers to develop new software instead of maintaining existing tools. 
+Contributions to OSS, especially those owned by others, are undervalued and rarely recognized in tenure or promotion evaluations.
+
+- **Problem**: The "publish-or-perish" culture discourages OSS maintenance, as it doesn’t align with traditional academic metrics.
+- **Potential Solutions**:
+  - **Recognition for OSS Contributions**: Institutions and funding agencies should acknowledge OSS maintenance as valuable scholarly work, similar to publications, and include it in grant and tenure evaluations.
+  - **Community-driven Publications**: Journals should accept papers on software updates, offering academic recognition for maintenance work, as seen in the Journal of Proteome Research’s Software Tools and Resources issue.
+
+### The Challenge of Consistent Maintainers
+
+In academic settings, many OSS projects are led by students, postdocs, or temporary researchers who eventually leave for other opportunities, often in unrelated fields.
+This results in a lack of long-term maintainers, leading to project stagnation or abandonment.
+
+- **Problem**: The reliance on transient academic positions means OSS projects are vulnerable to disruptions as contributors move on.
+- **Potential Solutions**:
+  - **Governance Models**: Establishing community-driven governance structures, such as steering committees or core maintainer teams, can provide continuity even as individual contributors leave.
+    Notably, this kind of governance is likely only feasible for larger, well-established open-source projects.
+  - **Transition Plans**: Projects should develop clear transition plans, ensuring that new maintainers can seamlessly take over.
+    This could involve thorough documentation, onboarding guidelines, and mentoring new contributors.
+
+Addressing these challenges requires a multi-pronged approach, combining changes in funding structures, academic incentives, and community engagement.
+The scientific community, funding agencies, companies, and academic institutions must collaborate to ensure that OSS can continue to thrive.
+By addressing these challenges head-on, we can build a more sustainable and collaborative ecosystem for open-source scientific software, ultimately driving innovation and reproducibility in proteomics research.
+
 ## How to start a gold-standard OSS project in proteomics
 
 | Box 1. How to get started with OSS. The following steps provide a guideline that can foster a successful open-source project that grows in adoption, value, and contributions over time.                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -178,7 +219,8 @@ This underscores a commitment from funders to foster collaborative scientific ec
 | 8. **Build a community.** Create forums, mailing lists, or a Slack channel to facilitate communication and support for users and contributors. Promote the project within academic and industry circles, social media, or conferences. Collaborations with other researchers can boost credibility and attract users. Encourage diverse participation, whether from seasoned developers, scientists, or students, by being open to questions, feedback, and contributions of varying levels.                                                                                                     |
 | 9. **Ensure long-term maintenance and evolution.** Provide a roadmap that outlines planned features, updates, or long-term project goals. This helps maintainers and contributors stay aligned and gives users confidence in the project’s development. Foster a healthy, engaged community by recognizing contributors, hosting hackathons or sprints, and encouraging new ideas. Consider a governance model where a core group of maintainers or a steering committee manages long-term development, ensuring that the project's mission endures even as individual contributors come and go. |
 | 10. **Monitor and measure success.** Track metrics like repository stars, downloads, citations, or code contributions to gauge adoption and impact. Regularly collect user feedback and address concerns or feature requests to ensure the project stays relevant and useful to its audience.                                                                                                                                                                                                                                                                                                    |
-| 11: **Stable DOIs.** To address the challenge of license changes and code changes from public to private after publication; OSS projects should create permanent records on archival platforms like Zenodo, Figshare, or Software Heritage, which provide DOIs for long-term citation and access. These platforms integrate with GitHub for automated archival, ensuring enduring accessibility to the community.                                                                                                                                            
+| 11: **Stable DOIs.** To address the challenge of license changes and code changes from public to private after publication; OSS projects should create permanent records on archival platforms like Zenodo, Figshare, or Software Heritage, which provide DOIs for long-term citation and access. These platforms integrate with GitHub for automated archival, ensuring enduring accessibility to the community.
+
 
 ## Strategies to commercialize OSS
 
@@ -224,66 +266,14 @@ Such a strategy can also be used by academic labs looking to protect new feature
 
 The open-core model is quite common, and in proteomics it is used for ScaffoldDIA from Proteome Software: the open-source core of ScaffoldDIA is EncyclopeDIA [30510204]. 
 
-## Challenges of Maintaining Open-Source Scientific Software
-
-While open-source software (OSS) in computational proteomics offers substantial benefits to the community, it also presents significant challenges for developers, particularly regarding sustainability.
-These challenges often deter researchers from committing to long-term OSS projects despite recognizing their value.
-Indeed, there are cases where researchers have previously pursued OSS, but have migrated to close-source software after encountering the real challenges of sustainability.
-Below, we discuss the key barriers to maintaining OSS and propose potential strategies to address them.
-Please note that these are both a mixture of practical and aspirational suggestions that we hope propel the field toward OSS in the future.
-
-### Financial Sustainability
-
-Maintaining an OSS project requires ongoing financial resources for activities like updates, bug fixes, testing, and user support.
-However, funding agencies like the NIH rarely prioritize proposals that focus solely on maintaining or improving existing software.
-Traditional grant mechanisms are often biased towards novelty and may not adequately support the critical yet less glamorous work of software maintenance.
-
-- **Problem**: Without consistent funding, many OSS projects in proteomics become "abandonware" once the initial grant period ends or the original developers move on to other projects or new positions.
-- **Potential Solutions**:
-  - **Dedicated Maintenance Grants**: Funding agencies could establish grant mechanisms specifically designed for software maintenance and updates.
-    These could be short-term, renewable grants focused on improving documentation, addressing user feedback, or enhancing software stability.
-    A good starting example are the "Essential Open Source Software for Science" grants offered by the Chan-Zuckerberg Initiative. 
-    However, these types of maintainability grants must expand to the NIH and other funding agencies to be a viable source of long-term support for OSS in proteomics.
-  - **Commercialization Models**: OSS projects might explore commercialization options like we outlined above. Depending on the scope of the software and the possible customer base, this could also be an opportunity for a company to spin-out of an academic lab.
-
-### Misaligned Incentive Structures in Academia
-
-The current incentive structure in academia favors publications and novelty, which drives researchers to create new software rather than maintaining and improving existing tools.
-Contributing to OSS projects, especially those owned by others, is often undervalued and rarely acknowledged in academic evaluations for tenure or promotions.
-
-- **Problem**: This "publish-or-perish" culture disincentivizes researchers from investing time in OSS maintenance, as these efforts typically do not contribute to traditional academic metrics.
-- **Potential Solutions**:
-  - **Recognition for OSS Contributions**: Institutions and funding agencies should recognize OSS maintenance and contributions as valuable scholarly outputs, akin to publications.
-    This could include incorporating software citations in metrics for grant evaluations or tenure decisions.
-  - **Community-driven Publications**: Encourage journals to accept papers on significant updates to existing software, thereby providing academic recognition for maintenance work.
-    In our field, the Journal of Proteome Research provides an exceptional venue for this in the special issue for Software Tools and Resources.
-
-### The Challenge of Consistent Maintainers
-
-In academic settings, many OSS projects are led by students, postdocs, or temporary researchers who eventually leave for other opportunities, often in unrelated fields.
-This results in a lack of long-term maintainers, leading to project stagnation or abandonment.
-
-- **Problem**: The reliance on transient academic positions means OSS projects are vulnerable to disruptions as contributors move on.
-- **Potential Solutions**:
-  - **Governance Models**: Establishing community-driven governance structures, such as steering committees or core maintainer teams, can provide continuity even as individual contributors leave.
-    Notably, this kind of governance is likely only feasible for larger, well-established open-source projects.
-  - **Transition Plans**: Projects should develop clear transition plans, ensuring that new maintainers can seamlessly take over.
-    This could involve thorough documentation, onboarding guidelines, and mentoring new contributors.
-
-
-Addressing these challenges requires a multi-pronged approach, combining changes in funding structures, academic incentives, and community engagement.
-The scientific community, funding agencies, companies, and academic institutions must collaborate to ensure that OSS can continue to thrive.
-By addressing these challenges head-on, we can build a more sustainable and collaborative ecosystem for open-source scientific software, ultimately driving innovation and reproducibility in proteomics research.
 
 ## Concluding remarks
 
 As proteomics research increasingly relies upon computational tools, embracing open-source and FAIR principles is essential for ensuring transparency, reproducibility, and accessibility.
 We urge researchers, funding agencies, institutions, and companies to prioritize open-source and FAIR practices, especially in publicly funded work, to create a truly collaborative scientific ecosystem.
 By collectively advancing open-source software, the scientific community can build an inclusive, rigorous foundation that fosters innovation and extends the benefits of research to scientists and the public alike.
-As we venture into the future, we as a community should explore mechanisms to make OSS sustainable---for example, by creating a foundation for proteomics software to support the maintenance of OSS in our field.
+As we venture into the future, we as a community should explore mechanisms to make OSS sustainable-for example, by creating a foundation for proteomics software to support the maintenance of OSS in our field.
 Importantly, an emphasis on creating software that is scalable, easy to deploy, and integrates complex functionalities beneath an easy-to-navigate interface is paramount to ensure its widespread adoption and success [38438732]. Providing software that is accessible to end-users is a way to address the issues related to the negative perception of the quality of academic or OSS in mass spectrometry [29546988]. Additionally, we expect that AI-assisted software development will significantly improve the quality of proteomics OSS, by automating error detection, optimizing code performance, and enhancing feature integration, thereby increasing reliability and user satisfaction.
-
-[B: agreed, but, we also need to start paying for OSS. Who is paying for gitlab, dockerhub, nextcloud etc at the moment? If we as a community don't start to pay, such a foundation is useless.][M: a major problem was covered in this paper, https://pubs.acs.org/doi/10.1021/acs.jproteome.8b00015 ... most people don't trust open source and free software.]
 
 Regardless, let us come together and commit to open science for a shared, sustainable future in our exploration of the proteome.
 
