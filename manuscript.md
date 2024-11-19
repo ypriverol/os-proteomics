@@ -151,6 +151,19 @@ Without such transparency, computational research risks becoming a "black box" t
 OSS can foster a culture of shared accountability, where code is not just released but continuously scrutinized and refined, driving the field forward in a collective effort toward scientific rigor.
 We have indeed observed this in our own projects: at the time of writing, quantms [38965444] and Mokapot [33596079] now have 12 and 13 contributors, respectively.
 
+## Open source and ML/AI models in proteomics
+
+Machine learning and deep learning are increasingly used in proteomics, with examples like the MS2 prediction model MS2PIP [37140039] and the peptide de novo sequencing model Casanovo [39080256]. Many deep learning-based proteomics tools enhance reproducibility by clearly reporting source code, training parameters, and other details. While closed-source tools have contributed to research, their models may carry bias, and their potential usefulness can be hard to assess when code and models are not accessible. A more contentious issue arises when closed-source or commercial models are trained on publicly shared community datasets, often under open-source licenses.
+
+Open-source software has proven its value by removing barriers to learning, sharing, and improving systems. For AI in proteomics, society needs similar freedoms: autonomy, transparency, ease of reuse, and collaborative improvement. The Open Source Initiative's Open Source AI Definition (OSAID) outlines these freedoms:
+
+- Use the system for any purpose.
+- Study how the system works and inspect its components.
+- Modify the system, including changing its output.
+- Share the system, with or without modifications, for any purpose.
+
+- AI and machine learning are more than software—they encompass data, configurations, documentation, and new artifacts like model weights and biases. Open source should apply to the entire system, including models, parameters, and structural elements. However, it is unclear what mechanisms or licenses ensure that these models, particularly their parameters, are freely available for use, research, modification, and sharing. We recommend clear assertions accompanying parameter distribution to ensure they remain freely accessible.
+
 ## Increasing emphasis on open science and open source by funding agencies
 
 As open science gains prominence, major funding agencies worldwide are implementing mandates to ensure that software developed with public funds is openly accessible.
@@ -263,7 +276,6 @@ Some variants of this model use a time delay for new features, where paying user
 Practically, the implementation of this strategy often involves the creation of a private, upstream fork of the OSS code repository.
 New features are then added to the private fork and synced to the OSS version at a later date.
 Such a strategy can also be used by academic labs looking to protect new features while preparing for publication and until a manuscript is accepted. Although we advocate for developing those features in the open, we recognize that there are instances where this is not practical. For example, when a junior researcher is publishing a novel algorithm, they may want to avoid the risk of having their work preempted by others. Similarly, collaborators may request that the software be kept private to prevent other researchers from using it and publishing their findings first. While we believe that these situations are rare in the proteomics community, they could lead to the original researchers losing recognition and credit for their work.
-
 The open-core model is quite common, and in proteomics it is used for ScaffoldDIA from Proteome Software: the open-source core of ScaffoldDIA is EncyclopeDIA [30510204]. 
 
 
@@ -274,7 +286,6 @@ We urge researchers, funding agencies, institutions, and companies to prioritize
 By collectively advancing open-source software, the scientific community can build an inclusive, rigorous foundation that fosters innovation and extends the benefits of research to scientists and the public alike.
 As we venture into the future, we as a community should explore mechanisms to make OSS sustainable-for example, by creating a foundation for proteomics software to support the maintenance of OSS in our field.
 Importantly, an emphasis on creating software that is scalable, easy to deploy, and integrates complex functionalities beneath an easy-to-navigate interface is paramount to ensure its widespread adoption and success [38438732]. Providing software that is accessible to end-users is a way to address the issues related to the negative perception of the quality of academic or OSS in mass spectrometry [29546988]. Additionally, we expect that AI-assisted software development will significantly improve the quality of proteomics OSS, by automating error detection, optimizing code performance, and enhancing feature integration, thereby increasing reliability and user satisfaction.
-
 Regardless, let us come together and commit to open science for a shared, sustainable future in our exploration of the proteome.
 
 ## Conflicts of interest
