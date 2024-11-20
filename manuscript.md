@@ -12,11 +12,11 @@ Together, these advances underscore how proteomics software has transformed into
 Computational proteomics, along with algorithm and software development, faces several key challenges common to other omics fields:
 
 - The increasing complexity and size of data acquired by mass spectrometers, the complex sequence of steps, including spectral processing, statistical analysis, and biological interpretation, along with the need to manage algorithmic details and parameter settings, all contribute to making software development in proteomics a complex and demanding endeavor.
-
+  
+- Although most software tools are described in publications, the absence of open-source code, comprehensive documentation, and version control often  impedes reproducibility and reuse. This lack of transparency challenges researchers from extending existing algorithms and adapting software to keep pace with rapidly advancing instrumentation and acquisition methods. This is especially important when there are big shifts like the rapid adoption of data-independant acquisition over data-dependant acquisition.
+  
 - Ensuring reproducibility is a challenge due to the limited access to detailed algorithmic information, which hinders validation and extension of methods.
 
-- Although most software tools are described in publications, the absence of open-source code, comprehensive documentation, and version control often impedes reproducibility and reuse.
-  This lack of accessibility also limits opportunities for researchers and developers to contribute effectively to advancing proteomics software.
 - Custom licenses and restrictions on software distribution can further complicate the situation, making it difficult to share, modify, or redistribute software, and hindering the development of a collaborative and open—source ecosystem.
   Proteomics software is often distributed under restrictive licenses and tailored to specific platforms (e.g., operating systems, computer architectures), limiting its use across diverse environments and services. This restricts the field’s adaptability and hinders the integration of proteomics with other omics disciplines.
 
@@ -104,7 +104,7 @@ It is therefore recommended to clearly state the dependencies that a piece of so
 
 The scientific community increasingly recognizes that algorithms, while not software or tools themselves but rather the underlying steps and methodology, are becoming significant research outputs in their own right. Algorithms are no longer seen merely as tools but are valued as core research outputs, reflecting the critical steps and methodologies at the heart of scientific innovation. For example, in proteomics, the fragment—indexing approach introduced by the MSFragger algorithm [28394336] has recently been implemented in two different search engines: Sage [37819886] and Comet [10.1101/2024.10.11.617953]. This shift highlights the importance of not only software as a means of implementation but also the reproducibility and reliability of computational methods that drive new discoveries. Both algorithms and their software implementations are now held to rigorous validation and reproducibility standards, similar to those for traditional experimental data and methodology.
 
-Transparent computational methods open doors to innovation, enabling researchers to test hypotheses, refine methodologies, and build upon one another’s work with confidence. For instance, providing open—source implementations allows the scientific community to verify methods, adapt them to new challenges, and explore alternative approaches. Open—source code therefore becomes a powerful tool for disseminating knowledge, facilitating shared standards, and accelerating the pace of discovery. Consider a proteomics experiment: without details on sample preparation or instrument settings or the raw data, the final results lack reproducibility. Similarly, open—source code ensures that computational methods can be accurately understood, replicated, and extended across labs worldwide.
+Transparent computational methods open doors to innovation, enabling researchers to test hypotheses, refine methodologies, and build upon one another’s work with confidence. For instance, providing open—source implementations allows the scientific community to verify methods, adapt them to new challenges, and explore alternative approaches. Consider a proteomics experiment: without details on sample preparation or instrument settings or the raw data, the final results lack reproducibility. Similarly, open—source code ensures that computational methods can be accurately understood, replicated, and extended across labs worldwide. This transparency is particularly relevant for core proteomics workflows - as demonstrated by alphaDIA [https://doi.org/10.1101/2024.05.28.596182] — where understanding the underlying algorithms of protein search engines directly impacts data interpretation and research outcomes.
 
 When algorithms and models are shared as open—source software, they inherently uphold the FAIR principles applied to scientific data. This level of openness strengthens scientific rigor, enabling others to examine the code, replicate findings, and contribute improvements. A transparent approach to computational research, through openly available code, fosters a collaborative environment where the community can validate results and improve tools, ultimately building trust in computational methodologies.
 
@@ -116,7 +116,7 @@ Finally, open—source code allows researchers to apply and compare different im
 
 Open—source software (OSS) fosters a collaborative ecosystem where researchers across institutions can freely contribute, refine, and extend tools, accelerating scientific progress.
 Unlike proprietary software that confines advancements to specific labs or companies, OSS allows researchers to rapidly build on each other’s work without duplicating efforts, promoting efficient resource use and transforming individual achievements into collective gains.
-By democratizing access to high—quality tools, OSS enables scientists from resource—limited settings to leverage the same technology as those in well—funded institutions, fostering a diverse global community that drives innovation forward.
+This is particularly vital in proteomics, where bioinformatics is integral to every workflow, and progress depends on the synergy between wet-lab experimentation and computational innovation. Exdending and building on top of existing algorithms is crucial for scientific progress.
 
 Proteomics has greatly benefited from this open—source approach.
 Projects like ProteoWizard [18606607,23051804], with tools such as Skyline [20147306] and msConvert [28188540], exemplify OSS’s impact.
@@ -308,3 +308,4 @@ MRL is an employee of Belharra Therapeutics, Inc., and an officer of Chaparral L
 | Chengxin Dai         | chengxin2024@126.com              | Beijing Proteome Research Center        |
 | Daniel S. Katz       | d.katz@ieee.org                   | University of Illinois Urbana—Champaign |
 | Michael R. Lazear    | mlazear@belharratx.com            | Belharra Therapeutics                   |
+| Georg Wallmann       | wallmann@biochem.mpg.de           | Max Planck Institute of Biochemistry    |
