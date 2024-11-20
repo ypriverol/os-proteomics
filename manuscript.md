@@ -153,7 +153,7 @@ We have indeed observed this in our own projects: at the time of writing, quantm
 
 ## Open source and ML/AI models in proteomics
 
-Machine learning and deep learning are increasingly used in proteomics, with examples like the MS2 prediction model MS2PIP [37140039] and the peptide de novo sequencing model Casanovo [39080256]. Many deep learning—based proteomics tools enhance reproducibility by clearly reporting source code, training parameters, and other details. While closed—source tools have contributed to research, their models may carry bias, and their potential usefulness can be hard to assess when code and models are not accessible. A more contentious issue arises when closed—source or commercial models are trained on publicly shared community datasets, often under open—source licenses.
+Machine learning and deep learning are increasingly used in proteomics, with examples like the MS2 prediction model MS2PIP [37140039] and the peptide _de novo_ sequencing models Casanovo [39080256] and InstaNovo [https://www.biorxiv.org/content/10.1101/2023.08.30.555055v3]. Many deep learning—based proteomics tools enhance reproducibility by clearly reporting source code, training parameters, and other details. While closed—source tools have contributed to research, their models may carry bias, and their potential usefulness can be hard to assess when code and models are not accessible. A more contentious issue arises when closed—source or commercial models are trained on publicly shared community datasets, often under open—source licenses.
 
 Open—source software has proven its value by removing barriers to learning, sharing, and improving systems. For AI in proteomics, society needs similar freedoms: autonomy, transparency, ease of reuse, and collaborative improvement. The Open Source Initiative's Open Source AI Definition (OSAID) outlines these freedoms:
 
@@ -294,6 +294,7 @@ WEF is an employee of Talus Bioscience, a drug—discovery biotechnology company
 Additionally, Talus Bioscience has a collaborative research agreement with Bruker.
 T.S. is an officer in OpenMS Inc., a non—profit foundation that manages the international coordination of OpenMS development.
 MRL is an employee of Belharra Therapeutics, Inc., and an officer of Chaparral Labs, Inc., a company offering SaaS solutions for proteomics, in addition to commercial support for OSS software. 
+JVG is an employee of InstaDeep Ltd.
 
 ### Authors
 
@@ -309,3 +310,4 @@ MRL is an employee of Belharra Therapeutics, Inc., and an officer of Chaparral L
 | Daniel S. Katz       | d.katz@ieee.org                   | University of Illinois Urbana—Champaign |
 | Michael R. Lazear    | mlazear@belharratx.com            | Belharra Therapeutics                   |
 | Georg Wallmann       | wallmann@biochem.mpg.de           | Max Planck Institute of Biochemistry    |
+| Jeroen Van Goey      | j.vangoey@instadeep.com           | InstaDeep                               |
