@@ -295,6 +295,7 @@ Additionally, Talus Bioscience has a collaborative research agreement with Bruke
 T.S. is an officer in OpenMS Inc., a non—profit foundation that manages the international coordination of OpenMS development.
 MRL is an employee of Belharra Therapeutics, Inc., and an officer of Chaparral Labs, Inc., a company offering SaaS solutions for proteomics, in addition to commercial support for OSS software. 
 JVG is an employee of InstaDeep Ltd.
+The MacCoss Lab at the University of Washington receives funding from Agilent, Bruker, Sciex, Shimadzu, Thermo Fisher Scientific, and Waters to support the development of Skyline, an open source software tool for quantitative proteomics. MJM is a paid consultant for Thermo Fisher Scientific.
 
 ### Authors
 
