@@ -309,5 +309,6 @@ JVG is an employee of InstaDeep Ltd.
 | Chengxin Dai         | chengxin2024@126.com              | Beijing Proteome Research Center        |
 | Daniel S. Katz       | d.katz@ieee.org                   | University of Illinois Urbana—Champaign |
 | Michael R. Lazear    | mlazear@belharratx.com            | Belharra Therapeutics                   |
+| Michael J. MacCoss   | maccoss@uw.edu       | Department of Genome Sciences, University of Washington 
 | Georg Wallmann       | wallmann@biochem.mpg.de           | Max Planck Institute of Biochemistry    |
 | Jeroen Van Goey      | j.vangoey@instadeep.com           | InstaDeep                               |
