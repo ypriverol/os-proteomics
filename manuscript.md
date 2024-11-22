@@ -84,16 +84,19 @@ In addition to the described misconceptions and complexity, many journals and so
 
 We want to emphasize a fundamental aspect and challenge in proteomics software development: the choice of software licenses. Licenses serve as the foundation for defining key aspects of software, including commercialization, code reuse, distribution, and proper citation.
 
-As the gold standard for proteomics software development, we recommend to use a standard OSS license (**Figure 1**) like Apache 2.0, MIT, BSD, LGPL, GPL, etc.; a list of them can be found at (https://opensource.org/licenses).
+As the gold standard for proteomics software development, we recommend to use a standard OSS license like Apache 2.0, MIT, BSD, LGPL, GPL, etc.; a list of them can be found at (https://opensource.org/licenses).
 These licenses are well known, are in use across many fields, and are well understood by the community.
 Additionally, they are compatible with the FAIR principles and the Open Source Initiative (OSI) guidelines [36241754].
 These established licenses all have a clear definition of what is allowed and what is not, and how the software can be distributed, reused, and cited.
 
+Many proteomics code repositories do not have a software license specified, in addition to several OSS and non-OSS licenses being used (**Figure 1**).
+It is important to note that without a specified license the software is not open source, as in this case the software and contributions are exclusively owned by the authors, and no one can use, copy, or distribute the contributions.
+Given the largest category of source code for proteomics tools have unspecified licenses suggests a misunderstanding of software licensing.
+
 ![jpr_oss_license](fig/jpr_oss_license.png)
-**Figure 1.** Open source software licenses in use in proteomics. Scientific papers published in the _Journal of Proteome Research_ that include a GitHub URL in their abstract were automatically retrieved from PubMed and information on the software license of the corresponding GitHub repository was retrieved through the GitHub API.
-Many proteomics code repositories do not have a license specified (**Figure 1**), in addition to several OSS licenses being used. It's important to note that without a specified license the software isn't open source. Without a specified license the software and contributions are exclusively owned by the authors, and no one can use, copy, or distribute the contributions. Given the largest category of source code for proteomics tools have unspecified licenses suggests a misunderstanding of software licensing.
+**Figure 1.** Software licenses in use in proteomics.
+Scientific papers published in the _Journal of Proteome Research_ that include a GitHub URL in their abstract were automatically retrieved from PubMed and information on the software license of the corresponding GitHub repository was retrieved through the GitHub API.
 The code to generate these data is available at https://gist.github.com/bittremieux/70905e5d9dcc829ae49aab49e85954af.
-[ML: Agreed — change unspecified, other, and CC licenses to "source—available, or closed—source" (or "not open—source"). They are not OSS licences]
 
 In addition, as the field is evolving, and software becomes more complex and has multiple components, different components could have different licenses and the dependencies between them should be clearly stated.
 It is therefore recommended to clearly state the dependencies that a piece of software might have and the licenses of each of them. Full disclosure of such dependencies is necessary to ensure that the user is aware of this, such that the community, developers, and journal reviewers are able to understand this challenge.
