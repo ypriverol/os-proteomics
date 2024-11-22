@@ -149,7 +149,7 @@ This feedback loop is unique to OSS, where the contributions from the community 
 
 Without such transparency, computational research risks becoming a "black box" that stifles innovation rather than promoting it, hindering the growth of scientific knowledge.
 OSS can foster a culture of shared accountability, where code is not just released but continuously scrutinized and refined, driving the field forward in a collective effort toward scientific rigor.
-We have indeed observed this in our own projects: at the time of writing, quantms [38965444] and Mokapot [33596079] now have 12 and 13 contributors, respectively.
+We have indeed observed this in our own projects: at the time of writing, quantms [38965444] and mokapot [33596079] now have 12 and 13 contributors, respectively.
 
 ## Open source and ML/AI models in proteomics
 
@@ -313,3 +313,4 @@ The MacCoss Lab at the University of Washington receives funding from Agilent, B
 | Michael J. MacCoss   | maccoss@uw.edu       | Department of Genome Sciences, University of Washington 
 | Georg Wallmann       | wallmann@biochem.mpg.de           | Max Planck Institute of Biochemistry    |
 | Jeroen Van Goey      | j.vangoey@instadeep.com           | InstaDeep                               |
+| Jimmy K. Eng         | engj@uw.edu                       | University of Washington                |
