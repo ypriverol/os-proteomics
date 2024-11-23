@@ -6,7 +6,7 @@ Research software is essential to modern science, with the majority of scientist
 This reliance on software is equally crucial in proteomics, where researchers depend on a range of tools and algorithms for every step, from mass spectrometer configuration and data acquisition, to the subsequent stages of processing, analysis, and interpretation [23467006, 34906327].
 
 Since the original publication of the first peptide identification tool, SEQUEST [24226387], proteomics software has evolved into a sophisticated ecosystem encompassing multiple stages of data processing, advanced predictive models, and robust computational frameworks.
-There are numerous examples of open—source software tools developed and used by the proteomics community. These include tools like Percolator [17952086] which is used to improve peptide and protein identification using machine learning, Prosit [31133760] which applies deep learning to predict fragment ion intensities, aiding in more accurate spectra matching, and Proteowizard [23051804] that has been providing shared libraries and tools for data access. Platforms like GalaxyP [29092937], or quantms [38965444] facilitate accessible, reproducible analyses through high—performance computing (HPC) and distributed workflows, supporting researchers in handling large datasets and complex analyses.
+Numerous examples of open—source software tools are developed and used by the proteomics community. These include tools like Percolator [17952086] which is used to improve peptide and protein identification using machine learning, Prosit [31133760] which applies deep learning to predict fragment ion intensities, aiding in more accurate spectra matching, and Proteowizard [23051804] that has been providing shared libraries and tools for data access. Platforms like GalaxyP [29092937], or quantms [38965444] facilitate accessible, reproducible analyses through high—performance computing (HPC) and distributed workflows, supporting researchers in handling large datasets and complex analyses.
 Together, these advances underscore how proteomics software has transformed into a multidisciplinary field, in a complex ecosystem of algorithms, models, and software tools requiring sophisticated computational and algorithmic expertise.
 
 Computational proteomics, along with algorithm and software development, faces several key challenges common to other omics fields:
@@ -29,7 +29,7 @@ Computational proteomics, along with algorithm and software development, faces s
 
 - Closed—source, platform—specific software has caused lock—in effects, restricting users to specific tools and hindering innovation. 
 Until recently, major instrument vendors lacked open—source, cross—platform libraries for data access, limiting data reuse and algorithm development. 
-Thermo Fisher's RawFileReader library marks progress, enabling tools like ThermoRawFileParser [31755270] and PRIDE Archive USI [39494541,34183830]. This idea has been recently extended for Bruker timsTOF data with the library timsrust (https://github.com/MannLabs/timsrust/), which is open—source and used by Sage.
+Thermo Fisher's RawFileReader library marks progress, enabling tools like ThermoRawFileParser [31755270] and PRIDE Archive USI [39494541,34183830]. This idea has been recently extended for Bruker timsTOF data with the timsrust library (https://github.com/MannLabs/timsrust/), which is open—source and already used by tools like Sage.
 
 A solution to these challenges is offered by open—source software (OSS) which is also aligned with the FAIR Principles (Findable, Accessible, Interoperable, Reusable), initially established for scientific data [26978244]. FAIR principles were expanded in 2022 for research software (FAIR4RS) to address the growing recognition of research software as a foundational research asset [36241754]. Following FAIR4RS principles empowers proteomics with OSS tools that are not only accessible but also foster community—driven development, rigorous validation, and transparent sharing of methodologies [37768885, 36241754].
 OSS has demonstrated clear benefits in increasing the accessibility, usability, and visibility of scientific software [30212065].
@@ -39,6 +39,7 @@ With code freely available for inspection, modification, and distribution, OSS e
 In this manuscript, we aim to explore the role of OSS in computational proteomics and its implications for the development of FAIR research software.
 We will discuss the benefits and challenges of OSS in proteomics, the role of OSS in the development of FAIR research software, and the importance of distribution, licensing, and citation of software in computational proteomics.
 We will also explore how other omics fields are dealing with OSS and FAIR software, and how these experiences can inform the development of proteomics software.
+Our goal is to present a vision for a future where OSS and FAIR software is encouraged and supported in the proteomics community.
 
 ## What does it mean for software to be "open—source"?
 
@@ -293,7 +294,7 @@ Regardless, let us come together and commit to open science for a shared, sustai
 
 ## Conflicts of interest
 
-WEF is an employee of Talus Bioscience, a drug—discovery biotechnology company that develops and contributes to OSS and does not currently sell software.
+WEF is an employee of Talus Bioscience, Inc, a drug—discovery biotechnology company that develops and contributes to OSS and does not currently sell software.
 Additionally, Talus Bioscience has a collaborative research agreement with Bruker.
 T.S. is an officer in OpenMS Inc., a non—profit foundation that manages the international coordination of OpenMS development.
 MRL is an employee of Belharra Therapeutics, Inc., and an officer of Chaparral Labs, Inc., a company offering SaaS solutions for proteomics, in addition to commercial support for OSS software. 
