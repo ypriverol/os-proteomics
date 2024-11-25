@@ -306,17 +306,17 @@ The MacCoss Lab at the University of Washington receives funding from Agilent, B
 
 | Name                 | Email                             | Affiliation                             | ORCID |
 | -------------------- | --------------------------------- | --------------------------------------- |-------|
-| Yasset Perez—Riverol | yperez@ebi.ac.uk                  | EMBL—EBI                                |
-| William E. Fondrie   | wfondrie@talus.bio                | Talus Bioscience                        |
-| Timo Sachsenberg     | timo.sachsenberg@uni—tuebingen.de | University of Tübingen                  |
-| Robbin Bouwmeester   | robbin.bouwmeester@ugent.be       | VIB—UGent                               |
-| Wout Bittremieux     | wout.bittremieux@uantwerpen.be    | University of Antwerp                   |
-| Aivett Bilbao        | aivett.bilbao@pnnl.gov            | PNNL—EMSL                               |
-| Chengxin Dai         | chengxin2024@126.com              | Beijing Proteome Research Center        |
-| Daniel S. Katz       | d.katz@ieee.org                   | University of Illinois Urbana—Champaign |
+| Yasset Perez—Riverol | yperez@ebi.ac.uk                  | EMBL—EBI                                | 0000-0001-6579-6941 |
+| William E. Fondrie   | wfondrie@talus.bio                | Talus Bioscience                        | 0000-0002-1554-3716 |
+| Timo Sachsenberg     | timo.sachsenberg@uni—tuebingen.de | University of Tübingen                  | 0000-0002-2833-6070 |
+| Robbin Bouwmeester   | robbin.bouwmeester@ugent.be       | VIB—UGent                               | 0000-0001-6807-7029 |
+| Wout Bittremieux     | wout.bittremieux@uantwerpen.be    | University of Antwerp                   | 0000-0002-3105-1359 |
+| Aivett Bilbao        | aivett.bilbao@pnnl.gov            | PNNL—EMSL                               | 0000-0003-2985-8249 |
+| Chengxin Dai         | chengxin2024@126.com              | Beijing Proteome Research Center        | 0000-0001-6943-5211 |
+| Daniel S. Katz       | d.katz@ieee.org                   | University of Illinois Urbana—Champaign | 0000-0001-5934-7525 | 
 | Lukas Käll           | lukas.kall@scilifelab.se          | KTH—Royal Institute of technology       | 0000-0001-5689-9797 |
-| Michael R. Lazear    | mlazear@belharratx.com            | Belharra Therapeutics                   |
-| Michael J. MacCoss   | maccoss@uw.edu       | Department of Genome Sciences, University of Washington 
-| Georg Wallmann       | wallmann@biochem.mpg.de           | Max Planck Institute of Biochemistry    |
-| Jeroen Van Goey      | j.vangoey@instadeep.com           | InstaDeep                               |
-| Jimmy K. Eng         | engj@uw.edu                       | University of Washington                |
+| Michael R. Lazear    | mlazear@belharratx.com            | Belharra Therapeutics                   | 0000-0001-5313-4262 |
+| Michael J. MacCoss   | maccoss@uw.edu       | Department of Genome Sciences, University of Washington | 0000-0003-1853-0256 |
+| Georg Wallmann       | wallmann@biochem.mpg.de           | Max Planck Institute of Biochemistry    | 0000-0003-4749-3730 |
+| Jeroen Van Goey      | j.vangoey@instadeep.com           | InstaDeep                               | 0000-0003-4480-5567 |
+| Jimmy K. Eng         | engj@uw.edu                       | University of Washington                | 0000-0001-6352-6737 |
