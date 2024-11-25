@@ -308,7 +308,7 @@ The MacCoss Lab at the University of Washington receives funding from Agilent, B
 | -------------------- | --------------------------------- | --------------------------------------- |-------|
 | Yasset Perez—Riverol | yperez@ebi.ac.uk                  | EMBL—EBI                                | 0000-0001-6579-6941 |
 | William E. Fondrie   | wfondrie@talus.bio                | Talus Bioscience                        | 0000-0002-1554-3716 |
-| Timo Sachsenberg     | timo.sachsenberg@uni—tuebingen.de | University of Tübingen                  | 0000-0002-2833-6070 |
+| Timo Sachsenberg     | timo.sachsenberg@uni-tuebingen.de | University of Tübingen                  | 0000-0002-2833-6070 |
 | Robbin Bouwmeester   | robbin.bouwmeester@ugent.be       | VIB—UGent                               | 0000-0001-6807-7029 |
 | Wout Bittremieux     | wout.bittremieux@uantwerpen.be    | University of Antwerp                   | 0000-0002-3105-1359 |
 | Aivett Bilbao        | aivett.bilbao@pnnl.gov            | PNNL—EMSL                               | 0000-0003-2985-8249 |
