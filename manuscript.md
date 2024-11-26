@@ -240,6 +240,25 @@ By addressing these challenges head-on, we can build a more sustainable and coll
 | 10. **Monitor and measure success.** Track metrics like repository stars, downloads, citations, or code contributions to gauge adoption and impact. Regularly collect user feedback and address concerns or feature requests to ensure the project stays relevant and useful to its audience.                                                                                                                                                                                                                                                                                                    |
 | 11: **Stable DOIs.** To address the challenge of license changes and code changes from public to private after publication; OSS projects should create permanent records on archival platforms like Zenodo, Figshare, or Software Heritage, which provide DOIs for long-term citation and access. These platforms integrate with GitHub for automated archival, ensuring enduring accessibility to the community.
 
+## Creation of Sustainable, Open-Source Software in an Academic Setting
+
+A primary purpose of the academic laboratory is the training of graduate and post-doctoral students. These positions are by their nature, of limited duration. The creation and development of software tools can be an ideal mechanism for creating a deep understanding of the concepts and best practice of proteomics. However, tools created during training can languish following the graduation and departure of the student unless there is a considered and established plan for sustainability in place.
+
+We have established and maintained a procedure for sustainable software using the following established practices. 
+
+| Box 2. One working approach to sustainable software development in an academic setting.
+|----------------------------------------------------------------------------------------------------------------------------|
+|1.	All students create code in the same language.
+|2.	The language used by the lab should operate across major platforms (Windows, Linux and MacOS).
+|3.	All new code must make maximal use of existing code for efficiency. 
+|4.	Any new tools that are created by students or staff are incorporated into that code base, if possible, rather than downstream applications, so that they can be made use of in many projects.
+|5.	All adaptations of existing code or newly created code must be covered by unit tests, that become a permanent part of the code base.
+|6.	All new code must be reviewed and approved by three people.
+|7.	All code must pass nightly build tests prior to public release.
+|8.	New applications should be extensions of existing applications whenever possible.
+
+The rationale for these rules is as follows. Choosing a single language for the laboratory means that all students will be well versed and deeply knowledgeable in that language. This enables an easy understanding of existing code and the ability to understand the code written by other contributors. The re-use of an established code base eventually results in robust, reliable and bug-free operation. Moreover, all contributors become extremely conversant with the individual capabilities and their straightforward and facile integration into new tools. Student contributions are guided by the consensus of the group, being incorporated into our codebase where they make the most sense and with an eye toward their future use. The requirement for unit test coverage means that new code functions as expected and maintains the functionality of existing functions. The requirement for three reviews means that all code created in the lab is well understood by many other lab members. Therefore, when a student leaves the lab, there are many individuals still around that understand all that student’s code and can maintain it moving forward. The requirement that students extend projects with new functionality rather than create monolithic software provides an avenue to re-use established code with proven reliability, limiting potential bugs only to the new portions of code. The effect of some code changes cannot be predicted. Therefore, the use of nightly build tests, where many code operations are evaluated with large datasets enable the team to find unexpected changes to the results or operation time. A key ancillary benefit of maximizing code re-use and minimizing new monolithic applications is the great reduction in the amount of code that needs maintenance over the long term. Code maintenance can require a significant investment of capital and human resources. Therefore, for the academic lab, a concerted effort to reduce the need for both of those precious resources is vital.
+
 ## Strategies to commercialize OSS
 
 A piece of software being open-source does not necessarily mean that it doesn't cost to be maintained, run it and developed. Because of this, strategies to commercialize OSS have been developed to ensure that the software can be maintained and developed in the long term.
@@ -320,3 +339,4 @@ The MacCoss Lab at the University of Washington receives funding from Agilent, B
 | Georg Wallmann       | wallmann@biochem.mpg.de           | Max Planck Institute of Biochemistry    | 0000-0003-4749-3730 |
 | Jeroen Van Goey      | j.vangoey@instadeep.com           | InstaDeep                               | 0000-0003-4480-5567 |
 | Jimmy K. Eng         | engj@uw.edu                       | University of Washington                | 0000-0001-6352-6737 |
+| Michael Robert Shortreed | mshort@chem.wisc.edu 	  | University of Wisconsin—Madison         | 0000-0003-4626-0863 |
