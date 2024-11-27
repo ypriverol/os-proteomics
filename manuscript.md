@@ -129,6 +129,14 @@ Projects like ProteoWizard [18606607,23051804], with tools such as Skyline [2014
 Skyline, for instance, supports over 20 external plugins available in its Tool Store, allowing users to perform specialized tasks far more efficiently than if they had to build solutions from scratch. Similarly, msConvert provides a standardized interface for mass spectrometry data, sparing developers the need to manage proprietary formats.
 These well-supported OSS projects create a foundational infrastructure that accelerates proteomics advancements.
 
+The field of genomics offers a compelling example of how open-source initiatives can drive transformative progress. 
+OSS such as reference-based aligners (e.g., BWA [19451168]), variant-calling algorithms (e.g., GATK-HaplotypeCaller [20644199]), 
+and large-scale cloud-based genomic data analysis tools (e.g., Hail https://hail.is) have revolutionized genomics research. 
+Furthermore, these tools have been seamlessly integrated into broader computational frameworks like the _nf-core/sarek_ [38666213], 
+demonstrating how community-driven collaboration and standardization can amplify the impact of individual tools. This collaborative 
+model underscores the potential for proteomics and other fields to follow a similar path, leveraging OSS to achieve 
+greater integration, scalability, and innovation.
+
 However, sustaining successful OSS projects in proteomics requires ongoing community engagement, which has often proven challenging.
 Despite their long history, projects like ProteoWizard and Skyline see few external contributions.
 Many researchers opt to develop independent tools rather than contribute enhancements within Skyline, missing opportunities for broader collaboration.
