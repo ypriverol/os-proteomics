@@ -332,8 +332,8 @@ The MacCoss Lab at the University of Washington receives funding from Agilent, B
 
 ### Authors
 
-| Name                 | Email                             | Affiliation                             | ORCID |
-| -------------------- | --------------------------------- | --------------------------------------- |-------|
+| Name                 | Email                             | Affiliation                             | ORCID               |
+| -------------------- | --------------------------------- | --------------------------------------- |---------------------|
 | Yasset Perez—Riverol | yperez@ebi.ac.uk                  | EMBL—EBI                                | 0000-0001-6579-6941 |
 | William E. Fondrie   | wfondrie@talus.bio                | Talus Bioscience                        | 0000-0002-1554-3716 |
 | Timo Sachsenberg     | timo.sachsenberg@uni-tuebingen.de | University of Tübingen                  | 0000-0002-2833-6070 |
@@ -350,4 +350,5 @@ The MacCoss Lab at the University of Washington receives funding from Agilent, B
 | Jimmy K. Eng         | engj@uw.edu                       | University of Washington                | 0000-0001-6352-6737 |
 | Michael Robert Shortreed | mshort@chem.wisc.edu 	  | University of Wisconsin—Madison         | 0000-0003-4626-0863 |
 | Bo Wen               | bwen1@uw.edu         | Department of Genome Sciences, University of Washington | 0000-0003-2261-3150 |
+| Enrique Audain       | enrique.audain.martinez@uni-oldenburg.de | University of Oldenburg | 0000-0002-9201-7840 |
 
