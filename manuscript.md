@@ -340,3 +340,5 @@ The MacCoss Lab at the University of Washington receives funding from Agilent, B
 | Jeroen Van Goey      | j.vangoey@instadeep.com           | InstaDeep                               | 0000-0003-4480-5567 |
 | Jimmy K. Eng         | engj@uw.edu                       | University of Washington                | 0000-0001-6352-6737 |
 | Michael Robert Shortreed | mshort@chem.wisc.edu 	  | University of Wisconsin—Madison         | 0000-0003-4626-0863 |
+| Bo Wen               | bwen1@uw.edu         | Department of Genome Sciences, University of Washington | 0000-0003-2261-3150 |
+
