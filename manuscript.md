@@ -129,6 +129,14 @@ Projects like ProteoWizard [18606607,23051804], with tools such as Skyline [2014
 Skyline, for instance, supports over 20 external plugins available in its Tool Store, allowing users to perform specialized tasks far more efficiently than if they had to build solutions from scratch. Similarly, msConvert provides a standardized interface for mass spectrometry data, sparing developers the need to manage proprietary formats.
 These well-supported OSS projects create a foundational infrastructure that accelerates proteomics advances.
 
+The field of genomics offers a compelling example of how open-source initiatives can drive transformative progress. 
+OSS such as reference-based aligners (e.g., BWA [19451168]), variant-calling algorithms (e.g., GATK-HaplotypeCaller [20644199]), 
+and large-scale cloud-based genomic data analysis tools (e.g., Hail https://hail.is) have revolutionized genomics research. 
+Furthermore, these tools have been seamlessly integrated into broader computational frameworks like the _nf-core/sarek_ [38666213], 
+demonstrating how community-driven collaboration and standardization can amplify the impact of individual tools. This collaborative 
+model underscores the potential for proteomics and other fields to follow a similar path, leveraging OSS to achieve 
+greater integration, scalability, and innovation.
+
 However, sustaining successful OSS projects in proteomics requires ongoing community engagement, which has often proven challenging.
 Despite their long history, projects like ProteoWizard and Skyline see few external contributions.
 Many researchers opt to develop independent tools rather than contribute enhancements within Skyline, missing opportunities for broader collaboration.
@@ -340,5 +348,6 @@ The MacCoss Lab at the University of Washington receives funding from Agilent, B
 | Jeroen Van Goey      | j.vangoey@instadeep.com           | InstaDeep                               | 0000-0003-4480-5567 |
 | Jimmy K. Eng         | engj@uw.edu                       | University of Washington                | 0000-0001-6352-6737 |
 | Michael Robert Shortreed | mshort@chem.wisc.edu 	  | University of Wisconsin—Madison         | 0000-0003-4626-0863 |
+| Bo Wen               | bwen1@uw.edu         | Department of Genome Sciences, University of Washington | 0000-0003-2261-3150 |
+| Enrique Audain       | enrique.audain.martinez@uni-oldenburg.de | University of Oldenburg | 0000-0002-9201-7840 |
 | William S. Noble | william-noble@uw.edu                  | Department of Genome Sciences, University of Washington                   |  0000-0001-7283-4715 |
-[Not sure where to stick my name in the list above. ---WSN]
