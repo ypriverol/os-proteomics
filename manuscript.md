@@ -3,10 +3,10 @@
 ## Introduction
 
 Scientific discovery today is as much a product of innovative software as it is of groundbreaking experiments, and the right tools often mean the difference between success and stagnation.
-Indeed,  the majority of scientists recognize scientific software as indispensable for their work and often impossible to conduct research without it [28751965, https://zenodo.org/records/14809].
+Indeed, the majority of scientists recognize scientific software as indispensable for their work and often impossible to conduct research without it [28751965, https://zenodo.org/records/14809].
 This reliance on software is equally crucial in proteomics, where researchers depend on a range of tools and algorithms for every step, from mass spectrometer configuration and data acquisition to the subsequent stages of processing, analysis, and interpretation [23467006, 34906327].
 
-Since the original publication of the first mass spectrum database search tool,, SEQUEST [24226387], proteomics software has evolved into a sophisticated ecosystem encompassing multiple stages of data processing, advanced predictive models, and robust computational frameworks.
+Since the original publication of the first mass spectrum database search tool, SEQUEST [24226387], proteomics software has evolved into a sophisticated ecosystem encompassing multiple stages of data processing, advanced predictive models, and robust computational frameworks.
 The publication of SEQUEST exemplifies a subsequent recurring pattern in MS-based proteomics, in which the development of software drives the adoption of novel experimental methodology. 
 Numerous examples of open-source software tools have been developed and used by the proteomics community. These include tools like Percolator [17952086], which is used to improve peptide and protein identification using machine learning, MS2PIP [24078703, 37140039] and Prosit [31133760], which apply gradient boosting and deep learning, respectively to predict fragment ion intensities, aiding in more accurate spectra matching, which can in turn be used by Percolator-based rescoring approaches like MS2Rescore [35803561], and Proteowizard [23051804], which provides shared libraries and tools for data access. Platforms like GalaxyP [29092937] and quantms [38965444] facilitate accessible, reproducible analyses through high-performance computing (HPC) and distributed workflows, supporting researchers in handling large datasets and complex analyses.
 Together, these advances underscore how proteomics software has transformed into a multidisciplinary field, involving a complex ecosystem of algorithms, models, and software tools that builds upon sophisticated computational and algorithmic expertise.
@@ -169,7 +169,7 @@ Extending and building on top of existing algorithms is crucial for scientific p
 Proteomics has already greatly benefited from this open-source approach.
 Projects like ProteoWizard [18606607,23051804], with tools such as Skyline [20147306], msConvert [28188540], and SearchGUI [21337703] exemplify OSS’s impact.
 Skyline, for instance, supports over twenty external plugins available in its Tool Store, allowing users to perform specialized tasks far more efficiently than if they had to build solutions from scratch. 
-Similarly, msConvert provides a standardized interface for mass spectrometry data, sparing developers the need to manage proprietary formats. SearchGUI, finally, provides a unified graphical user interface to twelve different search engines, in addition to ThermoRAWfileParser and the abovementioned msconvert.
+Similarly, msConvert provides a standardized interface for mass spectrometry data, sparing developers the need to manage proprietary formats. SearchGUI, finally, provides a unified graphical user interface to twelve different search engines, in addition to ThermoRawFileParser and the abovementioned msconvert.
 Together, such well-supported OSS projects create a foundational infrastructure that accelerates proteomics advancements.
 
 
@@ -354,7 +354,7 @@ A popular commercialization option for OSS has been to offer the software under 
 Projects using this strategy are often available under a strong copyleft license (GPL, AGPL, etc.) with no financial cost.
 However, the copyleft nature of these licenses requires any derivative works to be published under a compatible open-source license, which is often undesirable for corporate users.
 Thus, projects also offer more permissive commercial licenses to paying customers, allowing them to use the OSS project within proprietary code.
-Although this approach may seem prone to abuse (e.g., improper use of GPL code), our experience has been that companies tend to be risk-averse and prefer purchasing proper licenses to avoid the legal consequences of violating a copyleft license.
+Although this approach may seem prone to abuse (e.g., improper use of GPL code), our experience has been that companies tend to be risk-averse and prefer purchasing proper licenses to avoid violating a copyleft license.
 A successful example of this strategy from outside of proteomics has been RStudio by Posit.
 RStudio is currently available under an open-source AGPLv3 license, or under a commercial license when AGPLv3 is incompatible.
 Notably, developers should make sure to include a "contributor license agreement" as part of their requirements for new contributors to ensure their contributions can be distributed under both licenses.
