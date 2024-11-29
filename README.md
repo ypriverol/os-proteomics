@@ -4,9 +4,9 @@ Important dates:
 - ~~11/25 - the deadline for new contributions~~
 - 11/30 - our target date for manuscript submission to the *Journal of Proteome Research*
 
-# Contributions from 30 Nov 2024. 
+# Contributions after 30 Nov 2024. 
 
-Contributions after 30 November 2024 can be done to the online GitHub version, including comments, issues, etc; but they will **NOT BE INCLUDED** in the Online version of the manuscript in JPR. 
+Contributions after 30 November 2024 can be done to the online GitHub version, including comments, issues, etc; but they will **NOT BE INCLUDED** in the Online version of the manuscript in JPR. Please contact the authors if you want to discuss details. 
 
 ## Description 
 
