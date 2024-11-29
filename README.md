@@ -1,7 +1,7 @@
-# Open source, and FAIR Research Software in Proteomics
+## Open source, and FAIR Research Software in Proteomics
 
 Important dates:
-- 11/25 - the deadline for new contributions
+- ~~11/25 - the deadline for new contributions~~
 - 11/30 - our target date for manuscript submission to the *Journal of Proteome Research*
 
 ## Description 
