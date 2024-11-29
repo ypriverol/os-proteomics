@@ -341,11 +341,9 @@ Therefore, for the academic lab, a concerted effort to reduce the need for both 
 
 ## Strategies to commercialize OSS
 
-A piece of software being open-source does not necessarily mean that it does not have costs associated with maintaining, running and developing the software.
-Because of this, strategies to commercialize OSS have been developed to ensure that the software can be maintained and developed in the long term.
-OSS can be commercialized in a number of different ways depending on the owner's goals and principles.
-Here, we intend for "commercialization" to refer to any process by which OSS is monetized, regardless of whether it remains part of an academic lab, is developed by a company, or is spun out into its own startup.
-In fact, we would argue that healthy OSS projects must be financially supported by methods such as charitable means, grants, or commercialization, in order for the development of the project to be sustainable.
+Open-source software (OSS) is not free from costs; maintaining, running, and developing it requires resources. To ensure long-term sustainability, several commercialization strategies have been developed, balancing openness with financial viability, in a manner suiting the needs of the owner.
+Here, we consider "commercialization" as any means to monetize OSS, whether it remains in an academic setting, is adopted by a company, or spun out into a startup.
+We argue that healthy OSS projects must be financially supported by methods such as charitable means, grants, or commercialization, in order for the development of the project to be sustainable.
 We discuss a few commercialization models that have become popular with OSS, which try to strike a balance between supporting openness and supporting future development.
 It is worth noting that these strategies are not necessarily mutually exclusive.
 
@@ -392,13 +390,14 @@ The open-core model is quite common, and in proteomics it is used for ScaffoldDI
 
 ## Concluding remarks
 
-As proteomics research increasingly relies upon computational tools, embracing open-source and FAIR principles is essential for ensuring transparency, reproducibility, and accessibility.
-We urge researchers, funding agencies, institutions, and companies to prioritize open-source and FAIR practices, especially in publicly funded work, to create a truly collaborative scientific ecosystem..
+As proteomics increasingly depends on computational tools, adopting open-source and FAIR principles is crucial for ensuring transparency, reproducibility, and accessibility. 
+We urge researchers, funding agencies, institutions, and companies to prioritize open-source practices, particularly for publicly funded work, to foster a truly collaborative scientific ecosystem. 
 By collectively advancing open-source software, the scientific community can build an inclusive, rigorous foundation that fosters innovation and extends the benefits of research to scientists and the public alike.
 
-As we venture into the future, we as a community should explore mechanisms to make OSS sustainable -- for example, by creating a foundation for proteomics software to support the maintenance of OSS in our field.
-Importantly, an emphasis on creating software that is scalable, easy to deploy, and integrates complex functionalities beneath an easy-to-navigate interface is paramount to ensure its widespread adoption and success [38438732]. Providing software that is accessible to end users is a way to address the issues related to the negative perception of the quality of academic or OSS in mass spectrometry [29546988]. Additionally, we expect that AI-assisted software development will significantly improve the quality of proteomics OSS by automating error detection, optimizing code performance, and enhancing feature integration, thereby increasing reliability and user satisfaction.
-Regardless, let us come together and commit to open science for a shared, sustainable future in our exploration of the proteome.
+Moving forward, we as a community should explore mechanisms to make OSS sustainable -- for example, by creating a foundation for proteomics software to support the maintenance of OSS in our field.
+Emphasizing scalable, user-friendly software with complex features hidden behind intuitive interfaces will help ensure widespread adoption and success [38438732]. This approach can also counteract negative perceptions of the quality of academic or OSS in mass spectrometry [29546988]. 
+Additionally, we expect that AI-assisted software development will enhance the quality of proteomics OSS by automating error detection, optimizing code performance, and enhancing feature integration—ultimately boosting reliability and user satisfaction.
+Regardless, let us unite in our commitment to open science and pursue a shared, sustainable future in our exploration of the proteome.
 
 ## Conflicts of interest
 
